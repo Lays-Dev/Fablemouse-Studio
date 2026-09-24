@@ -67,5 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Make Me Forget.slnx"
+    "dotnet.defaultSolution": "Make Me Forget.slnx",
+    "dotnet.enableWorkspaceBasedDevelopment": false
 }
