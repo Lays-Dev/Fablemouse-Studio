@@ -273,6 +273,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 5
   _sprintSpeed: 8
+  _rigidbody: {fileID: 0}
+  _playerInput: {fileID: 0}
+  _moveAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: cb5bd649-c4f7-4901-bad1-29942e91c0ba
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  _sprintAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 62c014bc-5e81-428c-8229-16022e2697ec
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!114 &377695906
 MonoBehaviour:
   m_ObjectHideFlags: 0
