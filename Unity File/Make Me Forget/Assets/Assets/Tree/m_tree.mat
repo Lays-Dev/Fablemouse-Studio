@@ -49,12 +49,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _LeafTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: e30a3e75e4eddd8488daf04165e4b6e8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: e30a3e75e4eddd8488daf04165e4b6e8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1cecab4e67781a149bf30fef6488c8bb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -116,13 +120,16 @@ Material:
     - _UVSec: 0
     - _WindQuality: 0
     - _WindSpeed: 0
-    - _WindStrength: 0.1
+    - _WindStrength: 0.15
     - _ZWrite: 1
     m_Colors:
+    - _BottomColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.4889182, g: 1, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
-    - _Tint: {r: 0.97735846, g: 0.5960296, b: 0.1088002, a: 0}
+    - _MiddleColor: {r: 1, g: 0.24313727, b: 0, a: 0}
+    - _Tint: {r: 1, g: 1, b: 1, a: 0}
+    - _TopColor: {r: 1, g: 1, b: 1, a: 0}
     - _TranslucencyColor: {r: 0.73, g: 0.85, b: 0.40999997, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
