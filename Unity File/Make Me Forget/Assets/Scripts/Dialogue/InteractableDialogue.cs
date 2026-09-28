@@ -5,6 +5,7 @@ public class InteractableDialogue : MonoBehaviour
 {
     private bool _playerInRange;
     private InputAction _interactAction;
+    private InputAction _continueAction;
     private DialogueRunner _dialogueRunner;
 
     private void Awake()
@@ -15,6 +16,7 @@ public class InteractableDialogue : MonoBehaviour
             Debug.LogError("Scene needs a Dialogue Runner.");
         }
     }
+    // Checks for interaction and dialogue input.
     private void Update()
     {
         if (_playerInRange && _interactAction != null && _dialogueRunner != null)
@@ -22,6 +24,13 @@ public class InteractableDialogue : MonoBehaviour
             if (_interactAction.WasPressedThisFrame() && !_dialogueRunner.IsDialogueRunning)
             {
                 _dialogueRunner.StartDialogue("Start");
+            }
+
+            if (_continueAction != null &&
+                _continueAction.WasPressedThisFrame() &&
+                _dialogueRunner.IsDialogueRunning)
+            {
+                _dialogueRunner.RequestNextLine();
             }
         }
     }
@@ -35,6 +44,7 @@ public class InteractableDialogue : MonoBehaviour
             if (playerInput != null)
             {
                 _interactAction = playerInput.actions["Interact"];
+                _continueAction = playerInput.actions["ContinueDialogue"];
             }
         }
     }
@@ -46,6 +56,7 @@ public class InteractableDialogue : MonoBehaviour
         {
             _playerInRange = false;
             _interactAction = null;
+            _continueAction = null;
         }
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
