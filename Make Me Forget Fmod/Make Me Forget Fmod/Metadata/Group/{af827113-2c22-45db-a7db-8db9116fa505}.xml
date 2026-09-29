@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{af827113-2c22-45db-a7db-8db9116fa505}">
+		<property name="color">
+			<value>Purple</value>
+		</property>
+		<property name="name">
+			<value>MX</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{7ae251a7-30b5-44b2-9037-ad6cca65fd5c}</destination>
+		</relationship>
+		<relationship name="effectChain">
+			<destination>{38f424c0-1487-4837-899e-6bef01a72e81}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{a1dd51b3-3738-4b13-b508-9a8271df1fd9}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{bc0f60e3-2bdb-4155-9e4c-fa21b515df0e}</destination>
+		</relationship>
+	</object>
+	<object class="SidechainModulator" id="{7ae251a7-30b5-44b2-9037-ad6cca65fd5c}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>2</value>
+		</property>
+		<property name="attackTime">
+			<value>200</value>
+		</property>
+		<property name="releaseTime">
+			<value>400</value>
+		</property>
+		<property name="minimumThreshold">
+			<value>-30</value>
+		</property>
+		<property name="maximumThreshold">
+			<value>-24</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{a7eb7089-d043-4b4f-833a-f18018a4b671}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{38f424c0-1487-4837-899e-6bef01a72e81}">
+		<relationship name="effects">
+			<destination>{b638beb8-43d5-4cb4-97b3-a978c4bbb7b7}</destination>
+			<destination>{1cf8af7c-30be-434f-b30c-244f568cc934}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{a1dd51b3-3738-4b13-b508-9a8271df1fd9}" />
+	<object class="MixerBusFader" id="{b638beb8-43d5-4cb4-97b3-a978c4bbb7b7}" />
+	<object class="MultibandDynamicsEffect" id="{1cf8af7c-30be-434f-b30c-244f568cc934}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
+	</object>
+</objects>

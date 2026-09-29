@@ -16,6 +16,14 @@ public class TutorialMinigameScript : MonoBehaviour
     public Button ContinueButton;
     [Tooltip("Assign the Break Eggs Button here.")]
     public Button BreakEggsButton;
+    [Tooltip("Assign the Background 2 Button here.")]
+    public Button Background2Button;
+    [Tooltip("Assign the Background 1 Button here.")]
+    public Button Background1Button;
+    [Tooltip("Assign the Bug Button here.")]
+    public Button BugButton;
+    [Tooltip("Assign the Close Instructions Button here.")]
+    public Button StartButton;
 
 // Images
 
@@ -29,6 +37,14 @@ public class TutorialMinigameScript : MonoBehaviour
     public Image EggsImage;
     [Tooltip("Assign the Birb Image here.")]
     public Image BirbImage;
+    [Tooltip("Assign the Background 2 Image here.")]
+    public Image Background2Image;
+    [Tooltip("Assign the Bug Image here.")]
+    public Image BugImage;
+    [Tooltip("Assign the Smudge Image here.")]
+    public Image SmudgeImage;
+    [Tooltip("Assign the Instructions Image here.")]
+    public Image StartImage;
 
 // Animations
 
@@ -53,6 +69,10 @@ private bool EggsBroken = false;
         ReturnButton.onClick.AddListener(ReturnButtonClicked);
         ContinueButton.onClick.AddListener(ContinueButtonClicked);
         BreakEggsButton.onClick.AddListener(BreakEggsButtonClicked);
+        Background2Button.onClick.AddListener(Background2ButtonClicked);
+        Background1Button.onClick.AddListener(Background1ButtonClicked);
+        BugButton.onClick.AddListener(BugButtonClicked);
+        StartButton.onClick.AddListener(StartButtonClicked);
 
     }
 
@@ -68,6 +88,14 @@ private bool EggsBroken = false;
 
         }
 
+    }
+
+    void StartButtonClicked()
+    {
+        Debug.Log("Start Button was clicked.");
+        StartImage.gameObject.SetActive(false);
+        StartButton.gameObject.SetActive(false);
+        Background2Button.gameObject.SetActive(true);
     }
 
 #region Nest Button
@@ -118,6 +146,41 @@ private bool EggsBroken = false;
         BreakEggsButton.gameObject.SetActive(false);
         EggsBroken = true;
         Debug.Log("EggsBroken variable = " + EggsBroken);
+    }
+
+    void Background2ButtonClicked()
+    {
+        Debug.Log("Background 2 Button was clicked.");
+
+        Background2Image.gameObject.SetActive(true);
+        Background2Button.gameObject.SetActive(false);
+
+        if (EggsBroken == true)
+        {
+            Background1Button.gameObject.SetActive(false);
+        }
+
+    }
+
+        void Background1ButtonClicked()
+    {
+        Debug.Log("Background 1 Button was clicked.");
+
+        Background2Image.gameObject.SetActive(false);
+        Background2Button.gameObject.SetActive(true);
+
+
+    }
+
+    void BugButtonClicked()
+    {
+        Debug.Log("Bug Button was clicked.");
+
+        BugImage.gameObject.SetActive(false);
+        SmudgeImage.gameObject.SetActive(true);
+        BugButton.gameObject.SetActive(false);
+
+
     }
 
 }
