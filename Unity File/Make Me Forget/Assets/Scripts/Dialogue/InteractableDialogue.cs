@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.InputSystem;
 using Yarn.Unity;
 public class InteractableDialogue : MonoBehaviour
@@ -54,3 +54,4 @@ public class InteractableDialogue : MonoBehaviour
         
     }   
 }
+*/
