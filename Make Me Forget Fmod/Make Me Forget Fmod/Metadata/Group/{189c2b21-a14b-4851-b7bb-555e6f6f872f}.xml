@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{189c2b21-a14b-4851-b7bb-555e6f6f872f}">
+		<property name="color">
+			<value>Purple Light 1</value>
+		</property>
+		<property name="name">
+			<value>Exporation</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{d075eca1-805a-4b8c-98b0-ea6ddfc6f765}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{c19b37de-b5bd-40c8-b574-6b80791d2e0c}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{af827113-2c22-45db-a7db-8db9116fa505}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{d075eca1-805a-4b8c-98b0-ea6ddfc6f765}">
+		<relationship name="effects">
+			<destination>{003725a9-8941-47bb-9ae3-516f340a7bfe}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{c19b37de-b5bd-40c8-b574-6b80791d2e0c}" />
+	<object class="MixerBusFader" id="{003725a9-8941-47bb-9ae3-516f340a7bfe}" />
+</objects>
