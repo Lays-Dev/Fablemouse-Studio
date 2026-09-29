@@ -9,6 +9,7 @@ public class CutsceneDolly : MonoBehaviour
     [SerializeField] Transform cam;         
     [SerializeField] Transform startPoint;   
     [SerializeField] Transform endPoint;     
+    [SerializeField] CutsceneHandoff handoff;
 
     [Header("Timing")]
     [SerializeField] float startDelay = 0f;  
@@ -36,5 +37,9 @@ public class CutsceneDolly : MonoBehaviour
 
         // Lockeeed in!
         cam.SetPositionAndRotation(endPoint.position, endPoint.rotation);
+
+        // TEMPORARY: remove once the wake-up animation triggers the handoff
+        if (handoff != null)
+            handoff.EndCutscene();
     }
 }
