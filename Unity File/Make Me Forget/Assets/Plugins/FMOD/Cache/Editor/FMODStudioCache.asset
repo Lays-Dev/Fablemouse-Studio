@@ -20,6 +20,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
+--- !u!114 &-8354213999891323768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../FMod projects/Make Me Forget Fmod/Build/Desktop/MX.bank
+  Name: MX
+  StudioPath: bank:/MX
+  lastModified: 639262745408065821
+  FileSizes:
+  - Name: Desktop
+    Value: 2341984
+  Exists: 1
 --- !u!114 &-8095097022104829651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,7 +59,7 @@ MonoBehaviour:
     Data3: -2137945444
     Data4: -2042765085
   Banks:
-  - {fileID: -3095204551961125884}
+  - {fileID: -8354213999891323768}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -119,6 +139,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
+--- !u!114 &-7128388441418706597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../FMod projects/Make Me Forget Fmod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639259366667756995
+  FileSizes:
+  - Name: Desktop
+    Value: 1690
+  Exists: 1
 --- !u!114 &-6853701479237460383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +207,47 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-6640914088049037798
+--- !u!114 &-6232129015539577444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/DX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../FMod projects/Make Me Forget Fmod/Build/Desktop/DX.bank
+  Name: DX
+  StudioPath: bank:/DX
+  lastModified: 639256636029286106
+  FileSizes:
+  - Name: Desktop
+    Value: 506
+  Exists: 1
+--- !u!114 &-5674687685591625213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UI.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../FMod projects/Make Me Forget Fmod/Build/Desktop/UI.bank
+  Name: UI
+  StudioPath: bank:/UI
+  lastModified: 639256636029332404
+  FileSizes:
+  - Name: Desktop
+    Value: 506
+  Exists: 1
+--- !u!114 &-5314816432150271146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
+  Path: ../../../../FMod projects/Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
   lastModified: 639259366667741843
@@ -206,26 +286,6 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1690
-  Exists: 1
---- !u!114 &-3095204551961125884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/MX.bank
-  Name: MX
-  StudioPath: bank:/MX
-  lastModified: 639259391067285719
-  FileSizes:
-  - Name: Desktop
-    Value: 2341920
   Exists: 1
 --- !u!114 &-2691861058054089704
 MonoBehaviour:
@@ -278,26 +338,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 192000
---- !u!114 &-1892822024373791197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/DX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
-  Name: DX
-  StudioPath: bank:/DX
-  lastModified: 639256636029286106
-  FileSizes:
-  - Name: Desktop
-    Value: 506
-  Exists: 1
 --- !u!114 &-1762553878929618306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,9 +457,11 @@ MonoBehaviour:
   ID:
     data1: 2062178896
     data2: 3196238178
-  Type: 0
+  Type: 2
   IsGlobal: 0
-  Labels: []
+  Labels:
+  - Value A
+  - Value B
   Exists: 1
 --- !u!114 &-134114146864228174
 MonoBehaviour:
@@ -478,21 +520,21 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 7983649875864916847}
-  - {fileID: -1892822024373791197}
-  - {fileID: -6640914088049037798}
-  - {fileID: -3095204551961125884}
-  - {fileID: 4541254742469126287}
-  - {fileID: 5334672089230212466}
+  - {fileID: -7128388441418706597}
+  - {fileID: -6232129015539577444}
+  - {fileID: -5314816432150271146}
+  - {fileID: -8354213999891323768}
+  - {fileID: 8927487174602260051}
+  - {fileID: -5674687685591625213}
   EditorEvents:
   - {fileID: -8095097022104829651}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -6640914088049037798}
+  - {fileID: -5314816432150271146}
   StringsBanks:
-  - {fileID: 7983649875864916847}
+  - {fileID: -7128388441418706597}
   cacheVersion: 131860
-  cacheTime: 639259391067285719
+  cacheTime: 639262745408065821
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
@@ -516,9 +558,11 @@ MonoBehaviour:
   ID:
     data1: 959849305
     data2: 3092094403
-  Type: 0
+  Type: 2
   IsGlobal: 0
-  Labels: []
+  Labels:
+  - Value A
+  - Value B
   Exists: 1
 --- !u!114 &579503483565831771
 MonoBehaviour:
@@ -560,9 +604,11 @@ MonoBehaviour:
   ID:
     data1: 1901171272
     data2: 1249407490
-  Type: 0
+  Type: 2
   IsGlobal: 0
-  Labels: []
+  Labels:
+  - Value A
+  - Value B
   Exists: 1
 --- !u!114 &1705794285563106129
 MonoBehaviour:
@@ -608,9 +654,11 @@ MonoBehaviour:
   ID:
     data1: 1768245747
     data2: 1389024608
-  Type: 0
+  Type: 2
   IsGlobal: 0
-  Labels: []
+  Labels:
+  - Value A
+  - Value B
   Exists: 1
 --- !u!114 &3974703468693152369
 MonoBehaviour:
@@ -652,26 +700,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2341920
   Exists: 1
---- !u!114 &4541254742469126287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 639256636029312012
-  FileSizes:
-  - Name: Desktop
-    Value: 506
-  Exists: 1
 --- !u!114 &5248240591508422567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,26 +716,6 @@ MonoBehaviour:
   Name: DX
   StudioPath: bank:/DX
   lastModified: 639256636029286106
-  FileSizes:
-  - Name: Desktop
-    Value: 506
-  Exists: 1
---- !u!114 &5334672089230212466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/UI.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/UI.bank
-  Name: UI
-  StudioPath: bank:/UI
-  lastModified: 639256636029332404
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -732,26 +740,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 5250
   Exists: 1
---- !u!114 &7983649875864916847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 639259366667756995
-  FileSizes:
-  - Name: Desktop
-    Value: 1690
-  Exists: 1
 --- !u!114 &8561233660108149280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,4 +759,24 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 5250
+  Exists: 1
+--- !u!114 &8927487174602260051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../FMod projects/Make Me Forget Fmod/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 639256636029312012
+  FileSizes:
+  - Name: Desktop
+    Value: 506
   Exists: 1
