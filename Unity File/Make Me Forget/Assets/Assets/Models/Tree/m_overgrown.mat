@@ -12,8 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _ALPHATEST_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -58,7 +57,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: ae35700a22fb4d8449894f72f8336aa5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3b3e25fb4918f8948af0c131b319b90b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -95,7 +94,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaClip: 0.7
+    - _AlphaClip: 0.15
+    - _Ambient: -1.41
     - _AmbientOcclusion: -4.36
     - _BumpScale: 1
     - _CardSize: 1
@@ -130,7 +130,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _MiddleColor: {r: 0.79622644, g: 0.19359232, b: 0, a: 0}
-    - _Tint: {r: 0.31785944, g: 0.81886786, b: 0, a: 0}
+    - _Tint: {r: 0.21246704, g: 0.7660377, b: 0.21853213, a: 0}
     - _TopColor: {r: 1, g: 1, b: 1, a: 0}
     - _TranslucencyColor: {r: 0.73, g: 0.85, b: 0.40999997, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
