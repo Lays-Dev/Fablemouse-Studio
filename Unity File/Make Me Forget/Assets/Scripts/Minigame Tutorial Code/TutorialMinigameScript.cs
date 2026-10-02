@@ -24,6 +24,10 @@ public class TutorialMinigameScript : MonoBehaviour
     public Button BugButton;
     [Tooltip("Assign the Close Instructions Button here.")]
     public Button StartButton;
+    [Tooltip("Assign the Branch Button here.")]
+    public Button BranchButton; 
+    [Tooltip("Assign the Win Button here.")]
+    public Button WinButton; 
 
 // Images
 
@@ -45,6 +49,10 @@ public class TutorialMinigameScript : MonoBehaviour
     public Image SmudgeImage;
     [Tooltip("Assign the Instructions Image here.")]
     public Image StartImage;
+    [Tooltip("Assign the Tree Image here.")]
+    public Image TreeImage;
+    [Tooltip("Assign the Win Image here.")]
+    public Image WinImage;
 
 // Animations
 
@@ -58,6 +66,7 @@ public class TutorialMinigameScript : MonoBehaviour
 #region Variables
 
 private bool EggsBroken = false;
+private bool nest = false;
 
 
 #endregion
@@ -73,19 +82,23 @@ private bool EggsBroken = false;
         Background1Button.onClick.AddListener(Background1ButtonClicked);
         BugButton.onClick.AddListener(BugButtonClicked);
         StartButton.onClick.AddListener(StartButtonClicked);
-
+        BranchButton.onClick.AddListener(BranchButtonClicked);
+        WinButton.onClick.AddListener(WinButtonClicked);
     }
 
 #endregion
 
     void Update()
     {
-        AnimatorStateInfo state = BrokenEggsAnimation.GetCurrentAnimatorStateInfo(0);
-        if (state.normalizedTime >= 1f && !BrokenEggsAnimation.IsInTransition(0))
+        if (nest == true)
         {
-            BirbImage.gameObject.SetActive(true);
-            ReturnButton.gameObject.SetActive(true);
+            AnimatorStateInfo state = BrokenEggsAnimation.GetCurrentAnimatorStateInfo(0);
+            if (state.normalizedTime >= 1f && !BrokenEggsAnimation.IsInTransition(0))
+            {
+                BirbImage.gameObject.SetActive(true);
+                ReturnButton.gameObject.SetActive(true);
 
+            }
         }
 
     }
@@ -140,6 +153,7 @@ private bool EggsBroken = false;
 
     void BreakEggsButtonClicked()
     {
+        nest = true;
         ReturnButton.gameObject.SetActive(false);
         EggsImage.gameObject.SetActive(false);
         BrokenEggsImage.gameObject.SetActive(true);
@@ -179,6 +193,30 @@ private bool EggsBroken = false;
         BugImage.gameObject.SetActive(false);
         SmudgeImage.gameObject.SetActive(true);
         BugButton.gameObject.SetActive(false);
+
+
+    }
+
+    void BranchButtonClicked()
+    {
+        Debug.Log("Branch Button was clicked.");
+
+        TreeImage.gameObject.SetActive(true);
+        BranchButton.gameObject.SetActive(false);
+
+
+    }
+
+        void WinButtonClicked()
+    {
+        Debug.Log("Win Button was clicked.");
+
+        WinImage.gameObject.SetActive(true);
+        TreeImage.gameObject.SetActive(false);
+        Background1Button.gameObject.SetActive(false);
+        BugButton.gameObject.SetActive(false);
+        Background2Image.gameObject.SetActive(false);
+
 
 
     }
