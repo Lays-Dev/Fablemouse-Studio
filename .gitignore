@@ -115,7 +115,6 @@ InitTestScene*.unity*
 # Don't ignore the FMOD build folder
 !/Make Me Forget Fmod/[Bb]uild/
 
-
 # Ignore the Cache folder since it is updated locally.
 /[Aa]ssets/Plugins/FMOD/Cache/*
 

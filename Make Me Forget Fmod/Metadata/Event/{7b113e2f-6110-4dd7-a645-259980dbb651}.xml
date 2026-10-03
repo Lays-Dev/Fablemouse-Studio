@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{7b113e2f-6110-4dd7-a645-259980dbb651}">
 		<property name="name">
-			<value>Fish noises</value>
+			<value>Fish noises (inst)</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -53,7 +53,7 @@
 			<destination>{5d442fd4-cae1-4b6d-9714-265c35f27054}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{bc0f60e3-2bdb-4155-9e4c-fa21b515df0e}</destination>
+			<destination>{ce140400-f874-47a7-92af-ee06d6f904b7}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{10275429-ba89-49be-b117-fb542660ead0}" />

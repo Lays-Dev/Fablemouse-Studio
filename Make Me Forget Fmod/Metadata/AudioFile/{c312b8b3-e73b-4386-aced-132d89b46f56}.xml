@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{c312b8b3-e73b-4386-aced-132d89b46f56}">
+		<property name="assetPath">
+			<value>YJason talking.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.7083446712018141</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4b951061-35e5-4ded-9033-997b1820b603}</destination>
+		</relationship>
+	</object>
+</objects>

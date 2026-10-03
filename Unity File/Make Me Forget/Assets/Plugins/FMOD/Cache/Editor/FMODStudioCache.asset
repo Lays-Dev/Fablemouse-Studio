@@ -20,6 +20,34 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
+--- !u!114 &-8543580180989761500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Footsteps/Grass
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Footsteps/Grass
+  Guid:
+    Data1: -540071853
+    Data2: 1098064511
+    Data3: 1789078189
+    Data4: -127990459
+  Banks:
+  - {fileID: 4106074392153450591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3036043287501502505}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-8487956665292952577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,7 +71,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 6036330501417187754}
   MinDistance: 1
   MaxDistance: 20
   Length: 600
@@ -159,10 +188,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 639264725739361404
+  lastModified: 639265762896830039
   FileSizes:
   - Name: Desktop
-    Value: 737280
+    Value: 737472
   Exists: 1
 --- !u!114 &-6791643218246557162
 MonoBehaviour:
@@ -241,7 +270,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1600
+  Length: 600
 --- !u!114 &-5823063536518939165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,10 +294,11 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -3992786695407425426}
   MinDistance: 1
   MaxDistance: 20
-  Length: 400
+  Length: 800
 --- !u!114 &-5545245729763503708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,6 +402,33 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &-4544806775003605774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Fish eggs/Fish noises (inst)
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Fish eggs/Fish noises (inst)
+  Guid:
+    Data1: 2064727599
+    Data2: 1305960720
+    Data3: -1725610586
+    Data4: 1370938240
+  Banks:
+  - {fileID: 4106074392153450591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-4397318950749282490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,7 +455,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1600
+  Length: 600
 --- !u!114 &-4352280367507778065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,6 +482,30 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &-4208076566032070385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jump/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-4121236309609214532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,10 +521,34 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 639264725738767790
+  lastModified: 639263879606289697
   FileSizes:
   - Name: Desktop
     Value: 506
+  Exists: 1
+--- !u!114 &-3992786695407425426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Talking/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-3805149944562836527
 MonoBehaviour:
@@ -470,6 +575,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -8179130584985139621}
+  - {fileID: -4208076566032070385}
   MinDistance: 1
   MaxDistance: 20
   Length: 2515
@@ -500,33 +606,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4437
---- !u!114 &-3643884717929044903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Fish eggs/Fish noises
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Fish eggs/Fish noises
-  Guid:
-    Data1: 2064727599
-    Data2: 1305960720
-    Data3: -1725610586
-    Data4: 1370938240
-  Banks:
-  - {fileID: 4106074392153450591}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
 --- !u!114 &-3422780242099745117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,6 +658,30 @@ MonoBehaviour:
   - Value A
   - Value B
   Exists: 1
+--- !u!114 &-2733864014463774786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CL Fence/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2122327594980397322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,6 +702,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
+--- !u!114 &-1950936738481638100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle win
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Puzzle/Puzzle win
+  Guid:
+    Data1: -518947044
+    Data2: 1226470326
+    Data3: -13921110
+    Data4: -1968833124
+  Banks:
+  - {fileID: 4106074392153450591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &-1862722261461925286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,6 +748,32 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 506
+  Exists: 1
+--- !u!114 &-1121379887350990039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest AMB/Parameter 2
+  m_EditorClassIdentifier: 
+  Name: Parameter 2
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Value A
+  - Value B
   Exists: 1
 --- !u!114 &-1092145213511109275
 MonoBehaviour:
@@ -643,6 +799,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-1054391665085049334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dialog Bubble/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-421845326269774871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,10 +838,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639264725739143577
+  lastModified: 639265762883160754
   FileSizes:
   - Name: Desktop
-    Value: 5250
+    Value: 5174
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -686,7 +866,6 @@ MonoBehaviour:
   - {fileID: -6606161093246064670}
   - {fileID: -3736565803163412600}
   - {fileID: 2907013876483042939}
-  - {fileID: -3643884717929044903}
   - {fileID: -8487956665292952577}
   - {fileID: -3805149944562836527}
   - {fileID: -5823063536518939165}
@@ -694,13 +873,23 @@ MonoBehaviour:
   - {fileID: -4397318950749282490}
   - {fileID: 3055058726641404706}
   - {fileID: -6175167132579203844}
+  - {fileID: 5837503035019304523}
+  - {fileID: -1950936738481638100}
+  - {fileID: 8367053529437319411}
+  - {fileID: -4544806775003605774}
+  - {fileID: -8543580180989761500}
+  - {fileID: 507405947987170188}
+  - {fileID: 4706616541579181602}
+  - {fileID: 5960639379568247555}
+  - {fileID: 8004087764946185971}
+  - {fileID: 1655469774028134713}
   EditorParameters: []
   MasterBanks:
   - {fileID: -421845326269774871}
   StringsBanks:
   - {fileID: 7162685774577686401}
   cacheVersion: 131860
-  cacheTime: 639264725739361404
+  cacheTime: 639265763436481000
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
@@ -708,22 +897,67 @@ MonoBehaviour:
     index: 1
   - key: event:/SFX/Mechanics/Branches/Move branches
     index: 2
-  - key: event:/SFX/Mechanics/Fish eggs/Fish noises
-    index: 3
   - key: event:/SFX/Player/Yell
-    index: 4
+    index: 3
   - key: event:/SFX/Player/Jump
-    index: 5
+    index: 4
   - key: event:/SFX/Player/Talking
-    index: 6
+    index: 5
   - key: event:/SFX/Mechanics/Bug/Splat
-    index: 7
+    index: 6
   - key: event:/UI/Front end/select/Young/UI Forward
-    index: 8
+    index: 7
   - key: event:/UI/Front end/select/Young/UI Select
-    index: 9
+    index: 8
   - key: event:/UI/Front end/select/Young/UI Back
+    index: 9
+  - key: event:/SFX/ENV/CL Fence
     index: 10
+  - key: event:/SFX/Mechanics/Puzzle/Puzzle win
+    index: 11
+  - key: event:/SFX/Mechanics/Puzzle/Puzzle select
+    index: 12
+  - key: event:/SFX/Mechanics/Fish eggs/Fish noises (inst)
+    index: 13
+  - key: event:/SFX/Player/Footsteps/Grass
+    index: 14
+  - key: event:/SFX/Mechanics/Fish eggs/Bird sounds
+    index: 15
+  - key: event:/SFX/NPC/Jason/YJason Talking
+    index: 16
+  - key: event:/SFX/Mechanics/Dialog Bubble
+    index: 17
+  - key: event:/SFX/Mechanics/Puzzle/Puzzle start
+    index: 18
+  - key: event:/AMB/Globals/Forest AMB
+    index: 19
+--- !u!114 &507405947987170188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Fish eggs/Bird sounds
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Fish eggs/Bird sounds
+  Guid:
+    Data1: -1342055581
+    Data2: 1166038288
+    Data3: 1187383441
+    Data4: 1755888853
+  Banks:
+  - {fileID: 4106074392153450591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &733580498875989371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,6 +978,34 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2341984
   Exists: 1
+--- !u!114 &1655469774028134713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Forest AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Forest AMB
+  Guid:
+    Data1: 1605033708
+    Data2: 1181195740
+    Data3: -574023251
+    Data4: 789539891
+  Banks:
+  - {fileID: 4106074392153450591}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1121379887350990039}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 90240
 --- !u!114 &2907013876483042939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,6 +1033,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3036043287501502505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Grass/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3052441342334515195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,7 +1103,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1600
+  Length: 600
 --- !u!114 &3664851442825163920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,11 +1191,38 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639264725739276786
+  lastModified: 639265763436481000
   FileSizes:
   - Name: Desktop
-    Value: 389536
+    Value: 2048768
   Exists: 1
+--- !u!114 &4706616541579181602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/NPC/Jason/YJason Talking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NPC/Jason/YJason Talking
+  Guid:
+    Data1: -488523650
+    Data2: 1124350201
+    Data3: -600347472
+    Data4: -829682342
+  Banks:
+  - {fileID: 4106074392153450591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5263978597825127554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -949,7 +1262,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/MX.bank
   Name: MX
   StudioPath: bank:/MX
-  lastModified: 639264725738947992
+  lastModified: 639263879607019768
   FileSizes:
   - Name: Desktop
     Value: 2341920
@@ -985,6 +1298,86 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 192000
+--- !u!114 &5837503035019304523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/CL Fence
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/CL Fence
+  Guid:
+    Data1: -1794934254
+    Data2: 1200799433
+    Data3: -268879477
+    Data4: 555752459
+  Banks:
+  - {fileID: 4106074392153450591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2733864014463774786}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5960639379568247555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Dialog Bubble
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Dialog Bubble
+  Guid:
+    Data1: -218417481
+    Data2: 1341814687
+    Data3: 466425525
+    Data4: 247848723
+  Banks:
+  - {fileID: 4106074392153450591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1054391665085049334}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6036330501417187754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Yell/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &6508542036765466482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,10 +1437,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639264725739190845
+  lastModified: 639265762883160754
   FileSizes:
   - Name: Desktop
-    Value: 2280
+    Value: 2820
   Exists: 1
 --- !u!114 &7374789640968555135
 MonoBehaviour:
@@ -1095,6 +1488,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
+--- !u!114 &8004087764946185971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle start
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Puzzle/Puzzle start
+  Guid:
+    Data1: -1551137841
+    Data2: 1330984728
+    Data3: 1742725035
+    Data4: -187494383
+  Banks:
+  - {fileID: 4106074392153450591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &8367053529437319411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle select
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Puzzle/Puzzle select
+  Guid:
+    Data1: 598155549
+    Data2: 1275830164
+    Data3: 42277781
+    Data4: 1945209458
+  Banks:
+  - {fileID: 4106074392153450591}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8474383758777654654
 MonoBehaviour:
   m_ObjectHideFlags: 0
