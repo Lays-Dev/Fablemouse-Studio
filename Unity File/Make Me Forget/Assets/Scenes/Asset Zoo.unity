@@ -798,11 +798,19 @@ PrefabInstance:
       objectReference: {fileID: 1197865439}
     - target: {fileID: 6458493581011326043, guid: 5c1ba185453b2664bae853388cd8df5b, type: 3}
       propertyPath: distance
-      value: 17
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 6458493581011326043, guid: 5c1ba185453b2664bae853388cd8df5b, type: 3}
       propertyPath: offset.y
       value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6458493581011326043, guid: 5c1ba185453b2664bae853388cd8df5b, type: 3}
+      propertyPath: smoothTimeX
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6458493581011326043, guid: 5c1ba185453b2664bae853388cd8df5b, type: 3}
+      propertyPath: deadZoneSize.x
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8778242317825898383, guid: 5c1ba185453b2664bae853388cd8df5b, type: 3}
       propertyPath: orthographic
