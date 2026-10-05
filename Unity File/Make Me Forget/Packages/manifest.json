@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.fmod.fmod-for-unity-2-03": "2.3.14",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.ai.navigation": "2.0.14",
     "com.unity.collab-proxy": "2.13.6",
@@ -8,6 +9,7 @@
     "com.unity.inputsystem": "1.19.0",
     "com.unity.multiplayer.center": "1.0.0",
     "com.unity.render-pipelines.universal": "17.0.4",
+    "com.unity.terrain-tools": "5.3.3",
     "com.unity.test-framework": "1.6.0",
     "com.unity.timeline": "1.8.13",
     "com.unity.ugui": "2.0.0",
