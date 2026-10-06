@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{fb0b64e5-95ec-446e-af5c-4c5ec84655cb}">
+		<property name="assetPath">
+			<value>Fish sounds.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.5468707482993196</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4b951061-35e5-4ded-9033-997b1820b603}</destination>
+		</relationship>
+	</object>
+</objects>
