@@ -1,4 +1,4 @@
-/*using UnityEngine;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using Yarn.Unity;
 public class InteractableDialogue : MonoBehaviour
@@ -23,6 +23,7 @@ public class InteractableDialogue : MonoBehaviour
         {
             if (_interactAction.WasPressedThisFrame() && !_dialogueRunner.IsDialogueRunning)
             {
+                Debug.Log("Interact key was pressed.");
                 _dialogueRunner.StartDialogue("Start");
             }
 
@@ -65,4 +66,3 @@ public class InteractableDialogue : MonoBehaviour
         
     }   
 }
-*/
