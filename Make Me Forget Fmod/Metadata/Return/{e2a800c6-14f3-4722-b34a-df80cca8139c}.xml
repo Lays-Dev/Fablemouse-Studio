@@ -5,7 +5,7 @@
 			<value>Blue Light 1</value>
 		</property>
 		<property name="name">
-			<value>Reverb ext</value>
+			<value>Reverb</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{9ab5f645-1f32-4000-8ca6-9e04750184eb}</destination>

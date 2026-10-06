@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{5da6c3fe-ddb9-4f20-bea5-382e78a38a24}">
+		<property name="assetPath">
+			<value>Forest Wind AMB.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>90.239999999999995</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4b951061-35e5-4ded-9033-997b1820b603}</destination>
+		</relationship>
+	</object>
+</objects>
