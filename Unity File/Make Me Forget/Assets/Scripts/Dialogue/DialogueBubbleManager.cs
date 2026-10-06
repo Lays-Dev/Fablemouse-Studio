@@ -4,7 +4,7 @@ public class DialogueBubbleManager : MonoBehaviour
 {
     private DialogueSpeaker _currentSpeaker;
 
-    // Changes which character is currently displaying dialogue.
+    // Shows dialogue for the current speaker and hides the previous speaker.
     public void ShowDialogue(DialogueSpeaker speaker, string dialogue)
     {
         if (speaker == null)
@@ -22,7 +22,7 @@ public class DialogueBubbleManager : MonoBehaviour
         _currentSpeaker = speaker;
     }
 
-    // Hides the currently visible dialogue bubble.
+    // Hides whichever character is currently speaking.
     public void HideCurrentDialogue()
     {
         if (_currentSpeaker != null)

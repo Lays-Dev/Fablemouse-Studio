@@ -122,17 +122,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "right",
-                    "id": "57658371-dfae-45d6-83da-52dd79045645",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "",
                     "id": "35247150-7df0-4da5-a0ac-196fdfb701e7",
                     "path": "<Gamepad>/leftStick",

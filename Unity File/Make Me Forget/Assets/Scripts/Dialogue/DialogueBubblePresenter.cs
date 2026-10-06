@@ -15,37 +15,59 @@ public class DialogueBubblePresenter : DialoguePresenterBase
             Debug.LogError("Scene needs a DialogueBubbleManager.");
         }
     }
+
     // Called by Yarn when a conversation begins.
     public override YarnTask OnDialogueStartedAsync()
     {
         return YarnTask.CompletedTask;
     }
-    // Receives each line from Yarn and sends it to the correct character.
-    public override YarnTask RunLineAsync(LocalizedLine line,LineCancellationToken token)
+
+    // Shows one Yarn line and waits for the player to continue.
+    public override async YarnTask RunLineAsync(
+        LocalizedLine line,
+        LineCancellationToken token)
     {
         if (_bubbleManager == null)
         {
-            return YarnTask.CompletedTask;
+            return;
         }
 
         string speakerName = line.CharacterName;
         string dialogue = line.TextWithoutCharacterName.Text;
 
-        DialogueSpeaker[] speakers = FindObjectsByType<DialogueSpeaker>(FindObjectsSortMode.None);
+        DialogueSpeaker[] speakers =
+            FindObjectsByType<DialogueSpeaker>(FindObjectsSortMode.None);
 
+        DialogueSpeaker matchingSpeaker = null;
+
+        // Finds the character whose speaker name matches the Yarn line.
         foreach (DialogueSpeaker speaker in speakers)
         {
             if (speaker.SpeakerName == speakerName)
             {
-                _bubbleManager.ShowDialogue(speaker, dialogue);
+                matchingSpeaker = speaker;
                 break;
             }
         }
 
-        return YarnTask.CompletedTask;
+        if (matchingSpeaker == null)
+        {
+            Debug.LogWarning(
+                $"No DialogueSpeaker found with the name '{speakerName}'."
+            );
+
+            return;
+        }
+
+        // Shows this line above the correct character.
+        _bubbleManager.ShowDialogue(matchingSpeaker, dialogue);
+
+        // Keeps this line on screen until RequestNextLine() is called.
+        await YarnTask.WaitUntilCanceled(token.NextContentToken)
+            .SuppressCancellationThrow();
     }
 
-    // Hides the final speech bubble when the conversation ends.
+    // Hides the final bubble when the conversation finishes.
     public override YarnTask OnDialogueCompleteAsync()
     {
         if (_bubbleManager != null)
