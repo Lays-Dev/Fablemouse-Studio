@@ -28,6 +28,8 @@ public class TutorialMinigameScript : MonoBehaviour
     public Button BranchButton; 
     [Tooltip("Assign the Win Button here.")]
     public Button WinButton; 
+    [Tooltip("Assign the End Minigame Button here.")]
+    public Button EndButton;
 
 // Images
 
@@ -53,6 +55,10 @@ public class TutorialMinigameScript : MonoBehaviour
     public Image TreeImage;
     [Tooltip("Assign the Win Image here.")]
     public Image WinImage;
+
+    public GameObject canvas;
+    public static bool foundJason = false;
+
 
 // Animations
 
@@ -84,6 +90,7 @@ private bool nest = false;
         StartButton.onClick.AddListener(StartButtonClicked);
         BranchButton.onClick.AddListener(BranchButtonClicked);
         WinButton.onClick.AddListener(WinButtonClicked);
+        EndButton.onClick.AddListener(EndButtonClicked);
     }
 
 #endregion
@@ -218,6 +225,15 @@ private bool nest = false;
         Background2Image.gameObject.SetActive(false);
 
 
+
+    }
+
+    void EndButtonClicked()
+    {
+        Debug.Log("End Button was clicked.");
+        foundJason = true;
+
+        canvas.SetActive(false);
 
     }
 
