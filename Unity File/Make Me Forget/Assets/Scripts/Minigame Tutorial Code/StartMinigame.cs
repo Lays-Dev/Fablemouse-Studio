@@ -46,8 +46,17 @@ public class StartMinigame : MonoBehaviour
         {
             if (interactAction.WasPressedThisFrame())
             {
-                canvas.SetActive(true);
+                if (TutorialMinigameScript.foundJason == false)
+                {
+                    canvas.SetActive(true);
+                }
+                else
+                {
+                    Debug.Log("Jason has already been found. Minigame will not start.");
+                }
             }
         }
     }
+
+
 }
