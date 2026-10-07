@@ -19,7 +19,6 @@ public class DialogueSpeaker : MonoBehaviour
     {
         HideDialogue();
     }
-
     // Shows this character's dialogue bubble and updates its text.
     public void ShowDialogue(string dialogue)
     {
@@ -34,11 +33,10 @@ public class DialogueSpeaker : MonoBehaviour
             Debug.LogError($"{gameObject.name} is missing its Dialogue Text.");
             return;
         }
-
         _dialogueText.text = dialogue;
         _dialogueBubble.SetActive(true);
     }
-
+   
     // Hides this character's dialogue bubble.
     public void HideDialogue()
     {

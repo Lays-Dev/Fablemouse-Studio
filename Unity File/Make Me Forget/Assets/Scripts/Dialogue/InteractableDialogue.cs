@@ -18,7 +18,8 @@ public class InteractableDialogue : MonoBehaviour
     private void Awake()
     {
         _dialogueRunner = FindFirstObjectByType<DialogueRunner>();
-
+        PlayerInput playerInput = FindFirstObjectByType<PlayerInput>();
+        _continueAction = playerInput.actions["ContinueDialogue"];
         if (_dialogueRunner == null)
         {
             Debug.LogError("Scene needs a Dialogue Runner.");
@@ -96,7 +97,7 @@ public class InteractableDialogue : MonoBehaviour
             }
 
             _interactAction = playerInput.actions["Interact"];
-            _continueAction = playerInput.actions["ContinueDialogue"];
+            
 
             Debug.Log($"Player entered {gameObject.name}'s dialogue trigger.");
         }
