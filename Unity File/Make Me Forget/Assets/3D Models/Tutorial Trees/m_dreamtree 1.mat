@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: m_dreamtree
+  m_Name: m_dreamtree 1
   m_Shader: {fileID: -6465566751694194690, guid: 86e4b218fbfcd0d4cb61a35f7102a465, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -105,7 +105,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Gradient_Amount: 0.81
+    - _Gradient_Amount: 0.78
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -129,7 +129,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BottomColor: {r: 0, g: 0, b: 0, a: 0}
-    - _Bottom_Color: {r: 0.8238993, g: 0.42826784, b: 0.1787705, a: 0}
+    - _Bottom_Color: {r: 0.51145095, g: 0.6666667, b: 0.2470588, a: 0}
     - _Color: {r: 0.4889182, g: 1, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
@@ -137,7 +137,7 @@ Material:
     - _Middle_Color: {r: 0.30424094, g: 0.6981132, b: 0, a: 0}
     - _Tint: {r: 0.8415094, g: 0.5758328, b: 0.16353858, a: 0}
     - _TopColor: {r: 1, g: 1, b: 1, a: 0}
-    - _Top_Color: {r: 0.9843138, g: 0.83921576, b: 0.5137255, a: 1}
+    - _Top_Color: {r: 0.9169811, g: 0.6906343, b: 0.18512635, a: 1}
     - _TranslucencyColor: {r: 0.73, g: 0.85, b: 0.40999997, a: 1}
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
