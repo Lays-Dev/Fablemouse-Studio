@@ -23,6 +23,6 @@ public class BranchDrag : MonoBehaviour, IDragHandler, IPointerDownHandler
     public void OnDrag(PointerEventData eventData)
     {
         // Moves the UI element accurately using the New Input System's data
-        _rectTransform.anchoredPosition -= eventData.delta / _canvas.scaleFactor;
+        _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
     }
 }
