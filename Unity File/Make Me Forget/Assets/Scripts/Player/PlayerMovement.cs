@@ -50,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
         }
         Vector3 velocity = _rigidbody.linearVelocity;
         velocity.x = moveInput.x * currentSpeed;
+        velocity.z = moveInput.y * currentSpeed;
         _rigidbody.linearVelocity = velocity;
     }
 }
