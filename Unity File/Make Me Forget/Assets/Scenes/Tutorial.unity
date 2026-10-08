@@ -2885,6 +2885,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1610963303}
+  sucessInput: event:/SFX/Mechanics/Dialog Bubble
+  failedInput: event:/SFX/Mechanics/Puzzle/Puzzle select
 --- !u!4 &979628328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: caa290b89e1401a4e8dc0eb9444ee54d, type: 3}
@@ -3596,7 +3598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3518971944159040702, guid: b7f74b48b33c19d408d71e9220c0ab0b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.653547
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3518971944159040702, guid: b7f74b48b33c19d408d71e9220c0ab0b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3604,23 +3606,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3518971944159040702, guid: b7f74b48b33c19d408d71e9220c0ab0b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3518971944159040702, guid: b7f74b48b33c19d408d71e9220c0ab0b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3518971944159040702, guid: b7f74b48b33c19d408d71e9220c0ab0b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3518971944159040702, guid: b7f74b48b33c19d408d71e9220c0ab0b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -53.45096
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3518971944159040702, guid: b7f74b48b33c19d408d71e9220c0ab0b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.215442
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3518971944159040702, guid: b7f74b48b33c19d408d71e9220c0ab0b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3824,7 +3826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8716763506087884004, guid: efb841c219912be4fa168d5992729efc, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 580296947867535578, guid: efb841c219912be4fa168d5992729efc, type: 3}

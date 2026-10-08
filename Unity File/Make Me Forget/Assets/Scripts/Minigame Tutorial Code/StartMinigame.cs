@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMODUnity;
 
 public class StartMinigame : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class StartMinigame : MonoBehaviour
 
     [Tooltip("Assign the Tutorial Minigame Canvas here")]
     public GameObject canvas;
+
+    public string sucessInput = "event:/SFX/Mechanics/Dialog Bubble";
+    public string failedInput = "event:/SFX/Mechanics/Puzzle/Puzzle select";
 
     private bool playerInRange;
     private InputAction interactAction;
@@ -48,10 +52,14 @@ public class StartMinigame : MonoBehaviour
             {
                 if (TutorialMinigameScript.foundJason == false)
                 {
+                    RuntimeManager.PlayOneShot(sucessInput);
+                    Debug.Log("Sucess Interaction sound played!");
                     canvas.SetActive(true);
                 }
                 else
                 {
+                    RuntimeManager.PlayOneShot(failedInput);
+                    Debug.Log("Failed Interaction sound played!");
                     Debug.Log("Jason has already been found. Minigame will not start.");
                 }
             }

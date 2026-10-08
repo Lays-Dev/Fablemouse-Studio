@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class TutorialMinigameScript : MonoBehaviour
 {
@@ -65,6 +66,13 @@ public class TutorialMinigameScript : MonoBehaviour
     [Tooltip("Assign the Broken Eggs Image here.")]
     public Animator BrokenEggsAnimation;
 
+// SFX
+
+    public string interactArrow = "event:/UI/Front end/select/Young/UI Select";
+    public string eggsCracking = "event:/SFX/Mechanics/Fish eggs/Hatching";
+    public string bugSplat = "event:/SFX/Mechanics/Bug/Splat";
+
+
 
 
 #endregion
@@ -113,6 +121,10 @@ private bool nest = false;
     void StartButtonClicked()
     {
         Debug.Log("Start Button was clicked.");
+
+        RuntimeManager.PlayOneShot(interactArrow);
+        Debug.Log("Arrow Interaction sound played!");
+
         StartImage.gameObject.SetActive(false);
         StartButton.gameObject.SetActive(false);
         Background2Button.gameObject.SetActive(true);
@@ -122,7 +134,12 @@ private bool nest = false;
 
     void NestButtonClicked()
     {
+
         Debug.Log("Nest Button was clicked.");
+
+        RuntimeManager.PlayOneShot(interactArrow);
+        Debug.Log("Arrow Interaction sound played!");
+
         NestImage.gameObject.SetActive(true);
         ReturnButton.gameObject.SetActive(true);
     }
@@ -132,6 +149,8 @@ private bool nest = false;
     void ReturnButtonClicked()
     {
         Debug.Log("Return Button was clicked.");
+        RuntimeManager.PlayOneShot(interactArrow);
+        Debug.Log("Arrow Interaction sound played!");
 
         if (EggsBroken == true)
         {
@@ -151,6 +170,8 @@ private bool nest = false;
     void ContinueButtonClicked()
     {
         Debug.Log("Continue Button was clicked.");
+        RuntimeManager.PlayOneShot(interactArrow);
+        Debug.Log("Arrow Interaction sound played!");
         NestImage.gameObject.SetActive(false);
         ReturnButton.gameObject.SetActive(false);
         ContinueButton.gameObject.SetActive(false);
@@ -160,6 +181,10 @@ private bool nest = false;
 
     void BreakEggsButtonClicked()
     {
+        RuntimeManager.PlayOneShot(interactArrow);
+        Debug.Log("Arrow Interaction sound played!");
+        RuntimeManager.PlayOneShot(eggsCracking);
+        Debug.Log("Eggs Cracking sound played!");
         nest = true;
         ReturnButton.gameObject.SetActive(false);
         EggsImage.gameObject.SetActive(false);
@@ -172,6 +197,9 @@ private bool nest = false;
     void Background2ButtonClicked()
     {
         Debug.Log("Background 2 Button was clicked.");
+
+        RuntimeManager.PlayOneShot(interactArrow);
+        Debug.Log("Arrow Interaction sound played!");
 
         Background2Image.gameObject.SetActive(true);
         Background2Button.gameObject.SetActive(false);
@@ -187,6 +215,9 @@ private bool nest = false;
     {
         Debug.Log("Background 1 Button was clicked.");
 
+        RuntimeManager.PlayOneShot(interactArrow);
+        Debug.Log("Arrow Interaction sound played!");
+
         Background2Image.gameObject.SetActive(false);
         Background2Button.gameObject.SetActive(true);
 
@@ -196,7 +227,10 @@ private bool nest = false;
     void BugButtonClicked()
     {
         Debug.Log("Bug Button was clicked.");
-
+        RuntimeManager.PlayOneShot(interactArrow);
+        Debug.Log("Arrow Interaction sound played!");
+        RuntimeManager.PlayOneShot(bugSplat);
+        Debug.Log("Bug Splat sound played!");
         BugImage.gameObject.SetActive(false);
         SmudgeImage.gameObject.SetActive(true);
         BugButton.gameObject.SetActive(false);
@@ -208,6 +242,9 @@ private bool nest = false;
     {
         Debug.Log("Branch Button was clicked.");
 
+        RuntimeManager.PlayOneShot(interactArrow);
+        Debug.Log("Arrow Interaction sound played!");
+
         TreeImage.gameObject.SetActive(true);
         BranchButton.gameObject.SetActive(false);
 
@@ -217,6 +254,9 @@ private bool nest = false;
         void WinButtonClicked()
     {
         Debug.Log("Win Button was clicked.");
+
+        RuntimeManager.PlayOneShot(interactArrow);
+        Debug.Log("Arrow Interaction sound played!");
 
         WinImage.gameObject.SetActive(true);
         TreeImage.gameObject.SetActive(false);
@@ -231,6 +271,9 @@ private bool nest = false;
     void EndButtonClicked()
     {
         Debug.Log("End Button was clicked.");
+
+        RuntimeManager.PlayOneShot(interactArrow);
+        Debug.Log("Arrow Interaction sound played!");
         foundJason = true;
 
         canvas.SetActive(false);
