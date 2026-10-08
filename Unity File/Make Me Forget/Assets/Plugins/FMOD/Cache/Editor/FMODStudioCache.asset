@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4000
+  Length: 1600
 --- !u!114 &-7935413483228458052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,6 +119,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+  lastModified: 639265762883160754
   lastModified: 639265762883160754
   FileSizes:
   - Name: Desktop
@@ -302,7 +303,7 @@ MonoBehaviour:
   lastModified: 639263879607019768
   FileSizes:
   - Name: Desktop
-    Value: 2341920
+    Value: 2342624
   Exists: 1
 --- !u!114 &-2430519079331031849
 MonoBehaviour:
@@ -349,7 +350,7 @@ MonoBehaviour:
   lastModified: 639265763436481000
   FileSizes:
   - Name: Desktop
-    Value: 2048768
+    Value: 2048896
   Exists: 1
 --- !u!114 &-1308712586710276705
 MonoBehaviour:
@@ -571,7 +572,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4000
+  Length: 1600
 --- !u!114 &1723530095342730243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,6 +671,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+  lastModified: 639265762883160754
   lastModified: 639265762883160754
   FileSizes:
   - Name: Desktop
@@ -795,6 +797,7 @@ MonoBehaviour:
   Name: UI
   StudioPath: bank:/UI
   lastModified: 639268136634347219
+  lastModified: 639268136634347219
   FileSizes:
   - Name: Desktop
     Value: 737472
@@ -865,6 +868,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
+  lastModified: 639263879606289697
   lastModified: 639263879606289697
   FileSizes:
   - Name: Desktop

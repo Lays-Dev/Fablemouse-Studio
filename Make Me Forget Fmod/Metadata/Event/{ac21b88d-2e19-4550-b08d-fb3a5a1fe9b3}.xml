@@ -66,9 +66,6 @@
 		<property name="maxVoices">
 			<value>1</value>
 		</property>
-		<property name="triggerCooldown">
-			<value>80</value>
-		</property>
 	</object>
 	<object class="MarkerTrack" id="{0ef0a5dc-1205-48ce-a4ae-e20646b64267}" />
 	<object class="GroupTrack" id="{533422db-bdf9-4eec-ba37-1c12094b01c7}">
@@ -91,7 +88,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{d235fcc5-91ad-4296-a2fc-57debcbb22dc}">
 		<property name="volume">
-			<value>-5</value>
+			<value>-9</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{6c5eb1cf-59af-4d99-a1c5-ecf005afbebe}</destination>
@@ -163,7 +160,7 @@
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>4</value>
+			<value>12.5</value>
 		</property>
 	</object>
 	<object class="FadeCurve" id="{eccd151c-7793-425a-bd27-03e7024b83ef}">
@@ -243,7 +240,7 @@
 	</object>
 	<object class="AutomationPoint" id="{983beadb-eea5-48dd-ae28-aa6278f88e9d}">
 		<property name="position">
-			<value>0</value>
+			<value>0.01</value>
 		</property>
 		<property name="value">
 			<value>1</value>
