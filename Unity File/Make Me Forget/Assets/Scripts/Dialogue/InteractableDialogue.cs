@@ -1,68 +1,68 @@
-// using UnityEngine;
-// using UnityEngine.InputSystem;
-// using Yarn.Unity;
-// public class InteractableDialogue : MonoBehaviour
-// {
-//     private bool _playerInRange;
-//     private InputAction _interactAction;
-//     private InputAction _continueAction;
-//     private DialogueRunner _dialogueRunner;
+ using UnityEngine;
+using UnityEngine.InputSystem;
+using Yarn.Unity;
+public class InteractableDialogue : MonoBehaviour
+ {
+     private bool _playerInRange;
+     private InputAction _interactAction;
+     private InputAction _continueAction;
+     private DialogueRunner _dialogueRunner;
 
-//     private void Awake()
-//     {
-//         _dialogueRunner = FindFirstObjectByType<DialogueRunner>();
-//         if (_dialogueRunner == null)
-//         {
-//             Debug.LogError("Scene needs a Dialogue Runner.");
-//         }
-//     }
-//     // Checks for interaction and dialogue input.
-//     private void Update()
-//     {
-//         if (_playerInRange && _interactAction != null && _dialogueRunner != null)
-//         {
-//             if (_interactAction.WasPressedThisFrame() && !_dialogueRunner.IsDialogueRunning)
-//             {
-//                 Debug.Log("Interact key was pressed.");
-//                 _dialogueRunner.StartDialogue("Start");
-//             }
+     private void Awake()
+     {
+         _dialogueRunner = FindFirstObjectByType<DialogueRunner>();
+         if (_dialogueRunner == null)
+         {
+             Debug.LogError("Scene needs a Dialogue Runner.");
+         }
+     }
+     // Checks for interaction and dialogue input.
+     private void Update()
+     {
+         if (_playerInRange && _interactAction != null && _dialogueRunner != null)
+         {
+             if (_interactAction.WasPressedThisFrame() && !_dialogueRunner.IsDialogueRunning)
+             {
+                 Debug.Log("Interact key was pressed.");
+                 _dialogueRunner.StartDialogue("Start");
+             }
 
-//             if (_continueAction != null &&
-//                 _continueAction.WasPressedThisFrame() &&
-//                 _dialogueRunner.IsDialogueRunning)
-//             {
-//                 _dialogueRunner.RequestNextLine();
-//             }
-//         }
-//     }
-//     // Checks when player enters interactable area
-//     private void OnTriggerEnter(Collider other)
-//     {
-//         if (other.CompareTag("Player"))
-//         {
-//             _playerInRange = true;
-//             PlayerInput playerInput = other.GetComponent<PlayerInput>();
-//             if (playerInput != null)
-//             {
-//                 _interactAction = playerInput.actions["Interact"];
-//                 _continueAction = playerInput.actions["ContinueDialogue"];
-//             }
-//         }
-//     }
+             if (_continueAction != null &&
+                 _continueAction.WasPressedThisFrame() &&
+                 _dialogueRunner.IsDialogueRunning)
+             {
+                 _dialogueRunner.RequestNextLine();
+             }
+         }
+     }
+     // Checks when player enters interactable area
+     private void OnTriggerEnter(Collider other)
+     {
+         if (other.CompareTag("Player"))
+         {
+             _playerInRange = true;
+             PlayerInput playerInput = other.GetComponent<PlayerInput>();
+             if (playerInput != null)
+             {
+                 _interactAction = playerInput.actions["Interact"];
+                 _continueAction = playerInput.actions["ContinueDialogue"];
+             }
+         }
+     }
 
-//     //Checks when player leaves interactable area
-//     private void OnTriggerExit(Collider other)
-//     {
-//         if (other.CompareTag("Player"))
-//         {
-//             _playerInRange = false;
-//             _interactAction = null;
-//             _continueAction = null;
-//         }
-//     }
-//     // Start is called once before the first execution of Update after the MonoBehaviour is created
-//     void Start()
-//     {
+     //Checks when player leaves interactable area
+     private void OnTriggerExit(Collider other)
+     {
+         if (other.CompareTag("Player"))
+         {
+             _playerInRange = false;
+             _interactAction = null;
+             _continueAction = null;
+         }
+     }
+     // Start is called once before the first execution of Update after the MonoBehaviour is created
+     void Start()
+     {
         
-//     }   
-// }
+     }   
+ }
