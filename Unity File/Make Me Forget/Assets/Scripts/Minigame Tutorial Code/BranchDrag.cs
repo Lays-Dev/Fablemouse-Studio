@@ -1,8 +1,11 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using FMODUnity;
 
 public class BranchDrag : MonoBehaviour, IDragHandler, IPointerDownHandler
 {
+
+    public string moveBranches = "event:/SFX/Mechanics/Branches/Move branches";
     private RectTransform _rectTransform;
     private Canvas _canvas;
 
@@ -22,6 +25,8 @@ public class BranchDrag : MonoBehaviour, IDragHandler, IPointerDownHandler
 
     public void OnDrag(PointerEventData eventData)
     {
+        RuntimeManager.PlayOneShot(moveBranches);
+        Debug.Log("Move Branches SFX played.");
         // Moves the UI element accurately using the New Input System's data
         _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
     }
