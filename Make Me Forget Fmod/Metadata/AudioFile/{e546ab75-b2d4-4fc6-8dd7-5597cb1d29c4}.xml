@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{e546ab75-b2d4-4fc6-8dd7-5597cb1d29c4}">
+		<property name="assetPath">
+			<value>DIaB (5).ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.16145124716553289</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4b951061-35e5-4ded-9033-997b1820b603}</destination>
+		</relationship>
+	</object>
+</objects>
