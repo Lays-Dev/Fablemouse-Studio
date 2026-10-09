@@ -27,6 +27,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1600
+--- !u!114 &-8896526937557019182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Forest wind and bireds AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Forest wind and bireds AMB
+  Guid:
+    Data1: -1420459367
+    Data2: 1332629753
+    Data3: 1760060071
+    Data4: -249715458
+  Banks:
+  - {fileID: -1391725048417045336}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2384547262566824524}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 188124
 --- !u!114 &-7935413483228458052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,11 +147,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639265762883160754
-  lastModified: 639265762883160754
+  lastModified: 639270861534900206
   FileSizes:
   - Name: Desktop
-    Value: 2820
+    Value: 3022
   Exists: 1
 --- !u!114 &-6250025504659780731
 MonoBehaviour:
@@ -300,11 +327,38 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/MX.bank
   Name: MX
   StudioPath: bank:/MX
-  lastModified: 639263879607019768
+  lastModified: 639270861534762009
   FileSizes:
   - Name: Desktop
     Value: 2342624
   Exists: 1
+--- !u!114 &-2562360169699112132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Town AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Town AMB
+  Guid:
+    Data1: 1149970490
+    Data2: 1137862833
+    Data3: 248967308
+    Data4: -172469577
+  Banks:
+  - {fileID: -1391725048417045336}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 114515
 --- !u!114 &-2430519079331031849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,6 +386,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2384547262566824524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest wind and bireds AMB/Parameter 2
+  m_EditorClassIdentifier: 
+  Name: Parameter 2
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
 --- !u!114 &-1391725048417045336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,10 +427,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639265763436481000
+  lastModified: 639270861535531995
   FileSizes:
   - Name: Desktop
-    Value: 2048896
+    Value: 11086880
   Exists: 1
 --- !u!114 &-1308712586710276705
 MonoBehaviour:
@@ -380,6 +460,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 90240
+--- !u!114 &-842100572679539530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest night AMB/Parameter 2
+  m_EditorClassIdentifier: 
+  Name: Parameter 2
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
 --- !u!114 &-684499301776938132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,10 +527,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Mechanics/Branches/Move branches
   Guid:
-    Data1: 349106448
-    Data2: 1087129361
-    Data3: -1323976801
-    Data4: -328978000
+    Data1: -428374626
+    Data2: 1118908469
+    Data3: 2008907937
+    Data4: -2094455592
   Banks:
   - {fileID: -1391725048417045336}
   IsStream: 0
@@ -433,7 +539,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 800
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,13 +580,17 @@ MonoBehaviour:
   - {fileID: -684499301776938132}
   - {fileID: 5478996945096515251}
   - {fileID: 8051980358995538364}
+  - {fileID: -2562360169699112132}
+  - {fileID: 2132299651779556950}
+  - {fileID: 7777719085036982792}
+  - {fileID: -8896526937557019182}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2684559921295770011}
   StringsBanks:
   - {fileID: -6693570061455215926}
   cacheVersion: 131861
-  cacheTime: 639268136634347219
+  cacheTime: 639270861535531995
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
@@ -522,6 +632,14 @@ MonoBehaviour:
     index: 18
   - key: event:/UI/Front end/select/Young/UI Back
     index: 19
+  - key: event:/AMB/Globals/Town AMB
+    index: 20
+  - key: event:/AMB/Globals/Forest night AMB
+    index: 21
+  - key: event:/AMB/Globals/Heavy winds Forest
+    index: 22
+  - key: event:/AMB/Globals/Forest wind and bireds AMB
+    index: 23
 --- !u!114 &273129106705907624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,6 +743,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &2132299651779556950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Forest night AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Forest night AMB
+  Guid:
+    Data1: -489733745
+    Data2: 1213472850
+    Data3: 291191949
+    Data4: 1874520312
+  Banks:
+  - {fileID: -1391725048417045336}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -842100572679539530}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 142973
 --- !u!114 &2628049430791307689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,8 +817,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639265762883160754
-  lastModified: 639265762883160754
+  lastModified: 639270861534833551
   FileSizes:
   - Name: Desktop
     Value: 5174
@@ -797,7 +942,6 @@ MonoBehaviour:
   Name: UI
   StudioPath: bank:/UI
   lastModified: 639268136634347219
-  lastModified: 639268136634347219
   FileSizes:
   - Name: Desktop
     Value: 737472
@@ -869,7 +1013,6 @@ MonoBehaviour:
   Name: DX
   StudioPath: bank:/DX
   lastModified: 639263879606289697
-  lastModified: 639263879606289697
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -929,6 +1072,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7777719085036982792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Heavy winds Forest
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Heavy winds Forest
+  Guid:
+    Data1: 1714005135
+    Data2: 1195163812
+    Data3: 1559600259
+    Data4: -1514784013
+  Banks:
+  - {fileID: -1391725048417045336}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 284046
 --- !u!114 &8051980358995538364
 MonoBehaviour:
   m_ObjectHideFlags: 0
