@@ -27,7 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1600
---- !u!114 &-8896526937557019182
+--- !u!114 &-8397302068516744630
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,24 +37,93 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMB/Globals/Forest wind and bireds AMB
+  m_Name: event:/UI/Front end/select/Young/UI Back
   m_EditorClassIdentifier: 
-  Path: event:/AMB/Globals/Forest wind and bireds AMB
+  Path: event:/UI/Front end/select/Young/UI Back
   Guid:
-    Data1: -1420459367
-    Data2: 1332629753
-    Data3: 1760060071
-    Data4: -249715458
+    Data1: -1703903820
+    Data2: 1205112653
+    Data3: -1041177704
+    Data4: -1697676151
   Banks:
-  - {fileID: -1391725048417045336}
+  - {fileID: 3494821337381461089}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -2384547262566824524}
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 188124
+  Length: 600
+--- !u!114 &-8183738069999273129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CL Fence/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-8092922873622035379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639272051766473300
+  FileSizes:
+  - Name: Desktop
+    Value: 3022
+  Exists: 1
+--- !u!114 &-7939582924473951958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest wind and birds AMB/Parameter 2
+  m_EditorClassIdentifier: 
+  Name: Parameter 2
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
 --- !u!114 &-7935413483228458052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +153,61 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2515
+--- !u!114 &-7659065622721439998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Heavy winds Forest
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Heavy winds Forest
+  Guid:
+    Data1: 1714005135
+    Data2: 1195163812
+    Data3: 1559600259
+    Data4: -1514784013
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 284046
+--- !u!114 &-7290247364553753885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/CL Fence
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/CL Fence
+  Guid:
+    Data1: -1794934254
+    Data2: 1200799433
+    Data3: -268879477
+    Data4: 555752459
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8183738069999273129}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7162894600866431529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +256,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-6929690836102740759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Footsteps/Grass
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Footsteps/Grass
+  Guid:
+    Data1: -540071853
+    Data2: 1098064511
+    Data3: 1789078189
+    Data4: -127990459
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2344427013417015597}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6693570061455215926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +299,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639271384594572795
+  lastModified: 639272051766473300
   FileSizes:
   - Name: Desktop
     Value: 3022
@@ -179,6 +331,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &-6225692883585042399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Forest AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Forest AMB
+  Guid:
+    Data1: 1605033708
+    Data2: 1181195740
+    Data3: -574023251
+    Data4: 789539891
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 9133235055604755338}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 90240
+--- !u!114 &-6049640135560623027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest night AMB/Parameter 2
+  m_EditorClassIdentifier: 
+  Name: Parameter 2
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
 --- !u!114 &-5816646189599662455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,11 +533,170 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/MX.bank
   Name: MX
   StudioPath: bank:/MX
-  lastModified: 639271384594552774
+  lastModified: 639270621551006426
   FileSizes:
   - Name: Desktop
     Value: 2342624
   Exists: 1
+--- !u!114 &-3442346476839533053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/MX.bank
+  Name: MX
+  StudioPath: bank:/MX
+  lastModified: 639270621551006426
+  FileSizes:
+  - Name: Desktop
+    Value: 2342624
+  Exists: 1
+--- !u!114 &-3374117423511681853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Fish eggs/Fish noises (inst)
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Fish eggs/Fish noises (inst)
+  Guid:
+    Data1: 2064727599
+    Data2: 1305960720
+    Data3: -1725610586
+    Data4: 1370938240
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-3125794522126356538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/NPC/Jason/YJason Talking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NPC/Jason/YJason Talking
+  Guid:
+    Data1: -488523650
+    Data2: 1124350201
+    Data3: -600347472
+    Data4: -829682342
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3030106157427194484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Bug/Splat
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Bug/Splat
+  Guid:
+    Data1: 33174991
+    Data2: 1112888865
+    Data3: 1152387722
+    Data4: 1706249319
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &-2793733609603333239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Exploration/Tutorial BGM
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Exploration/Tutorial BGM
+  Guid:
+    Data1: 1358189720
+    Data2: 1136107501
+    Data3: -2137945444
+    Data4: -2042765085
+  Banks:
+  - {fileID: -3442346476839533053}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8816108869087763425}
+  - {fileID: 5890435833479362126}
+  - {fileID: -955434606764726879}
+  - {fileID: 2645513466534482896}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 192000
+--- !u!114 &-2739569787814592487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Fish eggs/Bird sounds
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Fish eggs/Bird sounds
+  Guid:
+    Data1: -1342055581
+    Data2: 1166038288
+    Data3: 1187383441
+    Data4: 1755888853
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2562360169699112132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,6 +724,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 114515
+--- !u!114 &-2477253725762330014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Front end/select/Young/UI Forward
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Front end/select/Young/UI Forward
+  Guid:
+    Data1: 920973855
+    Data2: 1257726945
+    Data3: 1612530055
+    Data4: 294027419
+  Banks:
+  - {fileID: 3494821337381461089}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
 --- !u!114 &-2430519079331031849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,7 +778,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-2384547262566824524
+--- !u!114 &-2173170793533171924
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -395,23 +787,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Forest wind and bireds AMB/Parameter 2
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Town AMB
   m_EditorClassIdentifier: 
-  Name: Parameter 2
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3583350736
-    data2: 2150705294
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Value A
-  - Value B
-  Exists: 1
+  Path: event:/AMB/Globals/Town AMB
+  Guid:
+    Data1: 1149970490
+    Data2: 1137862833
+    Data3: 248967308
+    Data4: -172469577
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 114515
 --- !u!114 &-1391725048417045336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -427,10 +820,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639271384594821064
+  lastModified: 639272051767846935
   FileSizes:
   - Name: Desktop
-    Value: 11086880
+    Value: 11087648
   Exists: 1
 --- !u!114 &-1308712586710276705
 MonoBehaviour:
@@ -460,6 +853,78 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 90240
+--- !u!114 &-1188201688848080580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Yell
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Yell
+  Guid:
+    Data1: -1481516213
+    Data2: 1235390282
+    Data3: 474548140
+    Data4: 1100207482
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1242686008967242674}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &-1080528296133792785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/DX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
+  Name: DX
+  StudioPath: bank:/DX
+  lastModified: 639263879606289697
+  FileSizes:
+  - Name: Desktop
+    Value: 506
+  Exists: 1
+--- !u!114 &-955434606764726879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Tutorial BGM/Sec1
+  m_EditorClassIdentifier: 
+  Name: Sec1
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2062178896
+    data2: 3196238178
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-842100572679539530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,6 +978,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &-155812163117946108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle select
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Puzzle/Puzzle select
+  Guid:
+    Data1: 598155549
+    Data2: 1275830164
+    Data3: 42277781
+    Data4: 1945209458
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-145833733705136420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,6 +1032,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 800
+--- !u!114 &-117627217237349474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Fish eggs/Hatching
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Fish eggs/Hatching
+  Guid:
+    Data1: 1955340806
+    Data2: 1150786186
+    Data3: 1126805155
+    Data4: -2127935567
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4437
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,58 +1072,58 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -6693570061455215926}
-  - {fileID: 5803136370976050982}
-  - {fileID: 2684559921295770011}
-  - {fileID: -3474614692411237194}
-  - {fileID: -1391725048417045336}
-  - {fileID: 4396521001560468880}
+  - {fileID: -8092922873622035379}
+  - {fileID: -1080528296133792785}
+  - {fileID: 4484139177999110664}
+  - {fileID: -3442346476839533053}
+  - {fileID: 7659047819052415250}
+  - {fileID: 3494821337381461089}
   EditorEvents:
-  - {fileID: 2628049430791307689}
-  - {fileID: 2768778413082092040}
-  - {fileID: -145833733705136420}
-  - {fileID: 2124698414858655876}
-  - {fileID: -9210650650686395174}
-  - {fileID: 7766260312451457758}
-  - {fileID: 3461217813143518520}
-  - {fileID: 6853229808131494837}
-  - {fileID: -5607969856196729757}
-  - {fileID: -3675087297102312838}
-  - {fileID: -7935413483228458052}
-  - {fileID: -2430519079331031849}
-  - {fileID: 8580885378657805572}
-  - {fileID: -5816646189599662455}
-  - {fileID: -6250025504659780731}
-  - {fileID: 803503985744622675}
-  - {fileID: -1308712586710276705}
-  - {fileID: -684499301776938132}
-  - {fileID: 5478996945096515251}
-  - {fileID: 8051980358995538364}
-  - {fileID: -2562360169699112132}
-  - {fileID: 2132299651779556950}
-  - {fileID: 7777719085036982792}
-  - {fileID: -8896526937557019182}
+  - {fileID: -2793733609603333239}
+  - {fileID: -117627217237349474}
+  - {fileID: -7290247364553753885}
+  - {fileID: 3142830135974713079}
+  - {fileID: -155812163117946108}
+  - {fileID: -3374117423511681853}
+  - {fileID: -2173170793533171924}
+  - {fileID: -1188201688848080580}
+  - {fileID: -6929690836102740759}
+  - {fileID: -2739569787814592487}
+  - {fileID: 3085653542735814923}
+  - {fileID: -3125794522126356538}
+  - {fileID: 2161572273247590391}
+  - {fileID: 4957252017241196247}
+  - {fileID: -7659065622721439998}
+  - {fileID: 1965946505099266240}
+  - {fileID: 4876594719485248828}
+  - {fileID: 7851166565380609389}
+  - {fileID: -3030106157427194484}
+  - {fileID: 2205648238622836699}
+  - {fileID: -6225692883585042399}
+  - {fileID: -2477253725762330014}
+  - {fileID: 5700028351035481086}
+  - {fileID: -8397302068516744630}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2684559921295770011}
+  - {fileID: 4484139177999110664}
   StringsBanks:
-  - {fileID: -6693570061455215926}
+  - {fileID: -8092922873622035379}
   cacheVersion: 131861
-  cacheTime: 639271384594821064
+  cacheTime: 639272051767846935
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
   - key: event:/SFX/Mechanics/Fish eggs/Hatching
     index: 1
-  - key: event:/SFX/Mechanics/Branches/Move branches
-    index: 2
   - key: event:/SFX/ENV/CL Fence
-    index: 3
+    index: 2
   - key: event:/SFX/Mechanics/Puzzle/Puzzle win
-    index: 4
+    index: 3
   - key: event:/SFX/Mechanics/Puzzle/Puzzle select
-    index: 5
+    index: 4
   - key: event:/SFX/Mechanics/Fish eggs/Fish noises (inst)
+    index: 5
+  - key: event:/AMB/Globals/Town AMB
     index: 6
   - key: event:/SFX/Player/Yell
     index: 7
@@ -618,27 +1137,27 @@ MonoBehaviour:
     index: 11
   - key: event:/SFX/Player/Talking
     index: 12
-  - key: event:/SFX/Mechanics/Dialog Bubble
-    index: 13
-  - key: event:/SFX/Mechanics/Bug/Splat
-    index: 14
-  - key: event:/SFX/Mechanics/Puzzle/Puzzle start
-    index: 15
-  - key: event:/AMB/Globals/Forest AMB
-    index: 16
-  - key: event:/UI/Front end/select/Young/UI Forward
-    index: 17
-  - key: event:/UI/Front end/select/Young/UI Select
-    index: 18
-  - key: event:/UI/Front end/select/Young/UI Back
-    index: 19
-  - key: event:/AMB/Globals/Town AMB
-    index: 20
   - key: event:/AMB/Globals/Forest night AMB
-    index: 21
+    index: 13
   - key: event:/AMB/Globals/Heavy winds Forest
+    index: 14
+  - key: event:/AMB/Globals/Forest wind and birds AMB
+    index: 15
+  - key: event:/SFX/Mechanics/Branches/Move branches
+    index: 16
+  - key: event:/SFX/Mechanics/Dialog Bubble
+    index: 17
+  - key: event:/SFX/Mechanics/Bug/Splat
+    index: 18
+  - key: event:/SFX/Mechanics/Puzzle/Puzzle start
+    index: 19
+  - key: event:/AMB/Globals/Forest AMB
+    index: 20
+  - key: event:/UI/Front end/select/Young/UI Forward
+    index: 21
+  - key: event:/UI/Front end/select/Young/UI Select
     index: 22
-  - key: event:/AMB/Globals/Forest wind and bireds AMB
+  - key: event:/UI/Front end/select/Young/UI Back
     index: 23
 --- !u!114 &273129106705907624
 MonoBehaviour:
@@ -691,6 +1210,106 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1600
+--- !u!114 &1131559031614633983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest wind and birds AMB/Parameter 2
+  m_EditorClassIdentifier: 
+  Name: Parameter 2
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
+--- !u!114 &1242686008967242674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Yell/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &1423391195348128039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jump/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Value A
+  - Value B
+  Exists: 1
+--- !u!114 &1599328141128018940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dialog Bubble/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &1723530095342730243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,6 +1334,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1965946505099266240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Forest wind and birds AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Forest wind and birds AMB
+  Guid:
+    Data1: -1420459367
+    Data2: 1332629753
+    Data3: 1760060071
+    Data4: -249715458
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1131559031614633983}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 188124
 --- !u!114 &2124698414858655876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,6 +1418,109 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 142973
+--- !u!114 &2161572273247590391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Talking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Talking
+  Guid:
+    Data1: -1407076211
+    Data2: 1162882585
+    Data3: 989564336
+    Data4: -1276567718
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2445548592232447317}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
+--- !u!114 &2205648238622836699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle start
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Puzzle/Puzzle start
+  Guid:
+    Data1: -1551137841
+    Data2: 1330984728
+    Data3: 1742725035
+    Data4: -187494383
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1600
+--- !u!114 &2344427013417015597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Grass/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2445548592232447317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Talking/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2628049430791307689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,6 +1552,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 192000
+--- !u!114 &2645513466534482896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Tutorial BGM/Sec4
+  m_EditorClassIdentifier: 
+  Name: Sec4
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1768245747
+    data2: 1389024608
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2684559921295770011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,7 +1591,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639271384594562781
+  lastModified: 639272051766448009
   FileSizes:
   - Name: Desktop
     Value: 5174
@@ -849,6 +1623,90 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4437
+--- !u!114 &2892533650695259197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Forest wind and birds AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Forest wind and birds AMB
+  Guid:
+    Data1: -1420459367
+    Data2: 1332629753
+    Data3: 1760060071
+    Data4: -249715458
+  Banks:
+  - {fileID: -1391725048417045336}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7939582924473951958}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 188124
+--- !u!114 &3085653542735814923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Jump
+  Guid:
+    Data1: -926825347
+    Data2: 1091288751
+    Data3: 865987497
+    Data4: 1598701459
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1423391195348128039}
+  - {fileID: 4035948400146081333}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2515
+--- !u!114 &3142830135974713079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle win
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Puzzle/Puzzle win
+  Guid:
+    Data1: -518947044
+    Data2: 1226470326
+    Data3: -13921110
+    Data4: -1968833124
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1600
 --- !u!114 &3231777625129566820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,6 +1760,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &3494821337381461089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UI.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/UI.bank
+  Name: UI
+  StudioPath: bank:/UI
+  lastModified: 639272010486408921
+  FileSizes:
+  - Name: Desktop
+    Value: 737888
+  Exists: 1
 --- !u!114 &3791004829022609497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,6 +1791,30 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Talking/Room Size
+  m_EditorClassIdentifier: 
+  Name: Room Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &4035948400146081333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jump/Room Size
   m_EditorClassIdentifier: 
   Name: Room Size
   StudioPath: 
@@ -941,11 +1843,86 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 639268765677949895
+  lastModified: 639272010486408921
   FileSizes:
   - Name: Desktop
-    Value: 737472
+    Value: 737888
   Exists: 1
+--- !u!114 &4484139177999110664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639272051766448009
+  FileSizes:
+  - Name: Desktop
+    Value: 5174
+  Exists: 1
+--- !u!114 &4876594719485248828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Branches/Move branches
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Branches/Move branches
+  Guid:
+    Data1: -428374626
+    Data2: 1118908469
+    Data3: 2008907937
+    Data4: -2094455592
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
+--- !u!114 &4957252017241196247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Forest night AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Forest night AMB
+  Guid:
+    Data1: -489733745
+    Data2: 1213472850
+    Data3: 291191949
+    Data4: 1874520312
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6049640135560623027}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 142973
 --- !u!114 &5478996945096515251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,6 +1943,33 @@ MonoBehaviour:
     Data4: -76973240
   Banks:
   - {fileID: 4396521001560468880}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &5700028351035481086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Front end/select/Young/UI Select
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Front end/select/Young/UI Select
+  Guid:
+    Data1: 1196251549
+    Data2: 1075463939
+    Data3: 1393018291
+    Data4: -76973240
+  Banks:
+  - {fileID: 3494821337381461089}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1012,10 +2016,34 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 639264725738767790
+  lastModified: 639263879606289697
   FileSizes:
   - Name: Desktop
     Value: 506
+  Exists: 1
+--- !u!114 &5890435833479362126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Tutorial BGM/Sec2
+  m_EditorClassIdentifier: 
+  Name: Sec2
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 959849305
+    data2: 3092094403
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &6853229808131494837
 MonoBehaviour:
@@ -1045,6 +2073,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &7659047819052415250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 639272051767846935
+  FileSizes:
+  - Name: Desktop
+    Value: 11087648
+  Exists: 1
 --- !u!114 &7766260312451457758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,6 +2147,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 284046
+--- !u!114 &7851166565380609389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Dialog Bubble
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Dialog Bubble
+  Guid:
+    Data1: -218417481
+    Data2: 1341814687
+    Data3: 466425525
+    Data4: 247848723
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1599328141128018940}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8051980358995538364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1202,6 +2278,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &8816108869087763425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Tutorial BGM/Sec3
+  m_EditorClassIdentifier: 
+  Name: Sec3
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1901171272
+    data2: 1249407490
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &8940365294466805633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,4 +2325,30 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
+  Exists: 1
+--- !u!114 &9133235055604755338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest AMB/Parameter 2
+  m_EditorClassIdentifier: 
+  Name: Parameter 2
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Value A
+  - Value B
   Exists: 1

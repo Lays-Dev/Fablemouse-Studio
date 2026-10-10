@@ -23,7 +23,7 @@
 {c2331b27-0c38-4efc-83e8-0f7a8b60506d} bus:/UI
 {5faadeec-9ddc-4667-ad19-c9dd336c0f2f} event:/AMB/Globals/Forest AMB
 {e2cf418f-2052-4854-8d3c-5b11f8e8ba6f} event:/AMB/Globals/Forest night AMB
-{ab558299-50f9-4f6e-a762-e868fea41df1} event:/AMB/Globals/Forest wind and bireds AMB
+{ab558299-50f9-4f6e-a762-e868fea41df1} event:/AMB/Globals/Forest wind and birds AMB
 {6629a48f-c0a4-473c-839c-f55cf33ab6a5} event:/AMB/Globals/Heavy winds Forest
 {448b283a-68b1-43d2-8cf0-d60eb752b8f5} event:/AMB/Globals/Town AMB
 {50f45498-9fed-43b7-9c8a-9180e3e03d86} event:/MX/Exploration/Tutorial BGM
