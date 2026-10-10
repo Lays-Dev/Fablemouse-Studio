@@ -7,12 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: m_grass
-  m_Shader: {fileID: -6465566751694194690, guid: ac422061e0e74ca4a961ec03be7e7e20, type: 3}
+  m_Name: m_dreamtree
+  m_Shader: {fileID: -6465566751694194690, guid: 86e4b218fbfcd0d4cb61a35f7102a465, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _ALPHATEST_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -24,10 +25,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -48,12 +45,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTex:
+    - _GlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Main_Texture:
+    - _LeafTexture:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e30a3e75e4eddd8488daf04165e4b6e8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexture:
+        m_Texture: {fileID: 2800000, guid: 1cecab4e67781a149bf30fef6488c8bb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -68,12 +73,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
+    - _ShadowOffset:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Wind_Texture:
-        m_Texture: {fileID: 2800000, guid: 70d016fa0a3b6e24ea1ffb7881333f27, type: 3}
+    - _TranslucencyMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -90,59 +95,55 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AddPrecomputedVelocity: 0
-    - _AlphaClip: 0
-    - _AlphaToMask: 0
-    - _Blend: 0
-    - _BlendModePreserveSpecular: 1
+    - _AlphaClip: 0.7
+    - _AmbientOcclusion: 0
     - _BumpScale: 1
-    - _ClearCoatMask: 0
-    - _ClearCoatSmoothness: 0
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _DetailAlbedoMapScale: 1
+    - _CardSize: 1
+    - _Cutoff: 0.478
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _DstBlendAlpha: 0
-    - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
-    - _Height_Blend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Gradient_Amount: 0.78
     - _Metallic: 0
+    - _Mode: 0
     - _OcclusionStrength: 1
-    - _Parallax: 0.005
+    - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ReceiveShadows: 1
+    - _ShadowStrength: 0.963
+    - _Shininess: 0.078125
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _SquashAmount: 1
     - _SrcBlend: 1
-    - _SrcBlendAlpha: 1
-    - _Surface: 0
-    - _USETERRAINCOLOR: 1
-    - _Wind_Intensity: 0.5
-    - _Wind_Noise_Scale: 0
-    - _Wind_Noise_Speed: 0
-    - _Wind_Speed: 0.5
-    - _WorkflowMode: 1
+    - _TranslucencyViewDependency: 0.687
+    - _UVSec: 0
+    - _WindQuality: 0
+    - _WindSpeed: 0
+    - _WindStrength: 0.15
+    - _Wind_Intensity: 0.1
+    - _Wind_Speed: 0.1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.11723374, g: 0.6981132, b: 0, a: 1}
-    - _Bottom_Color: {r: 0.8415094, g: 0.82402414, b: 0.35406902, a: 0}
-    - _Color: {r: 0.117233686, g: 0.6981132, b: 0, a: 1}
+    - _BottomColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Bottom_Color: {r: 0.51145095, g: 0.6666667, b: 0.2470588, a: 0}
+    - _Color: {r: 0.4889182, g: 1, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Far_Color: {r: 0.87448233, g: 0.99607843, b: 0.32941177, a: 0}
-    - _NearFarRange: {r: 15.8, g: 44.28, b: 0, a: 0}
-    - _Near_Color: {r: 0, g: 0.4037736, b: 0.16823903, a: 0}
-    - _Shadow_Color: {r: 0.94716984, g: 0.44141686, b: 0.44141686, a: 0}
-    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Wind_Noise_Contrast: {r: 0, g: 2.5, b: 0, a: 0}
-    - _Wind_Noise_Scale: {r: 10, g: 20, b: 0, a: 0}
+    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - _MiddleColor: {r: 1, g: 0.24313727, b: 0, a: 0}
+    - _Middle_Color: {r: 0.30424094, g: 0.6981132, b: 0, a: 0}
+    - _Tint: {r: 0.8415094, g: 0.5758328, b: 0.16353858, a: 0}
+    - _TopColor: {r: 1, g: 1, b: 1, a: 0}
+    - _Top_Color: {r: 0.9169811, g: 0.6906343, b: 0.18512635, a: 1}
+    - _TranslucencyColor: {r: 0.73, g: 0.85, b: 0.40999997, a: 1}
+    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &4972319820572440414
+--- !u!114 &259501390469395895
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
