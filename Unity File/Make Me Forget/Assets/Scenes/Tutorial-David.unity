@@ -3045,6 +3045,22 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 835204028499283164, guid: 2fe915c14b908ca4492dbb1686a46764, type: 3}
+      propertyPath: _jumpHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 835204028499283164, guid: 2fe915c14b908ca4492dbb1686a46764, type: 3}
+      propertyPath: _jumpCooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 835204028499283164, guid: 2fe915c14b908ca4492dbb1686a46764, type: 3}
+      propertyPath: _groundLayer.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 835204028499283164, guid: 2fe915c14b908ca4492dbb1686a46764, type: 3}
+      propertyPath: _groundCheckDistance
+      value: 0.07
+      objectReference: {fileID: 0}
     - target: {fileID: 944199248251780978, guid: 2fe915c14b908ca4492dbb1686a46764, type: 3}
       propertyPath: _speakerName
       value: Lona
@@ -4835,7 +4851,7 @@ GameObject:
   - component: {fileID: 1260419222}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
