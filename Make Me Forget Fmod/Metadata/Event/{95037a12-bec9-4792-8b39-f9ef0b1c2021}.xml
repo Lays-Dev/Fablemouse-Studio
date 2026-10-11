@@ -81,6 +81,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{48f2b76f-fa2b-434d-b824-299d6b79aeda}">
+		<property name="volume">
+			<value>-5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{2e8090c1-b63c-4fd4-9092-884ede9b818a}</destination>
 		</relationship>
@@ -126,7 +129,11 @@
 	</object>
 	<object class="MixerBusFader" id="{2d0dae93-3ea0-4080-a498-d32af9dfb3d6}" />
 	<object class="MixerBusFader" id="{969a7cbe-97cc-49a1-8984-ae222671d089}" />
-	<object class="LoudnessMeter" id="{7c5d744c-6187-4aa1-aec1-1584c9a356f8}" />
+	<object class="LoudnessMeter" id="{7c5d744c-6187-4aa1-aec1-1584c9a356f8}">
+		<property name="loudnessTarget">
+			<value>-18</value>
+		</property>
+	</object>
 	<object class="MixerSend" id="{d2c7f12d-80c3-4706-9942-6435a2b80211}">
 		<property name="inputFormat">
 			<value>1</value>
@@ -139,16 +146,25 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{a144d5a6-10f5-425f-8a7f-f190cef20718}">
+		<property name="volume">
+			<value>-2</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{594c8844-da18-448f-ba32-e811f11b7e6d}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{bbe16837-6aa2-4ddc-bea6-d10789787ed7}">
+		<property name="volume">
+			<value>-2</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{5c3ea6ff-d57b-48d6-aa20-2af0994f4f12}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{30cb5fe6-3821-4e53-ae7f-18524352e377}">
+		<property name="volume">
+			<value>-2</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{24eeec69-3818-4e11-86bc-d6c5b0796c89}</destination>
 		</relationship>
@@ -159,6 +175,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{17b4c3e6-fbff-4faa-91dd-79334f46131f}">
+		<property name="volume">
+			<value>-5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{72887bd8-b609-4a10-a854-d8787b10a135}</destination>
 		</relationship>

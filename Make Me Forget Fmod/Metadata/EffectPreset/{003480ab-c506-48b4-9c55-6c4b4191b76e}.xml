@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EffectPreset" id="{003480ab-c506-48b4-9c55-6c4b4191b76e}">
+		<property name="name">
+			<value>FMOD Loudness Meter</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0ff8d045-142d-4cd2-996e-9aac3a5d08a0}</destination>
+		</relationship>
+		<relationship name="effect">
+			<destination>{77811aee-e95e-4784-83a6-fa1a9e1c960b}</destination>
+		</relationship>
+	</object>
+	<object class="LoudnessMeter" id="{77811aee-e95e-4784-83a6-fa1a9e1c960b}">
+		<property name="loudnessTarget">
+			<value>-18</value>
+		</property>
+	</object>
+</objects>

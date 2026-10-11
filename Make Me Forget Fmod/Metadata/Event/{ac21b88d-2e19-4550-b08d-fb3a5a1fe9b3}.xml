@@ -213,7 +213,7 @@
 	<object class="MixerBusFader" id="{d9cc9d37-441a-49bb-9f3c-a71e86abcd85}" />
 	<object class="LoudnessMeter" id="{a89ecf27-a6e1-43f9-a52f-aa0d850dfaca}">
 		<property name="loudnessTarget">
-			<value>-20</value>
+			<value>-18</value>
 		</property>
 	</object>
 	<object class="MixerSend" id="{8becd209-8c5e-4dd2-9c09-1f7be1ce8599}">
