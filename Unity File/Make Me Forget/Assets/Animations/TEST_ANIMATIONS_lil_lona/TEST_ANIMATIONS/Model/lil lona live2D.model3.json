@@ -1,0 +1,23 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "lil lona live2D.moc3",
+		"Textures": [
+			"lil lona live2D.1024/texture_00.png"
+		],
+		"Physics": "lil lona live2D.physics3.json",
+		"DisplayInfo": "lil lona live2D.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}

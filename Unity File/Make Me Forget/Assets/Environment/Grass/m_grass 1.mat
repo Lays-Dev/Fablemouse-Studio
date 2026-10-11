@@ -131,12 +131,12 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.11723374, g: 0.6981132, b: 0, a: 1}
-    - _Bottom_Color: {r: 0.24800831, g: 0.3433962, b: 0, a: 0}
+    - _Bottom_Color: {r: 0, g: 0.2603773, b: 0.10610965, a: 0}
     - _Color: {r: 0.117233686, g: 0.6981132, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Far_Color: {r: 0.8113208, g: 0.66589534, b: 0.77738816, a: 0}
     - _NearFarRange: {r: 14.73, g: 44.28, b: 0, a: 0}
-    - _Near_Color: {r: 0.11566394, g: 0.3584906, b: 0.11566394, a: 0}
+    - _Near_Color: {r: 0.11372548, g: 0.35686275, b: 0.23053317, a: 0}
     - _Shadow_Color: {r: 0.94716984, g: 0.44141686, b: 0.44141686, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Wind_Noise_Contrast: {r: 0, g: 2.5, b: 0, a: 0}

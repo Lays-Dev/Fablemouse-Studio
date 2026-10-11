@@ -13,18 +13,32 @@
 {189c2b21-a14b-4851-b7bb-555e6f6f872f} bus:/MX/Exporation
 {1a913503-80fa-49c2-a377-df8e9caa294f} bus:/MX/Stingers
 {91c95cb5-4913-47c3-b752-b424b15d24c3} bus:/MX/System
-{e2a800c6-14f3-4722-b34a-df80cca8139c} bus:/Reverb ext
-{d7c629dc-1df6-498f-9f1e-c677a85a18e2} bus:/Reverb int
+{e2a800c6-14f3-4722-b34a-df80cca8139c} bus:/Reverb
 {1f42ce96-132a-4f88-a062-896400788fc9} bus:/SFX
 {261d3e99-8bae-4f2e-98a8-5678d0064be5} bus:/SFX/AMB
+{ce140400-f874-47a7-92af-ee06d6f904b7} bus:/SFX/ENV
+{d00c655e-e94d-4d7d-9cc5-6bb9a6eba9b9} bus:/SFX/Mechanic
 {e918e062-7bd1-485d-b89d-27fdaf112462} bus:/SFX/NPC
 {293b36f3-504a-4794-b1ce-dbc559ea1004} bus:/SFX/Player
 {c2331b27-0c38-4efc-83e8-0f7a8b60506d} bus:/UI
+{5faadeec-9ddc-4667-ad19-c9dd336c0f2f} event:/AMB/Globals/Forest AMB
+{e2cf418f-2052-4854-8d3c-5b11f8e8ba6f} event:/AMB/Globals/Forest night AMB
+{ab558299-50f9-4f6e-a762-e868fea41df1} event:/AMB/Globals/Forest wind and bireds AMB
+{6629a48f-c0a4-473c-839c-f55cf33ab6a5} event:/AMB/Globals/Heavy winds Forest
+{448b283a-68b1-43d2-8cf0-d60eb752b8f5} event:/AMB/Globals/Town AMB
 {50f45498-9fed-43b7-9c8a-9180e3e03d86} event:/MX/Exploration/Tutorial BGM
-{14cef110-4711-40cc-9fb7-15b1b03164ec} event:/SFX/Mechanics/Branches/Move branches
+{95037a12-bec9-4792-8b39-f9ef0b1c2021} event:/SFX/ENV/CL Fence
+{e677859e-3035-42b1-a180-bd77d8242983} event:/SFX/Mechanics/Branches/Move branches
 {01fa35cf-5621-4255-8a0a-b044674cb365} event:/SFX/Mechanics/Bug/Splat
-{7b113e2f-6110-4dd7-a645-259980dbb651} event:/SFX/Mechanics/Fish eggs/Fish noises
+{f2fb36b7-779f-4ffa-b516-cd1b13dfc50e} event:/SFX/Mechanics/Dialog Bubble
+{b001db63-5510-4580-9108-c646d5bca868} event:/SFX/Mechanics/Fish eggs/Bird sounds
+{7b113e2f-6110-4dd7-a645-259980dbb651} event:/SFX/Mechanics/Fish eggs/Fish noises (inst)
 {748c2206-9a8a-4497-a3ae-2943b1472a81} event:/SFX/Mechanics/Fish eggs/Hatching
+{a38b83cf-3718-4f55-abdf-df671110d3f4} event:/SFX/Mechanics/Puzzle/Puzzle Start
+{23a7211d-9f94-4c0b-951b-8502728af173} event:/SFX/Mechanics/Puzzle/Puzzle select
+{e1117f1c-73b6-491a-aa94-2bff9cfda58a} event:/SFX/Mechanics/Puzzle/Puzzle win
+{e2e1b87e-38f9-4304-b06c-37dc5a0d8cce} event:/SFX/NPC/Jason/YJason Talking
+{dfcf2853-227f-4173-ad2a-a36a45055ff8} event:/SFX/Player/Footsteps/Grass
 {c8c1c47d-beaf-410b-a9eb-9d33933f4a5f} event:/SFX/Player/Jump
 {ac21b88d-2e19-4550-b08d-fb3a5a1fe9b3} event:/SFX/Player/Talking
 {a7b1db4b-8f4a-49a2-ac07-491c7ad59341} event:/SFX/Player/Yell
@@ -32,6 +46,8 @@
 {36e4f21f-63e1-4af7-8741-1d609b808611} event:/UI/Front end/select/Young/UI Forward
 {474d599d-4703-401a-b3c5-0753487b69fb} event:/UI/Front end/select/Young/UI Select
 {3a571959-1920-4197-ae69-145cb5372e19} parameter:/Parameter 1
+{22d6d82a-2dee-4e8d-97bc-c4bd71d7632d} parameter:/Parameter 2
+{d4bd12e9-515f-4136-a75e-b4867ddc9f9c} parameter:/Room Size
 {97f5575d-7f95-4c4f-ac33-66cd96075448} parameter:/Sec1
 {12a19525-41de-4beb-8a01-f49cb651bfc5} parameter:/Sec2
 {9ef676e7-a41f-4695-a9e0-3686ecb925e3} parameter:/Sec3

@@ -1,0 +1,316 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "Body X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "ParamGroup",
+			"Name": "Body Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "ParamGroup",
+			"Name": "Body Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "ParamGroup",
+			"Name": "Breath"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "Angle X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "ParamGroup",
+			"Name": "Angle Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "ParamGroup",
+			"Name": "Angle Z"
+		},
+		{
+			"Id": "HeadXTIED",
+			"GroupId": "ParamGroup8",
+			"Name": "Head X TIED"
+		},
+		{
+			"Id": "HeadYTIED",
+			"GroupId": "ParamGroup8",
+			"Name": "Head Y TIED"
+		},
+		{
+			"Id": "HeadZTIED",
+			"GroupId": "ParamGroup8",
+			"Name": "Head Z TIED"
+		},
+		{
+			"Id": "LEarFront",
+			"GroupId": "ParamGroup8",
+			"Name": "L Ear Front"
+		},
+		{
+			"Id": "REarFront",
+			"GroupId": "ParamGroup8",
+			"Name": "R Ear Front"
+		},
+		{
+			"Id": "LEarSide",
+			"GroupId": "ParamGroup8",
+			"Name": "L Ear Side"
+		},
+		{
+			"Id": "REarSide",
+			"GroupId": "ParamGroup8",
+			"Name": "R Ear Side"
+		},
+		{
+			"Id": "EarsPhy",
+			"GroupId": "ParamGroup8",
+			"Name": "Ears Phy"
+		},
+		{
+			"Id": "SIDETOGGLE",
+			"GroupId": "ParamGroup8",
+			"Name": "SIDE TOGGLE"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup2",
+			"Name": "EyeL Open"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "ParamGroup2",
+			"Name": "EyeL Smile"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup2",
+			"Name": "EyeR Open"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "ParamGroup2",
+			"Name": "EyeR Smile"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "ParamGroup2",
+			"Name": "Eyeball X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "ParamGroup2",
+			"Name": "Eyeball Y"
+		},
+		{
+			"Id": "PupilPhy",
+			"GroupId": "ParamGroup2",
+			"Name": "Eye Phy"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "ParamGroup3",
+			"Name": "BrowL Y"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "ParamGroup3",
+			"Name": "BrowR Y"
+		},
+		{
+			"Id": "L_Arm_UpDown",
+			"GroupId": "ParamGroup4",
+			"Name": "L Arm Up/Down"
+		},
+		{
+			"Id": "R_Arm_UpDown2",
+			"GroupId": "ParamGroup4",
+			"Name": "R Arm Up/Down"
+		},
+		{
+			"Id": "LHand",
+			"GroupId": "ParamGroup4",
+			"Name": "L Hand"
+		},
+		{
+			"Id": "RHand",
+			"GroupId": "ParamGroup4",
+			"Name": "R Hand"
+		},
+		{
+			"Id": "ArmPhyL",
+			"GroupId": "ParamGroup4",
+			"Name": "Arm Phy L"
+		},
+		{
+			"Id": "ArmPhyR",
+			"GroupId": "ParamGroup4",
+			"Name": "Arm Phy R"
+		},
+		{
+			"Id": "L_Leg_Rotate",
+			"GroupId": "ParamGroup5",
+			"Name": "L Leg Rotate"
+		},
+		{
+			"Id": "R_Leg_Rotate2",
+			"GroupId": "ParamGroup5",
+			"Name": "R Leg Rotate"
+		},
+		{
+			"Id": "LFootRotate",
+			"GroupId": "ParamGroup5",
+			"Name": "L Foot Rotate"
+		},
+		{
+			"Id": "RFootRotate",
+			"GroupId": "ParamGroup5",
+			"Name": "R Foot Rotate"
+		},
+		{
+			"Id": "LfootX",
+			"GroupId": "ParamGroup5",
+			"Name": "L foot X"
+		},
+		{
+			"Id": "RfootX",
+			"GroupId": "ParamGroup5",
+			"Name": "R foot X"
+		},
+		{
+			"Id": "Body_X",
+			"GroupId": "ParamGroup6",
+			"Name": "Body X Tied"
+		},
+		{
+			"Id": "Body_Y",
+			"GroupId": "ParamGroup6",
+			"Name": "Body Y Tied"
+		},
+		{
+			"Id": "BodyPhy1",
+			"GroupId": "ParamGroup6",
+			"Name": "Body Phy1"
+		},
+		{
+			"Id": "BodyPhy2",
+			"GroupId": "ParamGroup6",
+			"Name": "Body Phy2"
+		},
+		{
+			"Id": "AnglesX",
+			"GroupId": "ParamGroup6",
+			"Name": "Angles X"
+		},
+		{
+			"Id": "AnglesY",
+			"GroupId": "ParamGroup6",
+			"Name": "Angles Y"
+		},
+		{
+			"Id": "Tail_Wag",
+			"GroupId": "ParamGroup7",
+			"Name": "Tail Wag"
+		},
+		{
+			"Id": "Tail_Phy",
+			"GroupId": "ParamGroup7",
+			"Name": "Tail Phy"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "INPUTS"
+		},
+		{
+			"Id": "ParamGroup8",
+			"GroupId": "",
+			"Name": "Head"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "Eyes"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "Brows"
+		},
+		{
+			"Id": "ParamGroup4",
+			"GroupId": "",
+			"Name": "Arms"
+		},
+		{
+			"Id": "ParamGroup5",
+			"GroupId": "",
+			"Name": "Legs"
+		},
+		{
+			"Id": "ParamGroup6",
+			"GroupId": "",
+			"Name": "Body"
+		},
+		{
+			"Id": "ParamGroup7",
+			"GroupId": "",
+			"Name": "Tail"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "ART",
+			"Name": "ART"
+		},
+		{
+			"Id": "Side_head",
+			"Name": "Side_head"
+		},
+		{
+			"Id": "Front_Head",
+			"Name": "Front_Head"
+		},
+		{
+			"Id": "Body",
+			"Name": "Body"
+		},
+		{
+			"Id": "Legs",
+			"Name": "Legs"
+		},
+		{
+			"Id": "Tail",
+			"Name": "Tail"
+		},
+		{
+			"Id": "L_Leg",
+			"Name": "L_Leg"
+		},
+		{
+			"Id": "R_Leg",
+			"Name": "R_Leg"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"HeadXTIED",
+			"HeadYTIED"
+		],
+		[
+			"ParamEyeBallX",
+			"ParamEyeBallY"
+		]
+	]
+}
