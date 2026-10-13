@@ -27,6 +27,35 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1600
+--- !u!114 &-8461236249998466060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/NPC/Movment/JumpNPC
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NPC/Movment/JumpNPC
+  Guid:
+    Data1: 779562514
+    Data2: 1220215410
+    Data3: 1824781954
+    Data4: -1178138824
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4890719460897374532}
+  - {fileID: 6236900937606960413}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 664
 --- !u!114 &-8397302068516744630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,9 +93,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/CL Fence/Room Size
+  m_Name: parameter:/CL Fence/roomSize
   m_EditorClassIdentifier: 
-  Name: Room Size
+  Name: roomSize
   StudioPath: 
   Min: 0
   Max: 1
@@ -75,7 +104,7 @@ MonoBehaviour:
     data1: 2885259439
     data2: 2548027537
   Type: 0
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &-8092922873622035379
@@ -93,10 +122,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639274878360199174
+  lastModified: 639275043781839971
   FileSizes:
   - Name: Desktop
-    Value: 3022
+    Value: 3358
   Exists: 1
 --- !u!114 &-7939582924473951958
 MonoBehaviour:
@@ -176,7 +205,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 7284504418136908630}
   MinDistance: 1
   MaxDistance: 20
   Length: 284046
@@ -232,6 +262,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-7143610802535514960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lona Talking/Vowel
+  m_EditorClassIdentifier: 
+  Name: Vowel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.5
+  ID:
+    data1: 3565018024
+    data2: 2386496228
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-7083903592765386329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,34 +310,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-6929690836102740759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/Footsteps/Grass
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/Footsteps/Grass
-  Guid:
-    Data1: -540071853
-    Data2: 1098064511
-    Data3: 1789078189
-    Data4: -127990459
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 2344427013417015597}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-6693570061455215926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +330,63 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3022
   Exists: 1
+--- !u!114 &-6505337453324542270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LandP/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
+  Exists: 1
+--- !u!114 &-6267901392753753676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/NPC/Movment/LandNPC
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NPC/Movment/LandNPC
+  Guid:
+    Data1: -1099010862
+    Data2: 1260121610
+    Data3: 1104077489
+    Data4: -1852412026
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2860375114684679503}
+  - {fileID: -4054178269379149852}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
 --- !u!114 &-6250025504659780731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,9 +452,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Forest night AMB/Parameter 2
+  m_Name: parameter:/Forest night AMB/loopEnd
   m_EditorClassIdentifier: 
-  Name: Parameter 2
+  Name: loopEnd
   StudioPath: 
   Min: 0
   Max: 1
@@ -382,8 +465,8 @@ MonoBehaviour:
   Type: 2
   IsGlobal: 0
   Labels:
-  - Value A
-  - Value B
+  - Loop
+  - End
   Exists: 1
 --- !u!114 &-5816646189599662455
 MonoBehaviour:
@@ -491,6 +574,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-4054178269379149852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LandNPC/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
+  Exists: 1
 --- !u!114 &-3675087297102312838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,6 +629,37 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3611823514372641373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DX/PC/Lona Talking
+  m_EditorClassIdentifier: 
+  Path: event:/DX/PC/Lona Talking
+  Guid:
+    Data1: -1777907832
+    Data2: 1202938137
+    Data3: 1622034598
+    Data4: 8528399
+  Banks:
+  - {fileID: -1080528296133792785}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2997765920696816979}
+  - {fileID: 7076365715737526553}
+  - {fileID: 7974099523987283495}
+  - {fileID: -7143610802535514960}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 400
 --- !u!114 &-3474614692411237194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,7 +695,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/MX.bank
   Name: MX
   StudioPath: bank:/MX
-  lastModified: 639274878360189172
+  lastModified: 639275043782484716
   FileSizes:
   - Name: Desktop
     Value: 2342624
@@ -639,6 +781,80 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &-2997765920696816979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lona Talking/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-2903115764605761211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Town AMB/loopEnd
+  m_EditorClassIdentifier: 
+  Name: loopEnd
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Loop
+  - End
+  Exists: 1
+--- !u!114 &-2860375114684679503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LandNPC/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-2793733609603333239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,6 +994,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2398999274139176946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LandP/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-2173170793533171924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,7 +1041,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -2903115764605761211}
   MinDistance: 1
   MaxDistance: 20
   Length: 114515
@@ -896,10 +1137,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 639274878360010847
+  lastModified: 639275055419836474
   FileSizes:
   - Name: Desktop
-    Value: 506
+    Value: 26528
   Exists: 1
 --- !u!114 &-955434606764726879
 MonoBehaviour:
@@ -911,9 +1152,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/Sec1
+  m_Name: parameter:/Tutorial BGM/sec1
   m_EditorClassIdentifier: 
-  Name: Sec1
+  Name: sec1
   StudioPath: 
   Min: 0
   Max: 1
@@ -1059,6 +1300,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4437
+--- !u!114 &-60903701845155676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FootstepsNpc/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1087,9 +1356,7 @@ MonoBehaviour:
   - {fileID: -3374117423511681853}
   - {fileID: -2173170793533171924}
   - {fileID: -1188201688848080580}
-  - {fileID: -6929690836102740759}
   - {fileID: -2739569787814592487}
-  - {fileID: 3085653542735814923}
   - {fileID: -3125794522126356538}
   - {fileID: 2161572273247590391}
   - {fileID: 4957252017241196247}
@@ -1103,13 +1370,22 @@ MonoBehaviour:
   - {fileID: -2477253725762330014}
   - {fileID: 5700028351035481086}
   - {fileID: -8397302068516744630}
-  EditorParameters: []
+  - {fileID: -3611823514372641373}
+  - {fileID: -8461236249998466060}
+  - {fileID: 870825632396695188}
+  - {fileID: 217916901227981529}
+  - {fileID: 5224887336113745328}
+  - {fileID: -6267901392753753676}
+  - {fileID: 5212986040854994872}
+  EditorParameters:
+  - {fileID: 8089620109424056317}
+  - {fileID: 3228399538104972685}
   MasterBanks:
   - {fileID: 4484139177999110664}
   StringsBanks:
   - {fileID: -8092922873622035379}
   cacheVersion: 131861
-  cacheTime: 639274878360548342
+  cacheTime: 639275055419836474
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
@@ -1127,38 +1403,77 @@ MonoBehaviour:
     index: 6
   - key: event:/SFX/Player/Yell
     index: 7
-  - key: event:/SFX/Player/Footsteps/Grass
-    index: 8
   - key: event:/SFX/Mechanics/Fish eggs/Bird sounds
-    index: 9
-  - key: event:/SFX/Player/Jump
-    index: 10
+    index: 8
   - key: event:/SFX/NPC/Jason/YJason Talking
-    index: 11
+    index: 9
   - key: event:/SFX/Player/Talking
-    index: 12
+    index: 10
   - key: event:/AMB/Globals/Forest night AMB
-    index: 13
+    index: 11
   - key: event:/AMB/Globals/Heavy winds Forest
-    index: 14
+    index: 12
   - key: event:/AMB/Globals/Forest wind and birds AMB
-    index: 15
+    index: 13
   - key: event:/SFX/Mechanics/Branches/Move branches
-    index: 16
+    index: 14
   - key: event:/SFX/Mechanics/Dialog Bubble
-    index: 17
+    index: 15
   - key: event:/SFX/Mechanics/Bug/Splat
-    index: 18
+    index: 16
   - key: event:/SFX/Mechanics/Puzzle/Puzzle start
-    index: 19
+    index: 17
   - key: event:/AMB/Globals/Forest AMB
-    index: 20
+    index: 18
   - key: event:/UI/Front end/select/Young/UI Forward
-    index: 21
+    index: 19
   - key: event:/UI/Front end/select/Young/UI Select
-    index: 22
+    index: 20
   - key: event:/UI/Front end/select/Young/UI Back
+    index: 21
+  - key: event:/DX/PC/Lona Talking
+    index: 22
+  - key: event:/SFX/NPC/Movment/JumpNPC
     index: 23
+  - key: event:/SFX/NPC/Movment/FootstepsNpc
+    index: 24
+  - key: event:/SFX/Player/JumpP
+    index: 25
+  - key: event:/SFX/Player/FootstepsP
+    index: 26
+  - key: event:/SFX/NPC/Movment/LandNPC
+    index: 27
+  - key: event:/SFX/Player/LandP
+    index: 28
+--- !u!114 &217916901227981529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/JumpP
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/JumpP
+  Guid:
+    Data1: -926825347
+    Data2: 1091288751
+    Data3: 865987497
+    Data4: 1598701459
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8890835963033148485}
+  - {fileID: 3824280969625647918}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 664
 --- !u!114 &273129106705907624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1181,6 +1496,30 @@ MonoBehaviour:
     data2: 2548027537
   Type: 0
   IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &338025299557094886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FootstepsP/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &803503985744622675
@@ -1210,6 +1549,35 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1600
+--- !u!114 &870825632396695188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/NPC/Movment/FootstepsNpc
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NPC/Movment/FootstepsNpc
+  Guid:
+    Data1: -837019096
+    Data2: 1262053430
+    Data3: 808376475
+    Data4: -1727618132
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -60903701845155676}
+  - {fileID: 2651436431551458988}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
 --- !u!114 &1131559031614633983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,9 +1588,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Forest wind and birds AMB/Parameter 2
+  m_Name: parameter:/Forest wind and birds AMB/loopEnd
   m_EditorClassIdentifier: 
-  Name: Parameter 2
+  Name: loopEnd
   StudioPath: 
   Min: 0
   Max: 1
@@ -1233,8 +1601,8 @@ MonoBehaviour:
   Type: 2
   IsGlobal: 0
   Labels:
-  - Value A
-  - Value B
+  - Loop
+  - End
   Exists: 1
 --- !u!114 &1242686008967242674
 MonoBehaviour:
@@ -1246,9 +1614,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Yell/Room Size
+  m_Name: parameter:/Yell/roomSize
   m_EditorClassIdentifier: 
-  Name: Room Size
+  Name: roomSize
   StudioPath: 
   Min: 0
   Max: 1
@@ -1257,34 +1625,8 @@ MonoBehaviour:
     data1: 2885259439
     data2: 2548027537
   Type: 0
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
-  Exists: 1
---- !u!114 &1423391195348128039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Jump/Parameter 1
-  m_EditorClassIdentifier: 
-  Name: Parameter 1
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1822729649
-    data2: 4252896315
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Value A
-  - Value B
   Exists: 1
 --- !u!114 &1599328141128018940
 MonoBehaviour:
@@ -1296,9 +1638,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Dialog Bubble/Room Size
+  m_Name: parameter:/Dialog Bubble/roomSize
   m_EditorClassIdentifier: 
-  Name: Room Size
+  Name: roomSize
   StudioPath: 
   Min: 0
   Max: 1
@@ -1307,7 +1649,7 @@ MonoBehaviour:
     data1: 2885259439
     data2: 2548027537
   Type: 0
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &1723530095342730243
@@ -1473,30 +1815,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1600
---- !u!114 &2344427013417015597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Grass/Room Size
-  m_EditorClassIdentifier: 
-  Name: Room Size
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &2445548592232447317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,9 +1825,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Talking/Room Size
+  m_Name: parameter:/Talking/roomSize
   m_EditorClassIdentifier: 
-  Name: Room Size
+  Name: roomSize
   StudioPath: 
   Min: 0
   Max: 1
@@ -1518,7 +1836,7 @@ MonoBehaviour:
     data1: 2885259439
     data2: 2548027537
   Type: 0
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &2628049430791307689
@@ -1562,9 +1880,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/Sec4
+  m_Name: parameter:/Tutorial BGM/sec4
   m_EditorClassIdentifier: 
-  Name: Sec4
+  Name: sec4
   StudioPath: 
   Min: 0
   Max: 1
@@ -1574,6 +1892,30 @@ MonoBehaviour:
     data2: 1389024608
   Type: 0
   IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2651436431551458988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FootstepsNpc/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &2684559921295770011
@@ -1651,35 +1993,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 188124
---- !u!114 &3085653542735814923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/Jump
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/Jump
-  Guid:
-    Data1: -926825347
-    Data2: 1091288751
-    Data3: 865987497
-    Data4: 1598701459
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 1423391195348128039}
-  - {fileID: 4035948400146081333}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2515
 --- !u!114 &3142830135974713079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1707,6 +2020,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1600
+--- !u!114 &3228399538104972685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: parameter:/roomSize
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &3231777625129566820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1775,7 +2112,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 639274878360548342
+  lastModified: 639272010486408921
   FileSizes:
   - Name: Desktop
     Value: 737888
@@ -1804,7 +2141,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &4035948400146081333
+--- !u!114 &3824280969625647918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1814,9 +2151,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Jump/Room Size
+  m_Name: parameter:/JumpP/roomSize
   m_EditorClassIdentifier: 
-  Name: Room Size
+  Name: roomSize
   StudioPath: 
   Min: 0
   Max: 1
@@ -1825,7 +2162,7 @@ MonoBehaviour:
     data1: 2885259439
     data2: 2548027537
   Type: 0
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &4396521001560468880
@@ -1863,10 +2200,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639274878360189172
+  lastModified: 639275043781839971
   FileSizes:
   - Name: Desktop
-    Value: 5174
+    Value: 5540
   Exists: 1
 --- !u!114 &4876594719485248828
 MonoBehaviour:
@@ -1895,6 +2232,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 800
+--- !u!114 &4890719460897374532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/JumpNPC/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
+  Exists: 1
 --- !u!114 &4957252017241196247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1923,6 +2288,64 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 142973
+--- !u!114 &5212986040854994872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/LandP
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/LandP
+  Guid:
+    Data1: 214050813
+    Data2: 1109917373
+    Data3: -197586297
+    Data4: -772855958
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2398999274139176946}
+  - {fileID: -6505337453324542270}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
+--- !u!114 &5224887336113745328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/FootstepsP
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/FootstepsP
+  Guid:
+    Data1: 2080929436
+    Data2: 1170513568
+    Data3: 555804600
+    Data4: 1003583817
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 338025299557094886}
+  - {fileID: 9077355933380000822}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
 --- !u!114 &5478996945096515251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2031,9 +2454,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/Sec2
+  m_Name: parameter:/Tutorial BGM/sec2
   m_EditorClassIdentifier: 
-  Name: Sec2
+  Name: sec2
   StudioPath: 
   Min: 0
   Max: 1
@@ -2043,6 +2466,30 @@ MonoBehaviour:
     data2: 3092094403
   Type: 0
   IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6236900937606960413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/JumpNPC/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &6853229808131494837
@@ -2073,6 +2520,56 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &7076365715737526553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lona Talking/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2723243440
+    data2: 1420114338
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &7284504418136908630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Heavy winds Forest/loopEnd
+  m_EditorClassIdentifier: 
+  Name: loopEnd
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Loop
+  - End
+  Exists: 1
 --- !u!114 &7659047819052415250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2088,10 +2585,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639274878360528364
+  lastModified: 639275043785097572
   FileSizes:
   - Name: Desktop
-    Value: 11087648
+    Value: 11202432
   Exists: 1
 --- !u!114 &7766260312451457758
 MonoBehaviour:
@@ -2175,6 +2672,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7974099523987283495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lona Talking/Pitch
+  m_EditorClassIdentifier: 
+  Name: Pitch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.5
+  ID:
+    data1: 3071614846
+    data2: 2746791122
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &8051980358995538364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2202,6 +2723,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &8089620109424056317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: parameter:/groundType
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
+  Exists: 1
 --- !u!114 &8580885378657805572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2288,9 +2837,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/Sec3
+  m_Name: parameter:/Tutorial BGM/sec3
   m_EditorClassIdentifier: 
-  Name: Sec3
+  Name: sec3
   StudioPath: 
   Min: 0
   Max: 1
@@ -2301,6 +2850,34 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
+  Exists: 1
+--- !u!114 &8890835963033148485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/JumpP/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
   Exists: 1
 --- !u!114 &8940365294466805633
 MonoBehaviour:
@@ -2326,6 +2903,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &9077355933380000822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FootstepsP/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
+  Exists: 1
 --- !u!114 &9133235055604755338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2336,9 +2941,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Forest AMB/Parameter 2
+  m_Name: parameter:/Forest AMB/loopEnd
   m_EditorClassIdentifier: 
-  Name: Parameter 2
+  Name: loopEnd
   StudioPath: 
   Min: 0
   Max: 1
@@ -2349,6 +2954,6 @@ MonoBehaviour:
   Type: 2
   IsGlobal: 0
   Labels:
-  - Value A
-  - Value B
+  - Loop
+  - End
   Exists: 1

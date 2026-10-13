@@ -26,6 +26,7 @@
 {ab558299-50f9-4f6e-a762-e868fea41df1} event:/AMB/Globals/Forest wind and birds AMB
 {6629a48f-c0a4-473c-839c-f55cf33ab6a5} event:/AMB/Globals/Heavy winds Forest
 {448b283a-68b1-43d2-8cf0-d60eb752b8f5} event:/AMB/Globals/Town AMB
+{96074788-6119-47b3-a648-ae600f228200} event:/DX/PC/Lona Talking
 {50f45498-9fed-43b7-9c8a-9180e3e03d86} event:/MX/Exploration/Tutorial BGM
 {95037a12-bec9-4792-8b39-f9ef0b1c2021} event:/SFX/ENV/CL Fence
 {e677859e-3035-42b1-a180-bd77d8242983} event:/SFX/Mechanics/Branches/Move branches
@@ -38,17 +39,24 @@
 {23a7211d-9f94-4c0b-951b-8502728af173} event:/SFX/Mechanics/Puzzle/Puzzle select
 {e1117f1c-73b6-491a-aa94-2bff9cfda58a} event:/SFX/Mechanics/Puzzle/Puzzle win
 {e2e1b87e-38f9-4304-b06c-37dc5a0d8cce} event:/SFX/NPC/Jason/YJason Talking
-{dfcf2853-227f-4173-ad2a-a36a45055ff8} event:/SFX/Player/Footsteps/Grass
-{c8c1c47d-beaf-410b-a9eb-9d33933f4a5f} event:/SFX/Player/Jump
+{ce1c1a28-6836-4b39-9bd8-2e30aca30699} event:/SFX/NPC/Movment/FootstepsNpc
+{2e772e12-0272-48bb-82f6-c36c3807c7b9} event:/SFX/NPC/Movment/JumpNPC
+{be7e6cd2-ee0a-4b1b-b1e2-ce41866f9691} event:/SFX/NPC/Movment/LandNPC
+{7c08769c-9ea0-45c4-b8e7-20214979d13b} event:/SFX/Player/FootstepsP
+{c8c1c47d-beaf-410b-a9eb-9d33933f4a5f} event:/SFX/Player/JumpP
+{0cc227fd-febd-4227-8712-39f46a27efd1} event:/SFX/Player/LandP
 {ac21b88d-2e19-4550-b08d-fb3a5a1fe9b3} event:/SFX/Player/Talking
 {a7b1db4b-8f4a-49a2-ac07-491c7ad59341} event:/SFX/Player/Yell
 {9a707db4-8f4d-47d4-98e3-f0c18984cf9a} event:/UI/Front end/select/Young/UI Back
 {36e4f21f-63e1-4af7-8741-1d609b808611} event:/UI/Front end/select/Young/UI Forward
 {474d599d-4703-401a-b3c5-0753487b69fb} event:/UI/Front end/select/Young/UI Select
-{3a571959-1920-4197-ae69-145cb5372e19} parameter:/Parameter 1
-{22d6d82a-2dee-4e8d-97bc-c4bd71d7632d} parameter:/Parameter 2
-{d4bd12e9-515f-4136-a75e-b4867ddc9f9c} parameter:/Room Size
-{97f5575d-7f95-4c4f-ac33-66cd96075448} parameter:/Sec1
-{12a19525-41de-4beb-8a01-f49cb651bfc5} parameter:/Sec2
-{9ef676e7-a41f-4695-a9e0-3686ecb925e3} parameter:/Sec3
-{aa6f256f-2cb1-4776-895b-88aeb976ab49} parameter:/Sec4
+{88fa0308-d29d-498a-8080-3f5430d1df3f} parameter:/Intensity
+{07189d0b-63ec-4250-b504-25cd5cfb5d8e} parameter:/Pitch
+{d5e76763-00b4-4d77-8234-da10a1d52b45} parameter:/Vowel
+{3a571959-1920-4197-ae69-145cb5372e19} parameter:/groundType
+{22d6d82a-2dee-4e8d-97bc-c4bd71d7632d} parameter:/loopEnd
+{d4bd12e9-515f-4136-a75e-b4867ddc9f9c} parameter:/roomSize
+{97f5575d-7f95-4c4f-ac33-66cd96075448} parameter:/sec1
+{12a19525-41de-4beb-8a01-f49cb651bfc5} parameter:/sec2
+{9ef676e7-a41f-4695-a9e0-3686ecb925e3} parameter:/sec3
+{aa6f256f-2cb1-4776-895b-88aeb976ab49} parameter:/sec4
