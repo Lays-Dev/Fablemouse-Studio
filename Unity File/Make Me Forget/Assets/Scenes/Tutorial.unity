@@ -18817,6 +18817,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7957388596619576793, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660324230207456089, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: sceneToLoad
+      value: HospitalScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
