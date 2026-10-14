@@ -26,6 +26,7 @@
 {ab558299-50f9-4f6e-a762-e868fea41df1} event:/AMB/Globals/Forest wind and birds AMB
 {6629a48f-c0a4-473c-839c-f55cf33ab6a5} event:/AMB/Globals/Heavy winds Forest
 {448b283a-68b1-43d2-8cf0-d60eb752b8f5} event:/AMB/Globals/Town AMB
+{358a14b1-ae97-4d80-a9c1-d46a175e40d3} event:/DX/NPC/Jason Talking
 {96074788-6119-47b3-a648-ae600f228200} event:/DX/PC/Lona Talking
 {50f45498-9fed-43b7-9c8a-9180e3e03d86} event:/MX/Exploration/Tutorial BGM
 {95037a12-bec9-4792-8b39-f9ef0b1c2021} event:/SFX/ENV/CL Fence

@@ -122,10 +122,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639275203313848235
+  lastModified: 639275283527481609
   FileSizes:
   - Name: Desktop
-    Value: 3400
+    Value: 3460
   Exists: 1
 --- !u!114 &-7939582924473951958
 MonoBehaviour:
@@ -358,6 +358,38 @@ MonoBehaviour:
   - Tile
   - Stone
   Exists: 1
+--- !u!114 &-6372437642708768631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DX/NPC/Jason Talking
+  m_EditorClassIdentifier: 
+  Path: event:/DX/NPC/Jason Talking
+  Guid:
+    Data1: 898241713
+    Data2: 1300278935
+    Data3: 1792328105
+    Data4: -750756329
+  Banks:
+  - {fileID: -1080528296133792785}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -708297084843516179}
+  - {fileID: 5377594235071529198}
+  - {fileID: 1086839780819984776}
+  - {fileID: 3544957093045864367}
+  - {fileID: 4050896385238197341}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 200
 --- !u!114 &-6267901392753753676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1164,10 +1196,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 639275205399298422
+  lastModified: 639275283527388601
   FileSizes:
   - Name: Desktop
-    Value: 36544
+    Value: 76864
   Exists: 1
 --- !u!114 &-955434606764726879
 MonoBehaviour:
@@ -1218,6 +1250,30 @@ MonoBehaviour:
   Labels:
   - Value A
   - Value B
+  Exists: 1
+--- !u!114 &-708297084843516179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jason Talking/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &-684499301776938132
 MonoBehaviour:
@@ -1404,6 +1460,7 @@ MonoBehaviour:
   - {fileID: 5224887336113745328}
   - {fileID: -6267901392753753676}
   - {fileID: 5212986040854994872}
+  - {fileID: -6372437642708768631}
   EditorParameters:
   - {fileID: 8089620109424056317}
   - {fileID: 3228399538104972685}
@@ -1412,7 +1469,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8092922873622035379}
   cacheVersion: 131861
-  cacheTime: 639275205399298422
+  cacheTime: 639275283527481609
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
@@ -1472,6 +1529,8 @@ MonoBehaviour:
     index: 27
   - key: event:/SFX/Player/LandP
     index: 28
+  - key: event:/DX/NPC/Jason Talking
+    index: 29
 --- !u!114 &217916901227981529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1605,6 +1664,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 800
+--- !u!114 &1086839780819984776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jason Talking/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2723243440
+    data2: 1420114338
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &1131559031614633983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2144,6 +2227,30 @@ MonoBehaviour:
   - Name: Desktop
     Value: 737888
   Exists: 1
+--- !u!114 &3544957093045864367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jason Talking/Pitch
+  m_EditorClassIdentifier: 
+  Name: Pitch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.5
+  ID:
+    data1: 3071614846
+    data2: 2746791122
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3791004829022609497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,6 +2299,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &4050896385238197341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jason Talking/Vowel
+  m_EditorClassIdentifier: 
+  Name: Vowel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.5
+  ID:
+    data1: 3565018024
+    data2: 2386496228
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &4396521001560468880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2227,7 +2358,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639275203313837306
+  lastModified: 639275283527466441
   FileSizes:
   - Name: Desktop
     Value: 5540
@@ -2373,6 +2504,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 800
+--- !u!114 &5377594235071529198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jason Talking/characterAge
+  m_EditorClassIdentifier: 
+  Name: characterAge
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1297164552
+    data2: 664545430
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Old
+  - Young
+  Exists: 1
 --- !u!114 &5478996945096515251
 MonoBehaviour:
   m_ObjectHideFlags: 0
