@@ -16446,6 +16446,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 935554503817768570, guid: 34b350aa22e55db40ac3b7522e249ffc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 967581004}
+    - targetCorrespondingSourceObject: {fileID: 935554503817768570, guid: 34b350aa22e55db40ac3b7522e249ffc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 967581006}
   m_SourcePrefab: {fileID: 100100000, guid: 34b350aa22e55db40ac3b7522e249ffc, type: 3}
 --- !u!1 &967581001 stripped
 GameObject:
@@ -16493,6 +16496,34 @@ MonoBehaviour:
   canvas: {fileID: 1610963303}
   sucessInput: event:/SFX/Mechanics/Dialog Bubble
   failedInput: event:/SFX/Mechanics/Puzzle/Puzzle select
+--- !u!114 &967581006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967581001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6dc2db168ca8204fb2aae3f4ead79a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cue: 0
+  interactionPoint: {fileID: 0}
+  playerTag: Player
+  startDistance: 5
+  fullDistance: 2
+  smoothing: 9
+  nearBrightness: 0.5
+  highlightColor: {r: 1, g: 0.85, b: 0.4, a: 1}
+  hueStrength: 0.5
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 0.08
+  outlineShader: {fileID: 0}
+  customColorProperty: 
+  pulseWhenClose: 1
+  pulseSpeed: 4
+  pulseAmount: 0.5
 --- !u!4 &976672559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1992338142359519393, guid: 79fb818b788c8024f9c3c2ca142001ea, type: 3}
@@ -18722,6 +18753,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4668336066335013441, guid: 277188d8de723c5458b5d4403fb68cf7, type: 3}
   m_PrefabInstance: {fileID: 1614676409}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1367971100
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3306880075849570970, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_Name
+      value: HospitalDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 135.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330608523399372828, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7957388596619576793, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660324230207456089, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
+      propertyPath: sceneToLoad
+      value: HospitalScene
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d694bdb1eb9ae74a809f732f355fbd4, type: 3}
 --- !u!4 &1369832122 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3231988683297002563, guid: 417a3993415f7bb4a9128bab385efd42, type: 3}
@@ -38023,3 +38131,4 @@ SceneRoots:
   - {fileID: 1930347332}
   - {fileID: 1534798801}
   - {fileID: 65490780}
+  - {fileID: 1367971100}
