@@ -53,6 +53,7 @@
 {88fa0308-d29d-498a-8080-3f5430d1df3f} parameter:/Intensity
 {07189d0b-63ec-4250-b504-25cd5cfb5d8e} parameter:/Pitch
 {d5e76763-00b4-4d77-8234-da10a1d52b45} parameter:/Vowel
+{706a07df-1fd0-4c1f-9606-135104b73e94} parameter:/characterAge
 {3a571959-1920-4197-ae69-145cb5372e19} parameter:/groundType
 {22d6d82a-2dee-4e8d-97bc-c4bd71d7632d} parameter:/loopEnd
 {d4bd12e9-515f-4136-a75e-b4867ddc9f9c} parameter:/roomSize

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{ef5a28a5-f5ea-4fa7-ad40-60c24aa0191b}">
+		<property name="name">
+			<value>characterAge</value>
+		</property>
+		<relationship name="folder">
+			<destination>{312f39b1-51dd-4a53-9059-7fe3247a0ef2}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{706a07df-1fd0-4c1f-9606-135104b73e94}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{706a07df-1fd0-4c1f-9606-135104b73e94}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Old</value>
+			<value>Young</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
