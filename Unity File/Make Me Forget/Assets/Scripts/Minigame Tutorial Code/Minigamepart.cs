@@ -1,4 +1,7 @@
 using UnityEngine;
+#if ENABLE_INPUT_SYSTEM
+using UnityEngine.InputSystem;
+#endif
 
 public class MiniGamePart : MonoBehaviour
 {
@@ -24,14 +27,27 @@ public class MiniGamePart : MonoBehaviour
     {
         if (!useBuiltInTrigger || !playerInRange) return;
 
-        if (Input.GetKeyDown(interactKey))
+        if (InteractPressed())
         {
             if (debugLogs) Debug.Log($"{name}: E pressed, opening part {partIndex}");
             Interact();
         }
     }
 
-    // ---- open the popup (or hook this into ur own interaction system) ----
+    //  works w the old AND new input system 
+
+    bool InteractPressed()
+    {
+#if ENABLE_INPUT_SYSTEM
+        if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame) return true;
+#endif
+#if ENABLE_LEGACY_INPUT_MANAGER
+        if (Input.GetKeyDown(interactKey)) return true;
+#endif
+        return false;
+    }
+
+    // open the popup (or hook this into ur own interaction system) 
 
     public void Interact()
     {
@@ -50,7 +66,7 @@ public class MiniGamePart : MonoBehaviour
         popup.Open(partIndex);
     }
 
-    // ---- is this lona? (checks the collider, its rigidbody, and parents) ----
+    //  is this lona? (checks the collider, its rigidbody, and parents) 
 
     bool IsPlayer(GameObject go, Component rb)
     {
@@ -85,12 +101,12 @@ public class MiniGamePart : MonoBehaviour
         if (interactPrompt) interactPrompt.SetActive(false);
     }
 
-    // ---- 3D triggers ----
+    // 3D triggers
 
     void OnTriggerEnter(Collider other) => Enter(other.gameObject, other.attachedRigidbody);
     void OnTriggerExit(Collider other) => Exit(other.gameObject, other.attachedRigidbody);
 
-    // ---- 2D triggers (in case lona uses 2D physics) ----
+    //  2D triggers (in case lona uses 2D physics) 
 
     void OnTriggerEnter2D(Collider2D other) => Enter(other.gameObject, other.attachedRigidbody);
     void OnTriggerExit2D(Collider2D other) => Exit(other.gameObject, other.attachedRigidbody);

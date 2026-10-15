@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+#if ENABLE_INPUT_SYSTEM
+using UnityEngine.InputSystem;
+#endif
 
 public class MiniGamePopup : MonoBehaviour
 {
@@ -31,11 +34,24 @@ public class MiniGamePopup : MonoBehaviour
 
     void Update()
     {
-        if (IsOpen && allowCancel && Input.GetKeyDown(cancelKey))
+        if (IsOpen && allowCancel && CancelPressed())
             Close();
     }
 
-    // open sesame
+    // works w the old AND new input system 
+
+    bool CancelPressed()
+    {
+#if ENABLE_INPUT_SYSTEM
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame) return true;
+#endif
+#if ENABLE_LEGACY_INPUT_MANAGER
+        if (Input.GetKeyDown(cancelKey)) return true;
+#endif
+        return false;
+    }
+
+    // open sesame 
 
     public void Open(int partIndex)
     {
@@ -56,7 +72,7 @@ public class MiniGamePopup : MonoBehaviour
         onOpened.Invoke();
     }
 
-    // they won!! call this from the minigame
+    //  they won!! call this from the minigame 
 
     public void Complete()
     {
