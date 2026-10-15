@@ -16,6 +16,9 @@ public class CameraZLimit : MonoBehaviour
 
     void LateUpdate()
     {
+        // don't interfere while the cutscene has the camera script turned off
+        if (!follow.enabled) return;
+
         // where the camera is where player stands
         float forwardZ = (transform.rotation * Vector3.forward).z;
         float cameraMinZ = playerMinZ - forwardZ * follow.distance;
