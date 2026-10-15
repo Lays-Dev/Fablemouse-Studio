@@ -1,10 +1,12 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class MiniGamePopup : MonoBehaviour
 {
     [Header("Player Control")]
-    public Behaviour[] disableWhileOpen;
+    public GameObject player;
+    public string[] scriptsToDisable = { "PlayerMovement" };
     public bool freeCursor = true;
     public bool allowCancel = true;
     public KeyCode cancelKey = KeyCode.Escape;
@@ -17,12 +19,14 @@ public class MiniGamePopup : MonoBehaviour
     public bool IsOpen { get; private set; }
     public int CurrentPart { get; private set; }
 
+    readonly List<Behaviour> disabled = new List<Behaviour>();
     CursorLockMode prevLockMode;
     bool prevCursorVisible;
 
     void Awake()
     {
-        gameObject.SetActive(false);
+        // hide on start but don't fight Open() lol
+        if (!IsOpen) gameObject.SetActive(false);
     }
 
     void Update()
@@ -31,7 +35,7 @@ public class MiniGamePopup : MonoBehaviour
             Close();
     }
 
-    // open sesame 
+    // open sesame
 
     public void Open(int partIndex)
     {
@@ -39,8 +43,7 @@ public class MiniGamePopup : MonoBehaviour
         IsOpen = true;
         gameObject.SetActive(true);
 
-        foreach (var b in disableWhileOpen)
-            if (b) b.enabled = false;
+        FreezePlayer();
 
         if (freeCursor)
         {
@@ -53,7 +56,7 @@ public class MiniGamePopup : MonoBehaviour
         onOpened.Invoke();
     }
 
-    // they won!! call this from the minigame 
+    // they won!! call this from the minigame
 
     public void Complete()
     {
@@ -66,15 +69,14 @@ public class MiniGamePopup : MonoBehaviour
         Close();
     }
 
-    // bye bye popup
+    // bye bye popup 
 
     public void Close()
     {
         if (!IsOpen) return;
         IsOpen = false;
 
-        foreach (var b in disableWhileOpen)
-            if (b) b.enabled = true;
+        UnfreezePlayer();
 
         if (freeCursor)
         {
@@ -84,5 +86,35 @@ public class MiniGamePopup : MonoBehaviour
 
         onClosed.Invoke();
         gameObject.SetActive(false);
+    }
+
+    // stop lona from wandering off
+
+    void FreezePlayer()
+    {
+        disabled.Clear();
+        if (player == null) return;
+
+        foreach (string scriptName in scriptsToDisable)
+        {
+            var script = player.GetComponent(scriptName) as Behaviour;
+            if (script == null)
+            {
+                Debug.LogWarning($"couldn't find '{scriptName}' on {player.name}, check the spelling bestie", this);
+                continue;
+            }
+            if (script.enabled)
+            {
+                script.enabled = false;
+                disabled.Add(script);
+            }
+        }
+    }
+
+    void UnfreezePlayer()
+    {
+        foreach (var script in disabled)
+            if (script) script.enabled = true;
+        disabled.Clear();
     }
 }

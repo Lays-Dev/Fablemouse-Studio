@@ -11,6 +11,7 @@ public class MiniGamePart : MonoBehaviour
     public KeyCode interactKey = KeyCode.E;
     public string playerTag = "Player";
     public GameObject interactPrompt;
+    public bool debugLogs = true;
 
     bool playerInRange;
 
@@ -24,7 +25,10 @@ public class MiniGamePart : MonoBehaviour
         if (!useBuiltInTrigger || !playerInRange) return;
 
         if (Input.GetKeyDown(interactKey))
+        {
+            if (debugLogs) Debug.Log($"{name}: E pressed, opening part {partIndex}");
             Interact();
+        }
     }
 
     // ---- open the popup (or hook this into ur own interaction system) ----
@@ -46,21 +50,48 @@ public class MiniGamePart : MonoBehaviour
         popup.Open(partIndex);
     }
 
-    // ---- trigger zone stuff ----
+    // ---- is this lona? (checks the collider, its rigidbody, and parents) ----
 
-    void OnTriggerEnter(Collider other)
+    bool IsPlayer(GameObject go, Component rb)
     {
-        if (!other.CompareTag(playerTag)) return;
+        if (go.CompareTag(playerTag)) return true;
+        if (rb && rb.CompareTag(playerTag)) return true;
+
+        Transform t = go.transform.parent;
+        while (t != null)
+        {
+            if (t.CompareTag(playerTag)) return true;
+            t = t.parent;
+        }
+        return false;
+    }
+
+    void Enter(GameObject other, Component rb)
+    {
+        if (debugLogs) Debug.Log($"{name}: something entered -> {other.name} (tag: {other.tag})");
+        if (!IsPlayer(other, rb)) return;
+
         playerInRange = true;
+        if (debugLogs) Debug.Log($"{name}: player in range, press {interactKey}");
 
         bool done = MiniGameProgress.Instance != null && MiniGameProgress.Instance.IsDone(partIndex);
         if (interactPrompt && !done) interactPrompt.SetActive(true);
     }
 
-    void OnTriggerExit(Collider other)
+    void Exit(GameObject other, Component rb)
     {
-        if (!other.CompareTag(playerTag)) return;
+        if (!IsPlayer(other, rb)) return;
         playerInRange = false;
         if (interactPrompt) interactPrompt.SetActive(false);
     }
+
+    // ---- 3D triggers ----
+
+    void OnTriggerEnter(Collider other) => Enter(other.gameObject, other.attachedRigidbody);
+    void OnTriggerExit(Collider other) => Exit(other.gameObject, other.attachedRigidbody);
+
+    // ---- 2D triggers (in case lona uses 2D physics) ----
+
+    void OnTriggerEnter2D(Collider2D other) => Enter(other.gameObject, other.attachedRigidbody);
+    void OnTriggerExit2D(Collider2D other) => Exit(other.gameObject, other.attachedRigidbody);
 }
