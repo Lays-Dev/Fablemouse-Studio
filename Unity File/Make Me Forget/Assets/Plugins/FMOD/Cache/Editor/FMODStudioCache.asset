@@ -93,7 +93,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639275272096663844
+  lastModified: 639274878360199174
   FileSizes:
   - Name: Desktop
     Value: 3022
@@ -553,7 +553,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/MX.bank
   Name: MX
   StudioPath: bank:/MX
-  lastModified: 639275272096653830
+  lastModified: 639274878360189172
   FileSizes:
   - Name: Desktop
     Value: 2342624
@@ -896,7 +896,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 639275272096538700
+  lastModified: 639274878360010847
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -1109,7 +1109,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8092922873622035379}
   cacheVersion: 131861
-  cacheTime: 639275272097188986
+  cacheTime: 639274878360548342
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
@@ -1775,7 +1775,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 639275223976469082
+  lastModified: 639274878360548342
   FileSizes:
   - Name: Desktop
     Value: 737888
@@ -1863,7 +1863,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639275272096658831
+  lastModified: 639274878360189172
   FileSizes:
   - Name: Desktop
     Value: 5174
@@ -2088,7 +2088,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639275272097188986
+  lastModified: 639274878360528364
   FileSizes:
   - Name: Desktop
     Value: 11087648
