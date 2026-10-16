@@ -42,6 +42,8 @@ public class TutorialMinigameScript : MonoBehaviour
     public Image EggsImage;
     [Tooltip("Assign the Birb Image here.")]
     public Image BirbImage;
+    [Tooltip("Assign the Dialouge Image here.")]
+    public Image DialougeImage;
  
  
  
@@ -111,6 +113,7 @@ private bool nest = false;
             {
                 BirbImage.gameObject.SetActive(true);
                 ReturnButton.gameObject.SetActive(true);
+                DialougeImage.gameObject.SetActive(true);
 
             }
         }
@@ -194,6 +197,7 @@ private bool nest = false;
         Debug.Log("EggsBroken variable = " + EggsBroken);
        // RuntimeManager.PlayOneShot(hungryBirds);
         //Debug.Log("Hungry Bird Fish sound played!");
+        //DialougeImage.gameObject.SetActive(true);
     }
 
 
