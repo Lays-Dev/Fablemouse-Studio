@@ -112,8 +112,9 @@ InitTestScene*.unity*
 !/[Aa]ssets/Gizmos/FMOD/*
 !/[Aa]ssets/Editor Default Resources/FMOD/*
 
-# Don't ignore the FMOD build folder
+# Don't ignore the FMOD build and metadata folder
 !/Make Me Forget Fmod/[Bb]uild/
+!/Make Me Forget Fmod/[Mm]etadata/
 
 # Ignore the Cache folder since it is updated locally.
 /[Aa]ssets/Plugins/FMOD/Cache/*

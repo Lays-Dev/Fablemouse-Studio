@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{16d6b34f-019c-4743-ae47-f52be298b569}">
 		<property name="name">
-			<value>Parameter 2</value>
+			<value>loopEnd</value>
 		</property>
 		<relationship name="folder">
 			<destination>{312f39b1-51dd-4a53-9059-7fe3247a0ef2}</destination>
@@ -19,8 +19,8 @@
 			<value>2</value>
 		</property>
 		<property name="enumerationLabels">
-			<value>Value A</value>
-			<value>Value B</value>
+			<value>Loop</value>
+			<value>End</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>
