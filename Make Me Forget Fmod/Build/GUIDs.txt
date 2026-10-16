@@ -29,13 +29,21 @@
 {358a14b1-ae97-4d80-a9c1-d46a175e40d3} event:/DX/NPC/Jason Talking
 {96074788-6119-47b3-a648-ae600f228200} event:/DX/PC/Lona Talking
 {50f45498-9fed-43b7-9c8a-9180e3e03d86} event:/MX/Exploration/Tutorial BGM
+{b001db63-5510-4580-9108-c646d5bca868} event:/SFX/ENV/Bird sounds
 {95037a12-bec9-4792-8b39-f9ef0b1c2021} event:/SFX/ENV/CL Fence
+{9aac0d6f-e076-478c-b046-e9d7813e41b9} event:/SFX/Mechanics/Branches/Branch swing&hit
 {e677859e-3035-42b1-a180-bd77d8242983} event:/SFX/Mechanics/Branches/Move branches
-{01fa35cf-5621-4255-8a0a-b044674cb365} event:/SFX/Mechanics/Bug/Splat
+{da10f592-f18d-46ea-85fe-0107e6e71299} event:/SFX/Mechanics/Branches/Move branches loop
+{4cacae4e-9544-4dea-9891-c50f8e714aa3} event:/SFX/Mechanics/Bugs/Bug hiss
+{4ac837f2-b817-4867-8fa8-898545297d64} event:/SFX/Mechanics/Bugs/Bugs crawling loop
+{01fa35cf-5621-4255-8a0a-b044674cb365} event:/SFX/Mechanics/Bugs/Splat
+{72597a81-7be4-4c2a-ac7d-239e28b4bf53} event:/SFX/Mechanics/Bugs/Stone drop
+{e7c34099-a4f4-47f4-97d9-8a3e2aeb7121} event:/SFX/Mechanics/Bugs/Stone lift
 {f2fb36b7-779f-4ffa-b516-cd1b13dfc50e} event:/SFX/Mechanics/Dialog Bubble
-{b001db63-5510-4580-9108-c646d5bca868} event:/SFX/Mechanics/Fish eggs/Bird sounds
-{7b113e2f-6110-4dd7-a645-259980dbb651} event:/SFX/Mechanics/Fish eggs/Fish noises (inst)
+{4a373691-9a1c-490d-9645-83331edae5c4} event:/SFX/Mechanics/Fish eggs/Chirp FB
 {748c2206-9a8a-4497-a3ae-2943b1472a81} event:/SFX/Mechanics/Fish eggs/Hatching
+{0e3447a4-7def-453f-b2b4-35209984350e} event:/SFX/Mechanics/Fish eggs/Hungry FB
+{aa588322-d434-49e2-aba4-e257682223e3} event:/SFX/Mechanics/Ground impact
 {a38b83cf-3718-4f55-abdf-df671110d3f4} event:/SFX/Mechanics/Puzzle/Puzzle Start
 {23a7211d-9f94-4c0b-951b-8502728af173} event:/SFX/Mechanics/Puzzle/Puzzle select
 {e1117f1c-73b6-491a-aa94-2bff9cfda58a} event:/SFX/Mechanics/Puzzle/Puzzle win

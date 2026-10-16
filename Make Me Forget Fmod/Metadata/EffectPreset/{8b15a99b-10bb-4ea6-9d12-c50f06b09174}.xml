@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EffectPreset" id="{8b15a99b-10bb-4ea6-9d12-c50f06b09174}">
+		<property name="name">
+			<value>Compressor</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0ff8d045-142d-4cd2-996e-9aac3a5d08a0}</destination>
+		</relationship>
+		<relationship name="effect">
+			<destination>{200a3421-e427-49ed-813d-47282aa10429}</destination>
+		</relationship>
+	</object>
+	<object class="CompressorEffect" id="{200a3421-e427-49ed-813d-47282aa10429}">
+		<property name="threshold">
+			<value>-20</value>
+		</property>
+		<property name="ratio">
+			<value>3</value>
+		</property>
+		<property name="gain">
+			<value>6</value>
+		</property>
+	</object>
+</objects>
