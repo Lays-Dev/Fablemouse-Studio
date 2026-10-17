@@ -19,7 +19,7 @@ public GameObject MinigameCanvas;
     public Image EggsImage;
     public Image EggsCrackedImage;
     public Image EggsBrokenImage;
-    public Image BirdsImage;
+    public GameObject BirdsImage;
     public Image DialougeImage;
 
     public string interactArrow =
