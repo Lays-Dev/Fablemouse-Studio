@@ -136,8 +136,19 @@ ReturnPointButton.gameObject.SetActive(false);
     }
 
     void ReturnPointButtonClicked()
-{
-    // Disable the entire minigame Canvas.
-    MinigameCanvas.SetActive(false);
-}
+    {
+        // Close the popup properly if it is assigned.
+        MiniGamePopup popup = FindFirstObjectByType<MiniGamePopup>();
+
+        if (popup != null && popup.IsOpen)
+        {
+            popup.Close();
+        }
+        else
+        {
+            // Fallback if this minigame isn't managed by a popup.
+            MinigameCanvas.SetActive(false);
+        }
+    }
+
 }
