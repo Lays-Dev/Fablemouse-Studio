@@ -76,11 +76,11 @@ MonoBehaviour:
   - {fileID: 7659047819052415250}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 490
+  Length: 250
 --- !u!114 &-8461236249998466060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1304,10 +1304,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 639275283527388601
+  lastModified: 639277893120987914
   FileSizes:
   - Name: Desktop
-    Value: 76864
+    Value: 77152
   Exists: 1
 --- !u!114 &-955434606764726879
 MonoBehaviour:
@@ -1490,7 +1490,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4437
+  Length: 4481
 --- !u!114 &-60903701845155676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1585,7 +1585,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8092922873622035379}
   cacheVersion: 131861
-  cacheTime: 639277031927004657
+  cacheTime: 639277906198494788
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
@@ -3038,10 +3038,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639277031927004657
+  lastModified: 639277906198494788
   FileSizes:
   - Name: Desktop
-    Value: 11550720
+    Value: 11561376
   Exists: 1
 --- !u!114 &7766260312451457758
 MonoBehaviour:
