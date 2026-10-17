@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.InputSystem;
 using FMODUnity;
 
@@ -50,7 +50,7 @@ public class StartMinigame : MonoBehaviour
         {
             if (interactAction.WasPressedThisFrame())
             {
-                if (TutorialMinigameScript.foundJason == false)
+                if (NestMinigameManager.foundJason == false)
                 {
                     RuntimeManager.PlayOneShot(sucessInput);
                     Debug.Log("Sucess Interaction sound played!");
@@ -67,4 +67,4 @@ public class StartMinigame : MonoBehaviour
     }
 
 
-}
+}*/
