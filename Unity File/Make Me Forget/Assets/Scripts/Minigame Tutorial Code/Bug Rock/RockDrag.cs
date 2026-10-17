@@ -1,30 +1,52 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-// IBeginDragHandler and IDragHandler. Interfaces that let Unity detect when a player moves or drags a UI GameObject.
-// IBeginDragHandler runs when the player begins dragging.
-// IDragHandler runs while the player moves the GameObject.
-
-public class DragRock : MonoBehaviour, IBeginDragHandler, IDragHandler
+public class RockDrag : MonoBehaviour, IDragHandler
 {
-    private RectTransform rectTransform;
-    private Canvas canvas;
+    [SerializeField] private RectTransform _rockImage;
+    [SerializeField] private GameObject _collectibleBug;
+    [SerializeField] private float _distanceNeeded = 150f;
 
-    private void Awake()
-    {
-        rectTransform = GetComponent<RectTransform>();
-        canvas = GetComponentInParent<Canvas>();
-    }
+    private Vector2 _startPosition;
+    private bool _moved;
 
-    public void OnBeginDrag(PointerEventData eventData)
+    void Start()
     {
-        // Start dragging the rock
+        // remember where the rock started
+        _startPosition = _rockImage.anchoredPosition;
+
+        // hide the bug until the rock moves
+        if (_collectibleBug != null)
+            _collectibleBug.SetActive(false);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        // Move the rock with the pointer or touch
-        rectTransform.anchoredPosition +=
-            eventData.delta / canvas.scaleFactor;
+        if (_moved) return;
+
+        RectTransform parent = _rockImage.parent as RectTransform;
+
+        // move the rock with the mouse
+        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            parent, eventData.position, eventData.pressEventCamera,
+            out Vector2 position))
+        {
+            _rockImage.anchoredPosition = position;
+        }
+
+        // check if the rock moved far enough
+        float distance = Vector2.Distance(
+            _startPosition, _rockImage.anchoredPosition);
+
+        if (distance >= _distanceNeeded)
+        {
+            _moved = true;
+
+            // reveal the bug
+            if (_collectibleBug != null)
+                _collectibleBug.SetActive(true);
+
+            Debug.Log("Rock moved, bug revealed!");
+        }
     }
 }
