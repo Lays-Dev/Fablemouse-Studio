@@ -910,9 +910,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9197545783704443364}
+      - m_Target: {fileID: 1006508614009203869}
         m_TargetAssemblyTypeName: ReturnPointBugMinigame, Assembly-CSharp
-        m_MethodName: CloseCanvas
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
