@@ -302,6 +302,9 @@
         },
         {
             "m_Id": "6599187f9bd44b78adfb048fe96f6e57"
+        },
+        {
+            "m_Id": "5879599da5ff4c1e8c6fbcfbcd62873c"
         }
     ],
     "m_GroupDatas": [
@@ -1431,6 +1434,9 @@
             },
             {
                 "m_Id": "8cbd360c484d4ea192714814a06866bb"
+            },
+            {
+                "m_Id": "5879599da5ff4c1e8c6fbcfbcd62873c"
             }
         ]
     },
@@ -1987,7 +1993,7 @@
     "m_ObjectId": "0e6ac45b731244c4910966743ff84893",
     "m_Title": "Wind Speed",
     "m_Position": {
-        "x": -1646.4000244140625,
+        "x": -1646.39990234375,
         "y": -1001.5999145507813
     }
 }
@@ -4734,6 +4740,40 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
+    "m_ObjectId": "5879599da5ff4c1e8c6fbcfbcd62873c",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "SurfaceDescription.NormalTS",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 0.0,
+            "y": 0.0,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "8e751120f25f420b83ce755613ab04e1"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SerializedDescriptor": "SurfaceDescription.NormalTS"
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "5a3ae67a45c54e199e22db214ceb2889",
     "m_Id": 0,
@@ -5073,7 +5113,7 @@
     "m_ObjectId": "60e5806cb85c4b5f982b0becdebca6ff",
     "m_Datas": [],
     "m_ActiveSubTarget": {
-        "m_Id": "8bab9f40a5d6438abbdde89db99f9902"
+        "m_Id": "b5af133f731740e2a7eb9a0cc15d78aa"
     },
     "m_AllowMaterialOverride": false,
     "m_SurfaceType": 0,
@@ -5233,8 +5273,8 @@
     "m_ObjectId": "642eee921c7a4ea9bede2c6e68a31658",
     "m_Title": "Main Texture & Gradient",
     "m_Position": {
-        "x": -1635.2001953125,
-        "y": 27.199993133544923
+        "x": -1635.199951171875,
+        "y": 27.2000732421875
     }
 }
 
@@ -6625,12 +6665,6 @@
 }
 
 {
-    "m_SGVersion": 2,
-    "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalUnlitSubTarget",
-    "m_ObjectId": "8bab9f40a5d6438abbdde89db99f9902"
-}
-
-{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "8bd9bf2165a5437395addcb7479f5bb1",
@@ -6774,8 +6808,8 @@
     "m_ObjectId": "8d44a4a9c2074bff943a488124981d7b",
     "m_Title": "Experimenting With Gradient Properties",
     "m_Position": {
-        "x": -1379.2001953125,
-        "y": 517.6000366210938
+        "x": -1379.199951171875,
+        "y": 517.60009765625
     }
 }
 
@@ -6848,6 +6882,30 @@
         "w": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.NormalMaterialSlot",
+    "m_ObjectId": "8e751120f25f420b83ce755613ab04e1",
+    "m_Id": 0,
+    "m_DisplayName": "Normal (Tangent Space)",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "NormalTS",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": [],
+    "m_Space": 3
 }
 
 {
@@ -7391,8 +7449,8 @@
     "m_ObjectId": "95a87ea5f4df4b468ba5f1b4f925748d",
     "m_Title": "Camera-Face Shader",
     "m_Position": {
-        "x": -869.5999145507813,
-        "y": -1532.800048828125
+        "x": -869.599853515625,
+        "y": -1532.7999267578125
     }
 }
 
@@ -8572,6 +8630,16 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 2,
+    "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalLitSubTarget",
+    "m_ObjectId": "b5af133f731740e2a7eb9a0cc15d78aa",
+    "m_WorkflowMode": 1,
+    "m_NormalDropOffSpace": 0,
+    "m_ClearCoat": false,
+    "m_BlendModePreserveSpecular": true
 }
 
 {
