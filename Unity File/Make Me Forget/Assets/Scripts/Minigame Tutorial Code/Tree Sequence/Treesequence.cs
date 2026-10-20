@@ -1,9 +1,17 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+#if ENABLE_INPUT_SYSTEM
+using UnityEngine.InputSystem;
+#endif
 
 public class TreeSequence : MonoBehaviour
 {
+    // which mini game sets this off
+    [Header("Mini Game")]
+    public MiniGamePopup popup;
+    public int triggerPartIndex = 1;
+
     // lona stuff
     [Header("Lona")]
     public Transform lona;
@@ -33,6 +41,8 @@ public class TreeSequence : MonoBehaviour
     public float branchDelay = 0f;
     public bool hideBirdWhenGone = true;
     public bool hideBranchUntilFall = true;
+    public bool hideBirdUntilStart = false;
+    public bool hideJasonUntilStart = false;
 
     // buttons and numbers
     [Header("Rules")]
@@ -73,13 +83,34 @@ public class TreeSequence : MonoBehaviour
     {
         treeStartPos = transform.position;
         if (branch && hideBranchUntilFall) branch.gameObject.SetActive(false);
+        if (bird && hideBirdUntilStart) bird.gameObject.SetActive(false);
+        if (jason && hideJasonUntilStart) jason.gameObject.SetActive(false);
+
+        // wait for the right mini game to be beaten
+        if (popup) popup.onCompleted.AddListener(OnMiniGameDone);
+    }
+
+    void OnDestroy()
+    {
+        if (popup) popup.onCompleted.RemoveListener(OnMiniGameDone);
+    }
+
+    void OnMiniGameDone()
+    {
+        if (popup.CurrentPart == triggerPartIndex) StartSequence();
     }
 
     // mini game 2 is done, let's go
+    [ContextMenu("Start Sequence")]
     public void StartSequence()
     {
         if (state != State.Waiting) return;
         state = State.BranchFalling;
+
+        // surprise, they were here all along
+        if (jason) jason.gameObject.SetActive(true);
+        if (bird) bird.gameObject.SetActive(true);
+
         if (bird) StartCoroutine(BirdFlyAway());
         StartCoroutine(BranchFall());
     }
@@ -111,17 +142,30 @@ public class TreeSequence : MonoBehaviour
     void Update()
     {
         // you pick up le branch
-        if (state == State.BranchOnGround && Input.GetKeyDown(pickUpKey) && Near(branch, pickUpRange))
+        if (state == State.BranchOnGround && Pressed(pickUpKey) && Near(branch, pickUpRange))
         {
             PickUpBranch();
             return;
         }
 
         // bonk the tree
-        if (state == State.Holding && Input.GetKeyDown(hitKey) && Near(transform, hitRange))
+        if (state == State.Holding && Pressed(hitKey) && Near(transform, hitRange))
         {
             HitTree();
         }
+    }
+
+    // works w the old AND new input system
+    bool Pressed(KeyCode key)
+    {
+#if ENABLE_INPUT_SYSTEM
+        if (Keyboard.current != null && System.Enum.TryParse(key.ToString(), out Key k)
+            && Keyboard.current[k].wasPressedThisFrame) return true;
+#endif
+#if ENABLE_LEGACY_INPUT_MANAGER
+        if (Input.GetKeyDown(key)) return true;
+#endif
+        return false;
     }
 
     // is lona close enough
