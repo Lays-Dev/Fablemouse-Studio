@@ -11,7 +11,11 @@ public class MiniGamePopup : MonoBehaviour
     public GameObject player;
     public string[] scriptsToDisable = { "PlayerMovement" };
     public bool freeCursor = true;
-    public bool allowCancel = true;
+
+    // Replaced because the escape feature was conflicting with my close button for the UI minigames, and the minigames would be closeable halfway through animations.
+    public bool allowCancel = false;
+    //public bool allowCancel = true;
+    
     public KeyCode cancelKey = KeyCode.Escape;
 
     [Header("Events")]
