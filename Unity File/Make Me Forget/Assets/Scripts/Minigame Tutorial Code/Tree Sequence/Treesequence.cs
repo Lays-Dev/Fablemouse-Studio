@@ -21,6 +21,9 @@ public class TreeSequence : MonoBehaviour
     public Transform birdFlyToPoint;
     public float birdFlySpeed = 6f;
 
+    [Header("Feeding Mini Game")]
+    public MiniGamePart feedingMiniGame;
+
     [Header("Blocked Area")]
     public GameObject areaBlocker;
 
@@ -53,6 +56,15 @@ public class TreeSequence : MonoBehaviour
             if (jason != null) jason.SetActive(true);
             if (bird != null) bird.SetActive(true);
             birdsShown = true;
+
+            // feeding mini game is done, no more E-ing back into it
+            if (feedingMiniGame != null)
+            {
+                feedingMiniGame.enabled = false;
+                foreach (var c in feedingMiniGame.GetComponents<Collider>()) c.enabled = false;
+                foreach (var c in feedingMiniGame.GetComponents<Collider2D>()) c.enabled = false;
+                if (feedingMiniGame.interactPrompt != null) feedingMiniGame.interactPrompt.SetActive(false);
+            }
         }
 
         // bird said bye and dipped
