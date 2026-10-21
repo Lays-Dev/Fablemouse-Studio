@@ -33777,7 +33777,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 853670304}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1842150580}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: GoToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &853670304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52387,7 +52399,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1491573875}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1842150580}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1491573875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70886,9 +70910,10 @@ MonoBehaviour:
   pausePanel: {fileID: 1336278034}
   mainMenuScene: MainMenu
   scriptsToDisable:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1809045293}
+  - {fileID: 1029148578}
+  - {fileID: 967581009}
+  - {fileID: 1748664780}
 --- !u!114 &1842150581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74095,7 +74120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1920060063}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1842150580}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1920060063
 MonoBehaviour:
   m_ObjectHideFlags: 0
