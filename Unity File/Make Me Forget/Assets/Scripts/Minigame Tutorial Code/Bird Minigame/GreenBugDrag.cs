@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -17,6 +16,8 @@ public class GreenBugDrag : MonoBehaviour,
     public GameObject dialogueImage;
     public GameObject birdsHungry;
     public GameObject birdsFlight;
+
+    [SerializeField ]public static bool birdsFed = false;
 
     private void Awake()
     {
@@ -50,6 +51,7 @@ public class GreenBugDrag : MonoBehaviour,
             dialogueImage.gameObject.SetActive(false);
             birdsHungry.gameObject.SetActive(false);
             birdsFlight.gameObject.SetActive(true);
+            birdsFed = true;
 
             // Hide the bug after feeding.
             heldItemCanvas.gameObject.SetActive(false);
