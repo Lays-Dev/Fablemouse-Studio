@@ -39,15 +39,15 @@ public class TreeSequence : MonoBehaviour
     {
         treeStartPosition = transform.position;
 
-        // Hide Jason and the bird until the birds are fed.
+        // jason n the bird r hiding until the birbs get fed hehe
         if (jason != null) jason.SetActive(false);
         if (bird != null) bird.SetActive(false);
     }
 
     private void Update()
     {
-        // When the birds are fed, show Jason and the bird.
-        // Bool is in the GreenBugDrag script.
+        // birbs got fed!! show jason n the bird
+        // (birdsFed lives in GreenBugDrag btw)
         if (GreenBugDrag.birdsFed == true && !birdsShown)
         {
             if (jason != null) jason.SetActive(true);
@@ -55,7 +55,7 @@ public class TreeSequence : MonoBehaviour
             birdsShown = true;
         }
 
-        // Bird flies away.
+        // bird said bye and dipped
         if (bird != null && bird.activeSelf && birdFlyToPoint != null)
         {
             bird.transform.position = Vector3.MoveTowards(
@@ -64,14 +64,14 @@ public class TreeSequence : MonoBehaviour
                 birdFlySpeed * Time.deltaTime
             );
 
-            // Hide the bird once it gets there.
+            // poof, bird's gone
             if (bird.transform.position == birdFlyToPoint.position)
             {
                 bird.SetActive(false);
             }
         }
 
-        // Jason falls down.
+        // dude falls down lmao
         if (jasonFalling)
         {
             jason.transform.position = Vector3.MoveTowards(
@@ -80,7 +80,7 @@ public class TreeSequence : MonoBehaviour
                 jasonFallSpeed * Time.deltaTime
             );
 
-            // When Jason lands, unlock the area.
+            // jason hit the ground, area's unlocked yayy
             if (jason.transform.position == jasonLandPoint.position)
             {
                 if (areaBlocker != null) areaBlocker.SetActive(false);
@@ -88,7 +88,7 @@ public class TreeSequence : MonoBehaviour
             }
         }
 
-        // Tree wiggles after each hit.
+        // tree goes wiggle wiggle
         if (wiggleTimer > 0f)
         {
             wiggleTimer -= Time.deltaTime;
@@ -98,8 +98,8 @@ public class TreeSequence : MonoBehaviour
             if (wiggleTimer <= 0f) transform.position = treeStartPosition;
         }
 
-        // Only allow hits if the player was already holding the branch last frame.
-        // (So the E press that picks up the branch doesn't count as a hit.)
+        // lona needs le branch first
+        // (the E press that picks it up doesn't count as a bonk, sneaky)
         bool holding = branchPickup != null && branchPickup.IsHoldingBranch();
         bool canHit = holding && wasHoldingLastFrame && hits < hitsNeeded;
         wasHoldingLastFrame = holding;
@@ -107,10 +107,10 @@ public class TreeSequence : MonoBehaviour
         if (!canHit || player == null)
             return;
 
-        // Check whether the player is close enough to the tree.
+        // is lona close enough to the tree
         float distance = Vector2.Distance(player.position, transform.position);
 
-        // Press E to hit the tree.
+        // press E to bonk
         if (distance <= hitDistance &&
             Keyboard.current != null &&
             Keyboard.current.eKey.wasPressedThisFrame)
@@ -119,18 +119,19 @@ public class TreeSequence : MonoBehaviour
         }
     }
 
+    // bonk
     private void HitTree()
     {
         hits++;
-        Debug.Log("Hit the tree! " + hits + "/" + hitsNeeded);
+        Debug.Log("bonk! " + hits + "/" + hitsNeeded);
 
         if (wiggleTree) wiggleTimer = 0.25f;
 
-        // Third hit makes Jason fall.
+        // third bonk, jason's going down
         if (hits >= hitsNeeded)
         {
             jasonFalling = true;
-            Debug.Log("Jason fell!");
+            Debug.Log("jason fell lmao");
         }
     }
 }
