@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 0a54c9bb9a5cd944ab6796954ec06aa9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HospitalScene.unity
     guid: 03a6bab6a0701d040a71ada5b7ae1e23
   m_configObjects:
