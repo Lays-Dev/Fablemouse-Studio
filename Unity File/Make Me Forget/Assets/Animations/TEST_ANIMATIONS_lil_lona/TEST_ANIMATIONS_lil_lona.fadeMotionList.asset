@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403ae2dd693bb1d4b924f6b8d206b053, type: 3}
   m_Name: TEST_ANIMATIONS_lil_lona.fadeMotionList
   m_EditorClassIdentifier: 
-  MotionInstanceIds: 208efefff68dfeff
+  MotionInstanceIds: 208efefff68dfeff0848ffffec47ffffd047ffffb447ffff9847ffff7c47ffff6047ffff4447ffff
   CubismFadeMotionObjects:
   - {fileID: 11400000, guid: db1f971973ac5504d99c5d509921d889, type: 2}
   - {fileID: 11400000, guid: 161ba619e9ad2bc439933d3274344143, type: 2}
+  - {fileID: 11400000, guid: 00333d2482bec904cb986cb498bb68a4, type: 2}
+  - {fileID: 11400000, guid: fd48cefd8a470a743b5e48f361dc1a22, type: 2}
+  - {fileID: 11400000, guid: 30570ce3b7280104484b8d3fdcdbcc15, type: 2}
+  - {fileID: 11400000, guid: 566e96b459774494696206b60db367c9, type: 2}
+  - {fileID: 11400000, guid: f1e4b64f3d174ef4883416790ca93cdc, type: 2}
+  - {fileID: 11400000, guid: 3681875b52c80414089f0731bcb64961, type: 2}
+  - {fileID: 11400000, guid: 7d98bd947dfdf89479b1c2da2781d898, type: 2}
+  - {fileID: 11400000, guid: 0cfc02eb7fc2b784abb45cd33193734f, type: 2}
