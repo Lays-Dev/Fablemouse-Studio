@@ -54,6 +54,10 @@ public class CarvingTestStarter : MonoBehaviour
                 $"Final: {result.Percent}%  ({new string('*', result.stars)}{new string('-', 3 - result.stars)})", style);
             GUI.Label(new Rect(20, 60, 800, 40),
                 $"Coverage {result.coverage:P0}   Precision {result.precision:P0}   R = try again", style);
+
+            var big = new GUIStyle(style) { fontSize = 48, fontStyle = FontStyle.Bold };
+            big.normal.textColor = minigame.Won ? Color.green : Color.red;
+            GUI.Label(new Rect(20, 110, 800, 60), minigame.Won ? "YOU WIN!" : "YOU LOSE", big);
         }
     }
 }
