@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 2723651846634899031}
   - component: {fileID: 890712436002562040}
   - component: {fileID: 1092306736670714044}
+  - component: {fileID: 7737112726469850800}
   m_Layer: 5
   m_Name: Green Bug (8)
   m_TagString: Untagged
@@ -202,7 +203,7 @@ Animator:
   m_GameObject: {fileID: 1229341678886557273}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ef1595e4565a38408af7c8841417947, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -226,6 +227,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341e6657822c0d74fbd263393e89f414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bugDragSFX:
+    Guid:
+      Data1: 1286385230
+      Data2: 1307219268
+      Data3: 264606104
+      Data4: -1555402354
+    Path: event:/SFX/Mechanics/Bugs/Bug hiss
+  bugsCrawlSFX:
+    Guid:
+      Data1: 1254635506
+      Data2: 1214756887
+      Data3: -2054575985
+      Data4: 1685924165
+    Path: event:/SFX/Mechanics/Bugs/Bugs crawling loop
+--- !u!212 &7737112726469850800
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229341678886557273}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.12, y: 5.12}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2293976646449203377
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +410,13 @@ MonoBehaviour:
   panel: {fileID: 0}
   bigBugImage: {fileID: 2293976646449203377}
   returnPointButton: {fileID: 5086906611039277917}
+  bugPuzzleWin:
+    Guid:
+      Data1: -1551137841
+      Data2: 1330984728
+      Data3: 1742725035
+      Data4: -187494383
+    Path: event:/SFX/Mechanics/Puzzle/Puzzle start
 --- !u!1 &3249958519545371524
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +528,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4e06d987ffc3b4faef9bc03aa2d02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bugSplatSFX:
+    Guid:
+      Data1: 33174991
+      Data2: 1112888865
+      Data3: 1152387722
+      Data4: 1706249319
+    Path: event:/SFX/Mechanics/Bugs/Splat
   clickedBugImage: {fileID: 21300000, guid: 4101b0b80f8eb7a4c94275b2c71db03c, type: 3}
 --- !u!1 &3580556944435217856
 GameObject:
@@ -540,7 +624,7 @@ Animator:
   m_GameObject: {fileID: 3580556944435217856}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ef1595e4565a38408af7c8841417947, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -564,6 +648,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341e6657822c0d74fbd263393e89f414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bugDragSFX:
+    Guid:
+      Data1: 1286385230
+      Data2: 1307219268
+      Data3: 264606104
+      Data4: -1555402354
+    Path: event:/SFX/Mechanics/Bugs/Bug hiss
+  bugsCrawlSFX:
+    Guid:
+      Data1: 1254635506
+      Data2: 1214756887
+      Data3: -2054575985
+      Data4: 1685924165
+    Path: event:/SFX/Mechanics/Bugs/Bugs crawling loop
 --- !u!1 &3959964263655874540
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,6 +774,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341e6657822c0d74fbd263393e89f414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bugDragSFX:
+    Guid:
+      Data1: 1286385230
+      Data2: 1307219268
+      Data3: 264606104
+      Data4: -1555402354
+    Path: event:/SFX/Mechanics/Bugs/Bug hiss
+  bugsCrawlSFX:
+    Guid:
+      Data1: 1254635506
+      Data2: 1214756887
+      Data3: -2054575985
+      Data4: 1685924165
+    Path: event:/SFX/Mechanics/Bugs/Bugs crawling loop
 --- !u!1 &4962324784492855432
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +900,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341e6657822c0d74fbd263393e89f414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bugDragSFX:
+    Guid:
+      Data1: 1286385230
+      Data2: 1307219268
+      Data3: 264606104
+      Data4: -1555402354
+    Path: event:/SFX/Mechanics/Bugs/Bug hiss
+  bugsCrawlSFX:
+    Guid:
+      Data1: 1254635506
+      Data2: 1214756887
+      Data3: -2054575985
+      Data4: 1685924165
+    Path: event:/SFX/Mechanics/Bugs/Bugs crawling loop
 --- !u!1 &5086906611039277917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,6 +1269,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4e06d987ffc3b4faef9bc03aa2d02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bugSplatSFX:
+    Guid:
+      Data1: 33174991
+      Data2: 1112888865
+      Data3: 1152387722
+      Data4: 1706249319
+    Path: event:/SFX/Mechanics/Bugs/Splat
   clickedBugImage: {fileID: 21300000, guid: 4101b0b80f8eb7a4c94275b2c71db03c, type: 3}
 --- !u!1 &6571428967764513476
 GameObject:
@@ -1472,6 +1605,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e3960317c9e9ab49ad0283cb8cad7aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rockDragSFX:
+    Guid:
+      Data1: -406634343
+      Data2: 1207215348
+      Data3: 1049287063
+      Data4: 561113898
+    Path: event:/SFX/Mechanics/Bugs/Stone lift
 --- !u!1 &7086308225215856473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,7 +2060,7 @@ Animator:
   m_GameObject: {fileID: 8485172001141299496}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ef1595e4565a38408af7c8841417947, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1944,6 +2084,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341e6657822c0d74fbd263393e89f414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bugDragSFX:
+    Guid:
+      Data1: 1286385230
+      Data2: 1307219268
+      Data3: 264606104
+      Data4: -1555402354
+    Path: event:/SFX/Mechanics/Bugs/Bug hiss
+  bugsCrawlSFX:
+    Guid:
+      Data1: 1254635506
+      Data2: 1214756887
+      Data3: -2054575985
+      Data4: 1685924165
+    Path: event:/SFX/Mechanics/Bugs/Bugs crawling loop
 --- !u!1 &8545759319508733493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,6 +2209,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4e06d987ffc3b4faef9bc03aa2d02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bugSplatSFX:
+    Guid:
+      Data1: 33174991
+      Data2: 1112888865
+      Data3: 1152387722
+      Data4: 1706249319
+    Path: event:/SFX/Mechanics/Bugs/Splat
   clickedBugImage: {fileID: 21300000, guid: 4101b0b80f8eb7a4c94275b2c71db03c, type: 3}
 --- !u!1 &8698116923536039520
 GameObject:
@@ -2168,6 +2329,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341e6657822c0d74fbd263393e89f414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bugDragSFX:
+    Guid:
+      Data1: 1286385230
+      Data2: 1307219268
+      Data3: 264606104
+      Data4: -1555402354
+    Path: event:/SFX/Mechanics/Bugs/Bug hiss
+  bugsCrawlSFX:
+    Guid:
+      Data1: 1254635506
+      Data2: 1214756887
+      Data3: -2054575985
+      Data4: 1685924165
+    Path: event:/SFX/Mechanics/Bugs/Bugs crawling loop
 --- !u!1 &9089510048417396312
 GameObject:
   m_ObjectHideFlags: 0

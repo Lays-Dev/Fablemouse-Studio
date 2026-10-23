@@ -1,8 +1,12 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using FMODUnity;
 
 public class MoveRock : MonoBehaviour, IBeginDragHandler, IDragHandler
 {
+    // EventReference is a struct from FMOD integration
+    [SerializeField] private EventReference rockDragSFX;
+
     private RectTransform rectTransform;
     private Canvas canvas;
 
@@ -14,7 +18,9 @@ public class MoveRock : MonoBehaviour, IBeginDragHandler, IDragHandler
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        
         // Start dragging the rock
+        RuntimeManager.PlayOneShot(rockDragSFX);
     }
 
     public void OnDrag(PointerEventData eventData)

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using FMODUnity;
 
 // The goal of the minigame is to click Big Green Bug
 // When clicked, Big Green Bug will be in the inventory slot.
@@ -10,6 +11,8 @@ public class BigBug : MonoBehaviour, IPointerClickHandler
     public GameObject panel;
     public GameObject bigBugImage;
     public GameObject returnPointButton;
+
+    [SerializeField] private EventReference bugPuzzleWin;
 
     private bool panelIsOpen = false;
 
@@ -28,6 +31,7 @@ public class BigBug : MonoBehaviour, IPointerClickHandler
 
         if (panel != null)
         {
+            RuntimeManager.PlayOneShot(bugPuzzleWin);
             panelIsOpen = !panelIsOpen;
             panel.SetActive(panelIsOpen);
             returnPointButton.gameObject.SetActive(true);
