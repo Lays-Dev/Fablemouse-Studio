@@ -94,9 +94,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{9f8800bd-8bc2-47f6-b507-8c88569df834}">
-		<property name="volume">
-			<value>-1.5</value>
-		</property>
 		<relationship name="effectChain">
 			<destination>{8ab1ef80-6380-4a11-bdd5-862b35d21f43}</destination>
 		</relationship>
@@ -130,6 +127,7 @@
 		<property name="length">
 			<value>0.25091666666666668</value>
 		</property>
+		<property name="name" />
 		<property name="polyphony">
 			<value>1</value>
 		</property>
@@ -149,7 +147,7 @@
 			<value>-3</value>
 		</property>
 		<property name="pitchRandomization">
-			<value>3</value>
+			<value>1</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{1ab51e24-698a-4e22-9812-43f4b623aefa}</destination>
@@ -178,6 +176,9 @@
 		</property>
 	</object>
 	<object class="EventMixerGroup" id="{fb0fe513-a141-4583-a6df-5d96b3a84574}">
+		<property name="volume">
+			<value>-16</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -210,11 +211,8 @@
 		<property name="maximumScatterDistance">
 			<value>1</value>
 		</property>
-		<property name="volumeRandomization">
-			<value>-3</value>
-		</property>
 		<property name="pitchRandomization">
-			<value>3</value>
+			<value>1</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{bbfe7d4e-a8ca-4860-9aae-b6a039d0f9de}</destination>
@@ -243,6 +241,9 @@
 		</property>
 	</object>
 	<object class="EventMixerGroup" id="{c3af1646-1edd-4b8f-8fee-420cdad3cc0c}">
+		<property name="volume">
+			<value>-16</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -295,7 +296,6 @@
 			<destination>{cb86aa9e-4b46-414c-b4d3-7e66e4df2e90}</destination>
 			<destination>{1aadd05c-4a57-4403-a871-2718c883a988}</destination>
 			<destination>{3e2aaa71-81b4-424a-ace1-048136c1f2cc}</destination>
-			<destination>{8efbcf0d-2983-4e52-9b03-ef1fad869288}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7b6ea441-6672-49e3-a0a2-d42fdb37d434}">
@@ -400,6 +400,9 @@
 		</relationship>
 	</object>
 	<object class="LimiterEffect" id="{cb86aa9e-4b46-414c-b4d3-7e66e4df2e90}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<property name="ceiling">
 			<value>-12</value>
 		</property>
@@ -414,11 +417,6 @@
 		</property>
 		<property name="loudnessTarget">
 			<value>-18</value>
-		</property>
-	</object>
-	<object class="ObjectSpatialiserEffect" id="{8efbcf0d-2983-4e52-9b03-ef1fad869288}">
-		<property name="bypass">
-			<value>true</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{e3ddfafc-a1af-4809-89c7-fa3e10bbd522}">
