@@ -1,8 +1,10 @@
 using UnityEngine;
 using Yarn.Unity;
+using FMODUnity;
 
 public class DialogueBubblePresenter : DialoguePresenterBase
 {
+    [SerializeField] private EventReference _bubbleOpenSound;
     private DialogueBubbleManager _bubbleManager;
 
     // Finds the dialogue bubble manager when the scene starts.
@@ -61,6 +63,11 @@ public class DialogueBubblePresenter : DialoguePresenterBase
 
         // Shows this line above the correct character.
         _bubbleManager.ShowDialogue(matchingSpeaker, dialogue);
+
+        if (!_bubbleOpenSound.IsNull)
+        {
+            RuntimeManager.PlayOneShot(_bubbleOpenSound);
+        }
 
         // Keeps this line on screen until RequestNextLine() is called.
         await YarnTask.WaitUntilCanceled(token.NextContentToken)
