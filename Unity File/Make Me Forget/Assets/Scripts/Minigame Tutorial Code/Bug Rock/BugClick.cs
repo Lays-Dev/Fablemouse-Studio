@@ -2,9 +2,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using FMODUnity;
 
 public class BugClick : MonoBehaviour, IPointerClickHandler
 {
+    [SerializeField] private EventReference bugSplatSFX;
+
     public Sprite clickedBugImage;
 
     private Image bugImage;
@@ -27,6 +30,7 @@ public class BugClick : MonoBehaviour, IPointerClickHandler
 
         if (bugImage != null && clickedBugImage != null)
         {
+            RuntimeManager.PlayOneShot(bugSplatSFX);
             bugImage.sprite = clickedBugImage;
             Debug.Log("Bug image changed!");
         }
