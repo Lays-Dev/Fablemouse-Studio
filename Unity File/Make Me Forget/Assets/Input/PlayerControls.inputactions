@@ -215,17 +215,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "9ff25fcc-066b-4792-a3ab-e502a8bc4312",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Quit",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "8308b7a8-00ab-445f-88c8-f554d4f09820",
                     "path": "<Keyboard>/period",
                     "interactions": "",

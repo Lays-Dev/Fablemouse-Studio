@@ -115,7 +115,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0
+    - _Smoothness: 0.35
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -133,9 +133,9 @@ Material:
     - _Bottom_Color: {r: 0.8415094, g: 0.82402414, b: 0.35406902, a: 0}
     - _Color: {r: 0.117233686, g: 0.6981132, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Far_Color: {r: 0.87448233, g: 0.99607843, b: 0.32941177, a: 0}
+    - _Far_Color: {r: 0.79235923, g: 0.9169811, b: 0.23357056, a: 0}
     - _NearFarRange: {r: 15.8, g: 44.28, b: 0, a: 0}
-    - _Near_Color: {r: 0, g: 0.4037736, b: 0.16823903, a: 0}
+    - _Near_Color: {r: 0, g: 0.335849, b: 0.06853409, a: 0}
     - _Shadow_Color: {r: 0.94716984, g: 0.44141686, b: 0.44141686, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Wind_Noise_Contrast: {r: 0, g: 2.5, b: 0, a: 0}
