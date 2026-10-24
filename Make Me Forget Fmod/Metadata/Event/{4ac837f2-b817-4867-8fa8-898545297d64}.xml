@@ -59,7 +59,7 @@
 			<destination>{ae87e86d-41f5-45b2-947a-581fe6b0c403}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{bc0f60e3-2bdb-4155-9e4c-fa21b515df0e}</destination>
+			<destination>{d00c655e-e94d-4d7d-9cc5-6bb9a6eba9b9}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{84f89aa7-3907-4ab1-994e-825a2c900bc3}" />
@@ -148,7 +148,6 @@
 		<property name="length">
 			<value>1.3987708333333333</value>
 		</property>
-		<property name="name" />
 		<property name="volume">
 			<value>-80</value>
 		</property>
@@ -169,7 +168,6 @@
 		<property name="length">
 			<value>1.3987708333333333</value>
 		</property>
-		<property name="name" />
 		<property name="volume">
 			<value>-2</value>
 		</property>
@@ -218,7 +216,6 @@
 		<property name="length">
 			<value>1.3987708333333333</value>
 		</property>
-		<property name="name" />
 		<relationship name="modulators">
 			<destination>{8774f014-c5bd-497c-bcba-6e086f971564}</destination>
 		</relationship>
@@ -238,7 +235,6 @@
 		<property name="length">
 			<value>1.3987708333333333</value>
 		</property>
-		<property name="name" />
 		<property name="volume">
 			<value>-2</value>
 		</property>
@@ -306,7 +302,6 @@
 		<property name="length">
 			<value>1.3987708333333333</value>
 		</property>
-		<property name="name" />
 		<property name="volume">
 			<value>-2</value>
 		</property>

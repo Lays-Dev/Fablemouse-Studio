@@ -44,6 +44,9 @@
 {748c2206-9a8a-4497-a3ae-2943b1472a81} event:/SFX/Mechanics/Fish eggs/Hatching
 {0e3447a4-7def-453f-b2b4-35209984350e} event:/SFX/Mechanics/Fish eggs/Hungry FB
 {aa588322-d434-49e2-aba4-e257682223e3} event:/SFX/Mechanics/Ground impact
+{4f70327f-cb9e-4887-9110-ed459d5bc2ee} event:/SFX/Mechanics/Pumpkin/Carving
+{8a6ca399-e433-4b8b-8bdf-8392af1714b6} event:/SFX/Mechanics/Pumpkin/Retry
+{998327fe-6d7f-46df-9e30-91952e1bcee2} event:/SFX/Mechanics/Pumpkin/Shave
 {a38b83cf-3718-4f55-abdf-df671110d3f4} event:/SFX/Mechanics/Puzzle/Puzzle Start
 {23a7211d-9f94-4c0b-951b-8502728af173} event:/SFX/Mechanics/Puzzle/Puzzle select
 {e1117f1c-73b6-491a-aa94-2bff9cfda58a} event:/SFX/Mechanics/Puzzle/Puzzle win

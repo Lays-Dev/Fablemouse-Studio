@@ -176,10 +176,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639277031872615731
+  lastModified: 639284675040904738
   FileSizes:
   - Name: Desktop
-    Value: 3872
+    Value: 4012
   Exists: 1
 --- !u!114 &-7939582924473951958
 MonoBehaviour:
@@ -582,6 +582,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 90240
+--- !u!114 &-6138307770500679087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Pumpkin/Retry
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Pumpkin/Retry
+  Guid:
+    Data1: -1972591719
+    Data2: 1267459123
+    Data3: -1836851317
+    Data4: -1240197201
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 405
 --- !u!114 &-6049640135560623027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,6 +795,33 @@ MonoBehaviour:
   - Tile
   - Stone
   Exists: 1
+--- !u!114 &-3758703117635620086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Pumpkin/Shave
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Pumpkin/Shave
+  Guid:
+    Data1: -1719457794
+    Data2: 1189047679
+    Data3: -1785646946
+    Data4: -489809106
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 202
 --- !u!114 &-3675087297102312838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1304,7 +1358,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 639277893120987914
+  lastModified: 639284677082076953
   FileSizes:
   - Name: Desktop
     Value: 77152
@@ -1577,6 +1631,9 @@ MonoBehaviour:
   - {fileID: -8510209434387157972}
   - {fileID: 5014737156336308738}
   - {fileID: -2991113187652199649}
+  - {fileID: 4155000703302734494}
+  - {fileID: -6138307770500679087}
+  - {fileID: -3758703117635620086}
   EditorParameters:
   - {fileID: 8089620109424056317}
   - {fileID: 3228399538104972685}
@@ -1585,7 +1642,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8092922873622035379}
   cacheVersion: 131861
-  cacheTime: 639283021140417127
+  cacheTime: 639284677083405524
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
@@ -1663,6 +1720,12 @@ MonoBehaviour:
     index: 36
   - key: event:/SFX/Mechanics/Bugs/Bugs crawling loop
     index: 37
+  - key: event:/SFX/Mechanics/Pumpkin/Carving
+    index: 38
+  - key: event:/SFX/Mechanics/Pumpkin/Retry
+    index: 39
+  - key: event:/SFX/Mechanics/Pumpkin/Shave
+    index: 40
 --- !u!114 &217916901227981529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2510,6 +2573,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &4155000703302734494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Pumpkin/Carving
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Pumpkin/Carving
+  Guid:
+    Data1: 1332753023
+    Data2: 1216859038
+    Data3: 1173164177
+    Data4: -289252451
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
 --- !u!114 &4396521001560468880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2545,7 +2635,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639277031872599521
+  lastModified: 639284675040889598
   FileSizes:
   - Name: Desktop
     Value: 5540
@@ -3038,10 +3128,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639283021140417127
+  lastModified: 639284677083405524
   FileSizes:
   - Name: Desktop
-    Value: 11561024
+    Value: 11633504
   Exists: 1
 --- !u!114 &7766260312451457758
 MonoBehaviour:
