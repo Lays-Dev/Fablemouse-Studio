@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
@@ -11,12 +12,16 @@ public class YarnVoModulationView : DialoguePresenterBase
     private List<VoiceModulation> voiceProfiles =
         new List<VoiceModulation>();
 
+    [Header("Voice Timing")]
+    [SerializeField, Min(0.1f)] private float _maxTalkingDuration = 1.5f;
+
     private readonly Dictionary<string, VoiceModulation> voices =
         new Dictionary<string, VoiceModulation>(
             StringComparer.OrdinalIgnoreCase);
 
     private VoiceModulation currentVoice;
     private CancellationTokenRegistration lineCancellation;
+    private Coroutine _voiceTimer;
 
     private void Awake()
     {
@@ -43,10 +48,9 @@ public class YarnVoModulationView : DialoguePresenterBase
     }
 
     public override YarnTask RunLineAsync(
-        LocalizedLine line,
-        LineCancellationToken token)
+    LocalizedLine line,
+    LineCancellationToken token)
     {
-        // End any previous line's sound and cancellation callback.
         lineCancellation.Dispose();
         StopCurrentVoice();
 
@@ -59,13 +63,20 @@ public class YarnVoModulationView : DialoguePresenterBase
             currentVoice = voice;
             currentVoice.Speak(text);
 
-            // Stop the sound when Yarn requests that this line end.
-            lineCancellation = token.NextContentToken.Register(
-                StopCurrentVoice);
+            // Stop talking when Yarn advances to the next line.
+            lineCancellation = token.NextContentToken.Register(StopCurrentVoice);
+
+            // Also stop talking after the maximum duration.
+            _voiceTimer = StartCoroutine(StopVoiceAfterDelay());
         }
 
-        // The regular Yarn LinePresenter controls text and line timing.
         return YarnTask.CompletedTask;
+    }
+
+    private IEnumerator StopVoiceAfterDelay()
+    {
+        yield return new WaitForSeconds(_maxTalkingDuration);
+        StopCurrentVoice();
     }
 
     public override YarnTask OnDialogueStartedAsync()
@@ -93,6 +104,12 @@ public class YarnVoModulationView : DialoguePresenterBase
 
     private void StopCurrentVoice()
     {
+        if (_voiceTimer != null)
+        {
+            StopCoroutine(_voiceTimer);
+            _voiceTimer = null;
+        }
+
         if (currentVoice != null)
         {
             currentVoice.StopSpeaking();

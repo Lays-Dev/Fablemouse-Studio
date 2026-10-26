@@ -55,4 +55,23 @@ public class MiniGameProgress : MonoBehaviour
             onAllComplete.Invoke();
         }
     }
+    public bool[] GetCompletedParts()
+    {
+        // Return a copy so other scripts cannot accidentally change progress.
+        return (bool[])done.Clone();
+    }
+    public void LoadCompletedParts(bool[] savedParts)
+    {
+        if (savedParts == null) return;
+
+        // Restore progress without exceeding either array's size.
+        int count = Mathf.Min(done.Length, savedParts.Length);
+
+        for (int i = 0; i < count; i++)
+        {
+            done[i] = savedParts[i];
+        }
+
+        Debug.Log($"Loaded minigame progress: {CompletedCount}/{partCount}");
+    }
 }

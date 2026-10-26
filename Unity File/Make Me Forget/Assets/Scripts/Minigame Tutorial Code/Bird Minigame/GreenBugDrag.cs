@@ -67,6 +67,28 @@ public class GreenBugDrag : MonoBehaviour,
         }
     }
 
+    // Restore the bird-feeding puzzle after loading a save.
+    public void RestoreBirdFeeding(bool wasFed)
+    {
+        birdsFed = wasFed;
+
+        if (!wasFed)
+            return;
+
+        // Restore the objects changed when the bird was fed.
+        if (dialogueImage != null)
+            dialogueImage.SetActive(false);
+
+        if (birdsHungry != null)
+            birdsHungry.SetActive(false);
+
+        if (birdsFlight != null)
+            birdsFlight.SetActive(true);
+
+        if (heldItemCanvas != null)
+            heldItemCanvas.SetActive(false);
+    }
+
     private bool IsOverBird()
     {
         // Only allow feeding if the bird is active.

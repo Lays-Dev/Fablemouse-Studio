@@ -50,7 +50,19 @@ public class PauseMenu : MonoBehaviour
         foreach (var script in scriptsToDisable)
             if (script != null) script.enabled = true;
     }
-
+    // Save the current game progress.
+    public void SaveGame()
+    {
+        if (GameSaveManager.Instance != null)
+        {
+            GameSaveManager.Instance.SaveGame();
+            Debug.Log("Game saved successfully!");
+        }
+        else
+        {
+            Debug.LogWarning("GameSaveManager not found!");
+        }
+    }
     // bye back to the menu (unfreeze first or the menu's frozen too lol)
     public void GoToMainMenu()
     {

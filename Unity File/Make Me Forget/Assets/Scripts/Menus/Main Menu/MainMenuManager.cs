@@ -11,13 +11,13 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] GameObject _MainMenuContainer;
     [SerializeField] GameObject _CreditsMenuContainer;
     [SerializeField] GameObject _SettingsMenuContainer;
-
     public enum MainMenuButtons 
     {
         Play,
         Options,
         Credits,
-        Quit
+        Quit,
+        Continue
     };
 
     public enum OptionsButtons 
@@ -53,6 +53,9 @@ public class MainMenuManager : MonoBehaviour
 
         switch (buttonClicked)
         {
+            case MainMenuButtons.Continue:
+                ContinueGame();
+                break;
             case MainMenuButtons.Play:
                 PlayClicked();
                 break;
@@ -83,6 +86,18 @@ public class MainMenuManager : MonoBehaviour
     public void PlayClicked()
     {
         SceneManager.LoadScene(_sceneToLoadAfterClickingPlay);
+    }
+    public void ContinueGame()
+    {
+        // Use the persistent save manager to load the saved game.
+        if (GameSaveManager.Instance != null)
+        {
+            GameSaveManager.Instance.LoadGame();
+        }
+        else
+        {
+            Debug.LogError("GameSaveManager not found!");
+        }
     }
 
     public void OpenCreditsMenu()
