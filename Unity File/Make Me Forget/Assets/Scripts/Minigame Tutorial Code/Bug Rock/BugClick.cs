@@ -12,6 +12,21 @@ public class BugClick : MonoBehaviour, IPointerClickHandler
 
     private Image bugImage;
 
+    private bool _isSquished = false;
+
+    public bool IsSquished => _isSquished;
+
+    public void RestoreSquished(bool wasSquished)
+    {
+        // Restore whether this particular bug was squished.
+        _isSquished = wasSquished;
+
+        // Change the sprite without replaying the sound.
+        if (_isSquished && bugImage != null && clickedBugImage != null)
+        {
+            bugImage.sprite = clickedBugImage;
+        }
+    }
     void Awake()
     {
         bugImage = GetComponent<Image>();
@@ -32,6 +47,7 @@ public class BugClick : MonoBehaviour, IPointerClickHandler
         {
             RuntimeManager.PlayOneShot(bugSplatSFX);
             bugImage.sprite = clickedBugImage;
+            _isSquished = true;
             Debug.Log("Bug image changed!");
         }
         else

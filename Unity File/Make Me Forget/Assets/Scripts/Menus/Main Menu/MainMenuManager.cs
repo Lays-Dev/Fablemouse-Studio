@@ -11,6 +11,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] GameObject _MainMenuContainer;
     [SerializeField] GameObject _CreditsMenuContainer;
     [SerializeField] GameObject _SettingsMenuContainer;
+    [SerializeField] GameObject _ContinueMenuContainer;
     public enum MainMenuButtons 
     {
         Play,
@@ -45,6 +46,15 @@ public class MainMenuManager : MonoBehaviour
     private void Start()
     {
         OpenMenu(_MainMenuContainer);
+
+        // Only display Continue if a save file exists.
+        if (_ContinueMenuContainer != null)
+        {
+            bool hasSave = GameSaveManager.Instance != null &&
+                           GameSaveManager.Instance.HasSave();
+
+            _ContinueMenuContainer.SetActive(hasSave);
+        }
     }
 
     public void MainMenuButtonClicked(MainMenuButtons buttonClicked)

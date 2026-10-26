@@ -15,7 +15,23 @@ public class BigBug : MonoBehaviour, IPointerClickHandler
     [SerializeField] private EventReference bugPuzzleWin;
 
     private bool panelIsOpen = false;
+    public bool IsBugCollected => bigBugImage != null && !bigBugImage.activeSelf;
 
+    public void RestoreBugCollected(bool wasCollected)
+    {
+        // Restore the bug's appearance without replaying its sound.
+        if (bigBugImage != null)
+            bigBugImage.SetActive(!wasCollected);
+
+        if (panel != null)
+        {
+            panelIsOpen = wasCollected;
+            panel.SetActive(wasCollected);
+        }
+
+        if (returnPointButton != null)
+            returnPointButton.SetActive(wasCollected);
+    }
     void Start()
     {
         // Hide the Inventory panel when the game starts.

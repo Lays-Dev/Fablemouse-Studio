@@ -6,6 +6,13 @@ public class BranchManager : MonoBehaviour
 
     private bool branchMoved = false;
 
+    public bool HasBranchMoved => branchMoved;
+
+    public void RestoreBranchMoved(bool wasMoved)
+    {
+        // Restore whether the branch has already fallen.
+        branchMoved = wasMoved;
+    }
     private void Update()
     {
         // Check whether the birds have been fed.

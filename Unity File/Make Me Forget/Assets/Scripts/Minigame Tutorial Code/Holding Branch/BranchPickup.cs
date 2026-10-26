@@ -63,4 +63,18 @@ public class BranchPickup : MonoBehaviour
     {
         return isHoldingBranch;
     }
+    public void RestoreHoldingBranch(bool wasHolding)
+    {
+        // Restore whether Lona picked up the branch.
+        isHoldingBranch = wasHolding;
+
+        // Update the branch's appearance.
+        if (heldBranch != null)
+            heldBranch.SetActive(wasHolding);
+
+        if (branchObject != null)
+            branchObject.SetActive(!wasHolding && GreenBugDrag.birdsFed);
+
+        canPickUp = false;
+    }
 }

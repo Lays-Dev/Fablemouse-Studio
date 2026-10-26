@@ -32,7 +32,31 @@ public GameObject MinigameCanvas;
     private int eggClickCount = 0;
     private bool isPlayingSound = false;
 
-void Start()
+    public int GetEggClickCount()
+    {
+        // Return how many times the eggs have been cracked.
+        return eggClickCount;
+    }
+
+    public void RestoreEggClickCount(int savedCount)
+    {
+        // Restore how many times the eggs were cracked.
+        eggClickCount = Mathf.Clamp(savedCount, 0, 2);
+
+        if (eggClickCount == 1)
+        {
+            EggsImage.sprite = EggsCrackedImage.sprite;
+        }
+        else if (eggClickCount == 2)
+        {
+            EggsImage.sprite = EggsBrokenImage.sprite;
+            BirdsImage.gameObject.SetActive(true);
+            BreakEggsButton.gameObject.SetActive(false);
+            DialougeImage.gameObject.SetActive(true);
+            ReturnPointButton.gameObject.SetActive(true);
+        }
+    }
+    void Start()
 {
     BreakEggsButton.onClick.AddListener(BreakEggsButtonClicked);
     ReturnPointButton.onClick.AddListener(ReturnPointButtonClicked);

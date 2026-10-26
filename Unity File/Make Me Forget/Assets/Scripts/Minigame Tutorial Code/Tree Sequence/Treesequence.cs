@@ -38,6 +38,41 @@ public class TreeSequence : MonoBehaviour
     private float wiggleTimer = 0f;
     private Vector3 treeStartPosition;
 
+    // Allow the save system to read the tree puzzle's progress.
+    public int HitCount => hits;
+    public bool BirdsShown => birdsShown;
+    public bool IsJasonFalling => jasonFalling;
+
+    public void RestoreTreeState(int savedHits, bool savedBirdsShown, bool savedJasonFalling)
+    {
+        // Restore the internal puzzle progress.
+        hits = Mathf.Clamp(savedHits, 0, hitsNeeded);
+        birdsShown = savedBirdsShown;
+        jasonFalling = savedJasonFalling;
+
+        // Prevent the tree from continuing an old wiggle animation.
+        wiggleTimer = 0f;
+        transform.position = treeStartPosition;
+
+        // Avoid treating the first frame after loading as a new branch pickup.
+        wasHoldingLastFrame = branchPickup != null && branchPickup.IsHoldingBranch();
+
+        // Feeding the birds permanently disables this interaction.
+        if (birdsShown && feedingMiniGame != null)
+        {
+            feedingMiniGame.enabled = false;
+
+            foreach (Collider c in feedingMiniGame.GetComponents<Collider>())
+                c.enabled = false;
+
+            foreach (Collider2D c in feedingMiniGame.GetComponents<Collider2D>())
+                c.enabled = false;
+
+            if (feedingMiniGame.interactPrompt != null)
+                feedingMiniGame.interactPrompt.SetActive(false);
+        }
+    }
+
     private void Start()
     {
         treeStartPosition = transform.position;
