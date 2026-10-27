@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403ae2dd693bb1d4b924f6b8d206b053, type: 3}
+  m_Name: Little_Lona.fadeMotionList
+  m_EditorClassIdentifier: 
+  MotionInstanceIds: 7c5cffff525cffff365cffff1a5cfffffe5bffffe25bffffc65bffffaa5bffff8e5bffff725bffff565bffff
+  CubismFadeMotionObjects:
+  - {fileID: 11400000, guid: aa2931f2848d24144a85a9b8815e54e0, type: 2}
+  - {fileID: 11400000, guid: 2925e0db65ba012449d9164778296b33, type: 2}
+  - {fileID: 11400000, guid: 6f20bfc3b8666d84393928dc5bb0e017, type: 2}
+  - {fileID: 11400000, guid: c9386188a1b450b4aa7739f9e0439a4a, type: 2}
+  - {fileID: 11400000, guid: cf60ad9a792aa9744a00e3360f3b159f, type: 2}
+  - {fileID: 11400000, guid: c08226921aadaee41a5dbcff213d8c6a, type: 2}
+  - {fileID: 11400000, guid: 793653b7a68ecb249a42d8a725b77ff1, type: 2}
+  - {fileID: 11400000, guid: 08dd97a011f19d14996a90bbd8633f77, type: 2}
+  - {fileID: 11400000, guid: 4f7fd8e587b1fc449a3a51b93b1fa695, type: 2}
+  - {fileID: 11400000, guid: 8cd1d01b4e9c8a34a937152a2b6a28e0, type: 2}
+  - {fileID: 11400000, guid: a3d4cf4a5d196d0428e49e98b0db838c, type: 2}
