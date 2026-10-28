@@ -1,9 +1,33 @@
 ﻿title: Start
 ---
-Lona: Jason is hiding close by. I will find him.
-Lona: I just need to finish counting.
-Lona: 4... 3... 2...
-Lona: 1!
-Lona: Ready or not, Jason, here I come!
+This is an example of using Yarn Spinner for a string of dialouge.
+The dialouge can continue.
+More dialouge can be written.
+Narrator: This is an example of labeling who is speaking.
+Other Narrator: This is an example of changing who is speaking.
+This is an example of options.
+<<declare $selectedOption1 = false>>
+    -> This is an option.
+        <<set $selectedOption1 to true>>
+        You selected the first option.
+        Why did you select this option? I told you to pick the second option.
+        -> My bad.
+            It's okay. Now I was able to show you what nesting options look like.
+            Next is the jump, I will show you what a jump in dialouge looks like.
+            <<jump Jump>>
+        -> I knew what I was doing.
+            Oh really. Maybe you did. I was able to show you what nesting options look like.
+            Next is the jump, I will show you what a jump in dialouge looks like.
+            <<jump Jump>>
+    -> This is another option. Click this one to select it.
+        You selected the second option.
+        Next is the jump, I will show you what a jump in dialouge looks like.
+        <<jump Jump>>
 
+===
+
+title: Jump
+---
+The dialouge just jumped!
+Earlier when selecting an option, you picked option one. This statment is {$selectedOption1}.
 ===
