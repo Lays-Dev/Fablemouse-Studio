@@ -1761,9 +1761,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDrawableRenderers:
-  - {fileID: 6846936138899526706}
-  - {fileID: 8134137652321916586}
-  - {fileID: 2673134048376633032}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _childPartColorEditors: []
   _isOverriddenPartMultiplyColors: 0
   _isOverriddenPartScreenColors: 0
@@ -1903,7 +1903,7 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 1
   _masks:
-  - {fileID: 6560945714263457814}
+  - {fileID: 0}
   ColorBlendType: 2
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -2101,7 +2101,7 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 0
   _masks:
-  - {fileID: 3704698983783338446}
+  - {fileID: 0}
   ColorBlendType: 2
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -2316,8 +2316,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDrawableRenderers:
-  - {fileID: 902756776110509568}
-  - {fileID: 6421297778494599258}
+  - {fileID: 0}
+  - {fileID: 0}
   _childPartColorEditors: []
   _isOverriddenPartMultiplyColors: 0
   _isOverriddenPartScreenColors: 0
@@ -2995,10 +2995,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDrawableRenderers:
-  - {fileID: 5963442971733817810}
+  - {fileID: 0}
   _childPartColorEditors:
-  - {fileID: 1642265936096391767}
-  - {fileID: 586504533806176024}
+  - {fileID: 0}
+  - {fileID: 0}
   _isOverriddenPartMultiplyColors: 0
   _isOverriddenPartScreenColors: 0
   _multiplyColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3182,7 +3182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Opacity: 1
-  _lastOpacity: 1
+  _lastOpacity: 0
   _isOverriddenModelMultiplyColors: 0
   _isOverriddenModelScreenColors: 0
   _modelMultiplyColor: {r: 0, g: 0, b: 0, a: 0}
@@ -3275,7 +3275,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2594389805060891539}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 702f05e81266375468e2b47006338cf9, type: 3}
   m_Name: 
@@ -3330,7 +3330,7 @@ Animator:
   m_GameObject: {fileID: 2594389805060891539}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 11b1ea5409c42ab428f1cda9f4b63b6a, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3876,7 +3876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5506d2a07bcd8314d85121fb9630484c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 2676001322874734484}
+  animator: {fileID: 0}
 --- !u!1 &2760528764201550897
 GameObject:
   m_ObjectHideFlags: 0
@@ -4477,7 +4477,7 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 1
   _masks:
-  - {fileID: 4517996311298247908}
+  - {fileID: 0}
   ColorBlendType: 2
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -4693,9 +4693,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDrawableRenderers:
-  - {fileID: 1629746622627706923}
-  - {fileID: 1312868832050278385}
-  - {fileID: 1516872387894716877}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _childPartColorEditors: []
   _isOverriddenPartMultiplyColors: 0
   _isOverriddenPartScreenColors: 0
@@ -4898,7 +4898,7 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 1
   _masks:
-  - {fileID: 3298754868129734305}
+  - {fileID: 0}
   ColorBlendType: 0
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -5051,17 +5051,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDrawableRenderers:
-  - {fileID: 2127839170184620102}
-  - {fileID: 1143613858649058270}
-  - {fileID: 5744226488850195773}
-  - {fileID: 8342856546732077286}
-  - {fileID: 7316000980299742975}
-  - {fileID: 6096847392324127275}
-  - {fileID: 669568125125289564}
-  - {fileID: 3704698983783338446}
-  - {fileID: 621711336351448318}
-  - {fileID: 6825254446222832004}
-  - {fileID: 6812749637513565216}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _childPartColorEditors: []
   _isOverriddenPartMultiplyColors: 0
   _isOverriddenPartScreenColors: 0
@@ -5151,11 +5151,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _childDrawableRenderers: []
   _childPartColorEditors:
-  - {fileID: 7184543222316533803}
-  - {fileID: 4499827402058586213}
-  - {fileID: 705610303074465674}
-  - {fileID: 2033547780401460893}
-  - {fileID: 4695054582828657067}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _isOverriddenPartMultiplyColors: 0
   _isOverriddenPartScreenColors: 0
   _multiplyColor: {r: 1, g: 1, b: 1, a: 1}
@@ -5507,7 +5507,7 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 0
   _masks:
-  - {fileID: 3704698983783338446}
+  - {fileID: 0}
   ColorBlendType: 0
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -6170,7 +6170,7 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 1
   _masks:
-  - {fileID: 8714503147432206291}
+  - {fileID: 0}
   ColorBlendType: 2
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -6305,7 +6305,7 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 1
   _masks:
-  - {fileID: 6560945714263457814}
+  - {fileID: 0}
   ColorBlendType: 2
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -6574,7 +6574,7 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 0
   _masks:
-  - {fileID: 8342856546732077286}
+  - {fileID: 0}
   ColorBlendType: 0
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -6874,7 +6874,7 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 1
   _masks:
-  - {fileID: 6421297778494599258}
+  - {fileID: 0}
   ColorBlendType: 2
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -7466,8 +7466,8 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 1
   _masks:
-  - {fileID: 4268516245668280279}
-  - {fileID: 7241266886898771673}
+  - {fileID: 0}
+  - {fileID: 0}
   ColorBlendType: 2
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -7949,23 +7949,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDrawableRenderers:
-  - {fileID: 2696807885922479157}
-  - {fileID: 6032064361893441597}
-  - {fileID: 1968515755975175714}
-  - {fileID: 2117777580955102358}
-  - {fileID: 3130082962941265939}
-  - {fileID: 4284157126132249160}
-  - {fileID: 6062208966052835084}
-  - {fileID: 6560945714263457814}
-  - {fileID: 5620416258316081291}
-  - {fileID: 4268516245668280279}
-  - {fileID: 7241266886898771673}
-  - {fileID: 4419246294566522619}
-  - {fileID: 3576948239680377917}
-  - {fileID: 3298754868129734305}
-  - {fileID: 929239320255201151}
-  - {fileID: 6610697927254474581}
-  - {fileID: 8775298235837524215}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _childPartColorEditors: []
   _isOverriddenPartMultiplyColors: 0
   _isOverriddenPartScreenColors: 0
@@ -8239,8 +8239,8 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 0
   _masks:
-  - {fileID: 6825254446222832004}
-  - {fileID: 6812749637513565216}
+  - {fileID: 0}
+  - {fileID: 0}
   ColorBlendType: 2
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -8438,7 +8438,7 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 1
   _masks:
-  - {fileID: 6032064361893441597}
+  - {fileID: 0}
   ColorBlendType: 0
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -8528,17 +8528,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _childDrawableRenderers:
-  - {fileID: 7206483535548806994}
-  - {fileID: 3921367453182513274}
-  - {fileID: 6167101838069678159}
-  - {fileID: 522745909799302017}
-  - {fileID: 4927976619577108243}
-  - {fileID: 3926139684099882697}
-  - {fileID: 7467697435039784830}
-  - {fileID: 6570030001543676332}
-  - {fileID: 8714503147432206291}
-  - {fileID: 4517996311298247908}
-  - {fileID: 2344401474774195429}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _childPartColorEditors: []
   _isOverriddenPartMultiplyColors: 0
   _isOverriddenPartScreenColors: 0
@@ -8867,7 +8867,7 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 1
   _masks:
-  - {fileID: 6560945714263457814}
+  - {fileID: 0}
   ColorBlendType: 0
   AlphaBlendType: 0
   DrawObjectType: 0
@@ -10444,12 +10444,12 @@ MonoBehaviour:
   _depthOffset: 0.00001
   _opacity: 1
   _masks:
-  - {fileID: 1629746622627706923}
-  - {fileID: 1312868832050278385}
-  - {fileID: 1516872387894716877}
-  - {fileID: 6846936138899526706}
-  - {fileID: 8134137652321916586}
-  - {fileID: 2673134048376633032}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   ColorBlendType: 2
   AlphaBlendType: 0
   DrawObjectType: 0
