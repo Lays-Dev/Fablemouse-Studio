@@ -1,0 +1,13 @@
+﻿title: TestMoni
+---
+This is an example of a Yarn Spinner script. Write your dialogue here!
+===
+title: TestMoniStart
+---
+Narrator: Yo, my name is Lona and I'm looking for Jason...
+Narrator: He hid pretty well, when I catch him should I 
+-> Beat him up
+    Narrator: hmm you might be onto sum
+-> ignore him
+    Narrator: dang gurl
+===
