@@ -30,4 +30,18 @@ title: Jump
 ---
 The dialouge just jumped!
 Earlier when selecting an option, you picked option one. This statment is {$selectedOption1}.
+<<once>>
+This is a once statment. It will only show once.
+You can have multiple lines in a once statment.
+<<else>>
+This line only runs once the "once" statment has ran.
+<<endonce>>
+<<once if $selectedOption1>>
+This line will only run once if you have selected option 1 earlier.
+<<endonce>>
+Now jump back through the dialouge to see the once statments dissapear.
+    -> Jump
+        <<jump Jump>>
+    -> Continue
+        This is the end.
 ===
