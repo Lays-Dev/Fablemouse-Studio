@@ -31,6 +31,16 @@
 {50f45498-9fed-43b7-9c8a-9180e3e03d86} event:/MX/Exploration/Tutorial BGM
 {b001db63-5510-4580-9108-c646d5bca868} event:/SFX/ENV/Bird sounds
 {95037a12-bec9-4792-8b39-f9ef0b1c2021} event:/SFX/ENV/CL Fence
+{29b6e0ab-69fc-4a22-92d9-ce90a4c88284} event:/SFX/ENV/Car/Inside/ICDoor Close
+{9e5e2ed6-0814-42e5-925a-d52f16eb401b} event:/SFX/ENV/Car/Inside/ICDoor Open
+{5eda5ffd-f969-43e2-862e-62b93e7d232d} event:/SFX/ENV/Car/Inside/ICar EngineLoop
+{7c0878f8-d7f9-4446-b819-0d979dc90d72} event:/SFX/ENV/Car/Inside/ICar Start
+{6b9b64be-bbd2-41c2-a986-5de7cba1c81b} event:/SFX/ENV/Car/Inside/ICar Stop
+{dff84f59-635c-4c20-ae6c-c94a051a39ee} event:/SFX/ENV/Car/Outside/OCDoor Close
+{522502c9-f978-4da3-b901-9d0c5d28d457} event:/SFX/ENV/Car/Outside/OCDoor Open
+{94ddb69c-0fed-44f3-abb1-903d71c52cef} event:/SFX/ENV/Car/Outside/OCar EngineLoop
+{9a518080-8b44-4238-86b5-7b12b14a3252} event:/SFX/ENV/Car/Outside/OCar Start
+{07a73ce2-3393-44c0-92f3-e7ef3d10731a} event:/SFX/ENV/Metal Gate
 {9aac0d6f-e076-478c-b046-e9d7813e41b9} event:/SFX/Mechanics/Branches/Branch swing&hit
 {e677859e-3035-42b1-a180-bd77d8242983} event:/SFX/Mechanics/Branches/Move branches
 {da10f592-f18d-46ea-85fe-0107e6e71299} event:/SFX/Mechanics/Branches/Move branches loop
@@ -57,7 +67,6 @@
 {7c08769c-9ea0-45c4-b8e7-20214979d13b} event:/SFX/Player/FootstepsP
 {c8c1c47d-beaf-410b-a9eb-9d33933f4a5f} event:/SFX/Player/JumpP
 {0cc227fd-febd-4227-8712-39f46a27efd1} event:/SFX/Player/LandP
-{ac21b88d-2e19-4550-b08d-fb3a5a1fe9b3} event:/SFX/Player/Talking
 {a7b1db4b-8f4a-49a2-ac07-491c7ad59341} event:/SFX/Player/Yell
 {9a707db4-8f4d-47d4-98e3-f0c18984cf9a} event:/UI/Front end/select/Young/UI Back
 {36e4f21f-63e1-4af7-8741-1d609b808611} event:/UI/Front end/select/Young/UI Forward
