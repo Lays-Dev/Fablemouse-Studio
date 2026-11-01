@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7916177522348653586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1320236790879559466}
+  - component: {fileID: 8746659117279901298}
+  - component: {fileID: 1862169966591783912}
+  - component: {fileID: 41568047142346349}
+  - component: {fileID: 905426791729651543}
+  m_Layer: 0
+  m_Name: Fence_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1320236790879559466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7916177522348653586}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.062, y: -0.0033332508, z: -0.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8746659117279901298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7916177522348653586}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.7789716, y: 1.9194422, z: 0.9286408}
+  m_Center: {x: 0.103991196, y: 0.45972094, z: -0.035679597}
+--- !u!114 &1862169966591783912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7916177522348653586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dadb3766eec0643aa57c2c833f7010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueNodes:
+  - Forest_Later
+--- !u!114 &41568047142346349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7916177522348653586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8d3ca5417bebc44be3fea8858094be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speakerName: Jason2
+  _dialogueBubble: {fileID: 0}
+  _dialogueText: {fileID: 0}
+--- !u!114 &905426791729651543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7916177522348653586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4b3e6efb4e183429485fbcc5411a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speakerName: Jason
+  voiceEvent:
+    Guid:
+      Data1: 898241713
+      Data2: 1300278935
+      Data3: 1792328105
+      Data4: -750756329
+    Path: event:/DX/NPC/Jason Talking
+  pulseInterval: 0.085
+  minPulseInterval: 0.045
+  maxPulseInterval: 0.13
+  punctuationPause: 0.3
+  restChance: 0.08
+  pitchParameter: Pitch
+  intensityParameter: Intensity
+  vowelParameter: Vowel
+  pitchRange: {x: -0.15, y: 0.15}
+  intensityRange: {x: 0.35, y: 0.8}
+  vowelRange: {x: 0.2, y: 0.8}
+  expressiveVariation: 0.5
