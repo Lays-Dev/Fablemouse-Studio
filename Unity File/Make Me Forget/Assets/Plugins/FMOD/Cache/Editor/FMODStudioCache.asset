@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1600
+--- !u!114 &-8804142474742810068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Inside/ICar Stop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Inside/ICar Stop
+  Guid:
+    Data1: 1805345982
+    Data2: 1103281106
+    Data3: -413301079
+    Data4: 466133451
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1001
 --- !u!114 &-8537779494508201071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,10 +203,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639285310028585271
+  lastModified: 639291306632648075
   FileSizes:
   - Name: Desktop
-    Value: 4012
+    Value: 4490
   Exists: 1
 --- !u!114 &-7939582924473951958
 MonoBehaviour:
@@ -635,6 +662,34 @@ MonoBehaviour:
   - Loop
   - End
   Exists: 1
+--- !u!114 &-5850359133795719073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Metal Gate
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Metal Gate
+  Guid:
+    Data1: 128400610
+    Data2: 1153446803
+    Data3: -270011502
+    Data4: 443748413
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4269056747916557076}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5816646189599662455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,6 +772,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-4971985837603756694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Outside/OCDoor Close
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Outside/OCDoor Close
+  Guid:
+    Data1: -537374887
+    Data2: 1277191004
+    Data3: 1254714542
+    Data4: -298247675
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4744741149426668752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,6 +848,30 @@ MonoBehaviour:
   Labels:
   - Old
   - Young
+  Exists: 1
+--- !u!114 &-4269056747916557076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Metal Gate/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &-4054178269379149852
 MonoBehaviour:
@@ -881,6 +987,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 200
+--- !u!114 &-3485508455598324726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Inside/ICDoor Open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Inside/ICDoor Open
+  Guid:
+    Data1: -1637994794
+    Data2: 1122306068
+    Data3: 802511506
+    Data4: 457239318
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3474614692411237194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1358,10 +1491,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 639285310028585271
+  lastModified: 639291306632637950
   FileSizes:
   - Name: Desktop
-    Value: 77152
+    Value: 73216
   Exists: 1
 --- !u!114 &-955434606764726879
 MonoBehaviour:
@@ -1601,7 +1734,6 @@ MonoBehaviour:
   - {fileID: -2173170793533171924}
   - {fileID: -1188201688848080580}
   - {fileID: -3125794522126356538}
-  - {fileID: 2161572273247590391}
   - {fileID: 4957252017241196247}
   - {fileID: -7659065622721439998}
   - {fileID: 1965946505099266240}
@@ -1634,6 +1766,16 @@ MonoBehaviour:
   - {fileID: 4155000703302734494}
   - {fileID: -6138307770500679087}
   - {fileID: -3758703117635620086}
+  - {fileID: -4971985837603756694}
+  - {fileID: 3784176201966655784}
+  - {fileID: 7016765358893888032}
+  - {fileID: 614702342612309769}
+  - {fileID: -8804142474742810068}
+  - {fileID: 2188991746909925630}
+  - {fileID: -3485508455598324726}
+  - {fileID: -5850359133795719073}
+  - {fileID: 2130305336401536718}
+  - {fileID: 8078537904631165404}
   EditorParameters:
   - {fileID: 8089620109424056317}
   - {fileID: 3228399538104972685}
@@ -1642,7 +1784,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8092922873622035379}
   cacheVersion: 131861
-  cacheTime: 639285310029286094
+  cacheTime: 639291306633347636
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
@@ -1660,72 +1802,90 @@ MonoBehaviour:
     index: 6
   - key: event:/SFX/NPC/Jason/YJason Talking
     index: 7
-  - key: event:/SFX/Player/Talking
-    index: 8
   - key: event:/AMB/Globals/Forest night AMB
-    index: 9
+    index: 8
   - key: event:/AMB/Globals/Heavy winds Forest
-    index: 10
+    index: 9
   - key: event:/AMB/Globals/Forest wind and birds AMB
-    index: 11
+    index: 10
   - key: event:/SFX/Mechanics/Branches/Move branches
-    index: 12
+    index: 11
   - key: event:/SFX/Mechanics/Dialog Bubble
-    index: 13
+    index: 12
   - key: event:/SFX/Mechanics/Puzzle/Puzzle start
-    index: 14
+    index: 13
   - key: event:/AMB/Globals/Forest AMB
-    index: 15
+    index: 14
   - key: event:/UI/Front end/select/Young/UI Forward
-    index: 16
+    index: 15
   - key: event:/UI/Front end/select/Young/UI Select
-    index: 17
+    index: 16
   - key: event:/UI/Front end/select/Young/UI Back
-    index: 18
+    index: 17
   - key: event:/DX/PC/Lona Talking
-    index: 19
+    index: 18
   - key: event:/SFX/NPC/Movment/JumpNPC
-    index: 20
+    index: 19
   - key: event:/SFX/NPC/Movment/FootstepsNpc
-    index: 21
+    index: 20
   - key: event:/SFX/Player/JumpP
-    index: 22
+    index: 21
   - key: event:/SFX/Player/FootstepsP
-    index: 23
+    index: 22
   - key: event:/SFX/NPC/Movment/LandNPC
-    index: 24
+    index: 23
   - key: event:/SFX/Player/LandP
-    index: 25
+    index: 24
   - key: event:/DX/NPC/Jason Talking
-    index: 26
+    index: 25
   - key: event:/SFX/Mechanics/Ground impact
-    index: 27
+    index: 26
   - key: event:/SFX/Mechanics/Bugs/Bug hiss
-    index: 28
+    index: 27
   - key: event:/SFX/ENV/Bird sounds
-    index: 29
+    index: 28
   - key: event:/SFX/Mechanics/Branches/Branch swing&hit
-    index: 30
+    index: 29
   - key: event:/SFX/Mechanics/Bugs/Stone drop
-    index: 31
+    index: 30
   - key: event:/SFX/Mechanics/Fish eggs/Chirp FB
-    index: 32
+    index: 31
   - key: event:/SFX/Mechanics/Branches/Move branches loop
-    index: 33
+    index: 32
   - key: event:/SFX/Mechanics/Bugs/Stone lift
-    index: 34
+    index: 33
   - key: event:/SFX/Mechanics/Fish eggs/Hungry FB
-    index: 35
+    index: 34
   - key: event:/SFX/Mechanics/Bugs/Splat
-    index: 36
+    index: 35
   - key: event:/SFX/Mechanics/Bugs/Bugs crawling loop
-    index: 37
+    index: 36
   - key: event:/SFX/Mechanics/Pumpkin/Carving
-    index: 38
+    index: 37
   - key: event:/SFX/Mechanics/Pumpkin/Retry
-    index: 39
+    index: 38
   - key: event:/SFX/Mechanics/Pumpkin/Shave
+    index: 39
+  - key: event:/SFX/ENV/Car/Outside/OCDoor Close
     index: 40
+  - key: event:/SFX/ENV/Car/Outside/OCar Start
+    index: 41
+  - key: event:/SFX/ENV/Car/Outside/OCar EngineLoop
+    index: 42
+  - key: event:/SFX/ENV/Car/Inside/ICDoor Close
+    index: 43
+  - key: event:/SFX/ENV/Car/Inside/ICar Stop
+    index: 44
+  - key: event:/SFX/ENV/Car/Outside/OCDoor Open
+    index: 45
+  - key: event:/SFX/ENV/Car/Inside/ICDoor Open
+    index: 46
+  - key: event:/SFX/ENV/Metal Gate
+    index: 47
+  - key: event:/SFX/ENV/Car/Inside/ICar Start
+    index: 48
+  - key: event:/SFX/ENV/Car/Inside/ICar EngineLoop
+    index: 49
 --- !u!114 &217916901227981529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1803,6 +1963,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &614702342612309769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Inside/ICDoor Close
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Inside/ICDoor Close
+  Guid:
+    Data1: 699850923
+    Data2: 1243769340
+    Data3: -1865492078
+    Data4: -2071803740
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &803503985744622675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2037,6 +2224,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &2130305336401536718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Inside/ICar Start
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Inside/ICar Start
+  Guid:
+    Data1: 2080930040
+    Data2: 1145493497
+    Data3: -1760749128
+    Data4: 1913506205
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3001
 --- !u!114 &2132299651779556950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2065,7 +2279,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 142973
---- !u!114 &2161572273247590391
+--- !u!114 &2188991746909925630
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2075,24 +2289,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/Talking
+  m_Name: event:/SFX/ENV/Car/Outside/OCDoor Open
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/Talking
+  Path: event:/SFX/ENV/Car/Outside/OCDoor Open
   Guid:
-    Data1: -1407076211
-    Data2: 1162882585
-    Data3: 989564336
-    Data4: -1276567718
+    Data1: 1378157257
+    Data2: 1302591864
+    Data3: 211616185
+    Data4: 1473521757
   Banks:
   - {fileID: 7659047819052415250}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters:
-  - {fileID: 2445548592232447317}
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 800
+  Length: 0
 --- !u!114 &2205648238622836699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2148,30 +2361,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 802
---- !u!114 &2445548592232447317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Talking/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &2628049430791307689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2501,6 +2690,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &3784176201966655784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Outside/OCar Start
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Outside/OCar Start
+  Guid:
+    Data1: -1705934720
+    Data2: 1111001924
+    Data3: 310097286
+    Data4: 1379027633
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3001
 --- !u!114 &3791004829022609497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2635,7 +2851,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639285310028585271
+  lastModified: 639291306632648075
   FileSizes:
   - Name: Desktop
     Value: 5540
@@ -3063,6 +3279,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &7016765358893888032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Outside/OCar EngineLoop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Outside/OCar EngineLoop
+  Guid:
+    Data1: -1797409124
+    Data2: 1156780013
+    Data3: 1032892843
+    Data4: -282278543
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
 --- !u!114 &7076365715737526553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3128,10 +3371,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639285310029286094
+  lastModified: 639291306633347636
   FileSizes:
   - Name: Desktop
-    Value: 11633504
+    Value: 12028448
   Exists: 1
 --- !u!114 &7766260312451457758
 MonoBehaviour:
@@ -3266,6 +3509,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &8078537904631165404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Inside/ICar EngineLoop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Inside/ICar EngineLoop
+  Guid:
+    Data1: 1591369725
+    Data2: 1138948457
+    Data3: -1184747898
+    Data4: 757300542
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9693
 --- !u!114 &8089620109424056317
 MonoBehaviour:
   m_ObjectHideFlags: 0

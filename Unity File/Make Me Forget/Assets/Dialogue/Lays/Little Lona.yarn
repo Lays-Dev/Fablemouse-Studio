@@ -1,47 +1,15 @@
-﻿title: Start
+﻿title: Little_Lona
 ---
-This is an example of using Yarn Spinner for a string of dialouge.
-The dialouge can continue.
-More dialouge can be written.
-Narrator: This is an example of labeling who is speaking.
-Other Narrator: This is an example of changing who is speaking.
-This is an example of options.
-<<declare $selectedOption1 = false>>
-    -> This is an option.
-        <<set $selectedOption1 to true>>
-        You selected the first option.
-        Why did you select this option? I told you to pick the second option.
-        -> My bad.
-            It's okay. Now I was able to show you what nesting options look like.
-            Next is the jump, I will show you what a jump in dialouge looks like.
-            <<jump Jump>>
-        -> I knew what I was doing.
-            Oh really. Maybe you did. I was able to show you what nesting options look like.
-            Next is the jump, I will show you what a jump in dialouge looks like.
-            <<jump Jump>>
-    -> This is another option. Click this one to select it.
-        You selected the second option.
-        Next is the jump, I will show you what a jump in dialouge looks like.
-        <<jump Jump>>
+<<start_counting>>
 
-===
+Jason: You wont find me this time, Lona!
+Narrator: Little Lona stands beneath these ethereal trees, her eyes closed, her hands covering them for extra measure.
+Little Lona: 10... 9... 8... 7... 6...
+Narrator: She counts down the moments until she can open her eyes and win this game of hide and seek, as she always does.
+Narrator: Her best friend Jason rushes off to hide.
+Little Lona: 5... 4... 3... 2... 1! 
+Little Lona: Ready or not, here I come!
+Narrator: Little Lona opens her eyes and begins to search for Jason.
 
-title: Jump
----
-The dialouge just jumped!
-Earlier when selecting an option, you picked option one. This statment is {$selectedOption1}.
-<<once>>
-This is a once statment. It will only show once.
-You can have multiple lines in a once statment.
-<<else>>
-This line only runs once the "once" statment has ran.
-<<endonce>>
-<<once if $selectedOption1>>
-This line will only run once if you have selected option 1 earlier.
-<<endonce>>
-Now jump back through the dialouge to see the once statments dissapear.
-    -> Jump
-        <<jump Jump>>
-    -> Continue
-        This is the end.
+<<stop_counting>>
 ===
