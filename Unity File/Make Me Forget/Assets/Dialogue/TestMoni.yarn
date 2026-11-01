@@ -1,13 +1,21 @@
-﻿title: TestMoni
+﻿title: MoniStart
 ---
-This is an example of a Yarn Spinner script. Write your dialogue here!
+<<declare $trust = 0>>
+Lona: Yo! I'm looking for Jason 
+Lona: do u know where he is?
+-> Who tf is Jason?
+    <<set $trust to $trust + 1>>
+    Lona: bruh...
+-> yeah, I'll tell u if you gimme 5 dabloons
+    Lona: I'm broke dawg
+<<jump MoniEnd>>
 ===
-title: TestMoniStart
+
+title: MoniEnd
 ---
-Narrator: Yo, my name is Lona and I'm looking for Jason...
-Narrator: He hid pretty well, when I catch him should I 
--> Beat him up
-    Narrator: hmm you might be onto sum
--> ignore him
-    Narrator: dang gurl
+<<if $trust > 0>>
+    Lona: nvm I guess
+<<else>>
+    Lona: Well... see you around, I guess.
+<<endif>>
 ===
