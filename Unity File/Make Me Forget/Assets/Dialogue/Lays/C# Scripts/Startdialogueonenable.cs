@@ -13,7 +13,7 @@ public class StartDialogueOnEnable : MonoBehaviour
 
         if (dialogueRunner.IsDialogueRunning)
         {
-            Debug.Log("Skipped, another dialogue is still running!");
+            Debug.Log("Skipped, still running: " + dialogueRunner.Dialogue.CurrentNode);
             return;
         }
 
