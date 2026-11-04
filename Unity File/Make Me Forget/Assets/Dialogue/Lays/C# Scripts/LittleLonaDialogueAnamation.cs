@@ -57,7 +57,7 @@ public class LittleLonaDialogueAnamation : MonoBehaviour
         // Prevent player movement.
         Instance.playerMovement.FreezePlayer();
 
-        Debug.Log("START COUNTING!");
+//        Debug.Log("START COUNTING!");
     }
 
     [YarnCommand("stop_counting")]
@@ -72,6 +72,6 @@ public class LittleLonaDialogueAnamation : MonoBehaviour
         // Allow player movement again.
         Instance.playerMovement.UnfreezePlayer();
 
-        Debug.Log("STOP COUNTING!");
+   //     Debug.Log("STOP COUNTING!");
     }
 }

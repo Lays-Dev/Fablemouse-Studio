@@ -15,49 +15,75 @@ Narrator: Little Lona opens her eyes and begins to search for Jason.
 ===
 title: Baby_Birds
 ---
-Little Lona: Awww...Baby birds!
+Little Lona: Is that a nest up there?
+Little Lona: I wonder if any birds live there.
 ===
 title: Egg_Click_1
 ---
-Lona: Huh??? It moved!
+Little Lona: Huh??? It moved!
 ===
 title: Egg_Click_2
 ---
-Lona: ...
+Little Lona: There hatching!
+Little Lona: ...what the heck are those things?
 ===
 title: Nest_Hatched
 ---
-Lona: Okay... still cute.
-Lona: Wow, you're loud!
-Lona: Heh...I make that noise when I'm hungry too.
+Little Lona: Okay... you guys are cute, strange little things.
+Little Lona: Wow, and you're loud!
+Little Lona: Heh...I make that noise when I'm hungry too.
+Little Lona: I can't leave you like this. 
+Little Lona: There's got to be some bugs nearby to feed you.
+===
+title: Hungry_Birds
+---
+Little Lona: Those freaks are still hungry...
+Little Lona: I should find them a bug to eat.
 ===
 title: Nest_Fed
 ---
-Lona: There you go. All better, right?
-Lona: Bye, little freaks.
+Little Lona: There you go. All better, right?
+Little Lona: Bye, little freaks.
 ===
 title: Rock_Approach
 ---
-Lona: They might like these bugs...
+Little Lona: They might like these bugs...
 ===
+
+title: Rock_Approach_First
+---
+Little Lona: ...I wonder if those bugs are edible.
+===
+
 title: Rock_Push
 ---
-Lona: NGHHH—come ON…
+Little Lona: NGHHH—come ON…
 ===
 title: Rock_Eugh
 ---
-Lona: Eugh.
+Little Lona: Eugh.
 ===
 title: Rock_Lunch
 ---
-Lona: …Well, you're somebody's lunch.
+Little Lona: …Well, you're somebody's lunch.
 ===
 title: Branch_Fallen
 ---
-Lona: ...
-Lona: Huh. That's convenient.
+Little Lona: ...
+Little Lona: Huh. That's convenient.
 ===
 title: Branch_Pickup
 ---
-Lona: This could come in handy.
+Little Lona: This could come in handy.
+Little Lona: Now to get Jason down from that tree.
+===
+title: Rock_Approach_Check
+---
+Little Lona: What a big bug.
+Little Lona: I almost mistaked it for Jason.
+<<if visited("Egg_Click_2")>>
+    <<jump Rock_Approach>>
+<<else>>
+    <<jump Rock_Approach_First>>
+<<endif>>
 ===

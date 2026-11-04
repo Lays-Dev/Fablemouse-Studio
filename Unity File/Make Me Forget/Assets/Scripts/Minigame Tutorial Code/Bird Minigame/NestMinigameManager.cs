@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using FMODUnity;
 using FMOD.Studio;
 using System.Collections;
+using Yarn.Unity;
 
 public class NestMinigame : MonoBehaviour
 {
@@ -10,16 +11,19 @@ public class NestMinigame : MonoBehaviour
 
     public Button BreakEggsButton;
     [Tooltip("Assign the Return Point Button here.")]
-public Button ReturnPointButton;
+    public Button ReturnPointButton;
 
-[Tooltip("Assign the entire minigame Canvas here.")]
-public GameObject MinigameCanvas;
+    [Tooltip("Assign the entire minigame Canvas here.")]
+    public GameObject MinigameCanvas;
 
     public Image EggsImage;
     public Image EggsCrackedImage;
     public Image EggsBrokenImage;
     public GameObject BirdsImage;
     public Image DialougeImage;
+
+    [Header("Yarn Dialogue")]
+    [SerializeField] private DialogueRunner dialogueRunner;
 
     public string interactArrow =
         "event:/UI/Front end/select/Young/UI Select";
@@ -57,13 +61,18 @@ public GameObject MinigameCanvas;
         }
     }
     void Start()
-{
-    BreakEggsButton.onClick.AddListener(BreakEggsButtonClicked);
-    ReturnPointButton.onClick.AddListener(ReturnPointButtonClicked);
+    {
+        BreakEggsButton.onClick.AddListener(BreakEggsButtonClicked);
+        ReturnPointButton.onClick.AddListener(ReturnPointButtonClicked);
 
-    // The return button starts active before eggs are broken.
-    ReturnPointButton.gameObject.SetActive(true);
-}
+        // The return button starts active before eggs are broken.
+        ReturnPointButton.gameObject.SetActive(true);
+
+        if (dialogueRunner == null)
+        {
+            dialogueRunner = FindFirstObjectByType<DialogueRunner>();
+        }
+    }
 
     void BreakEggsButtonClicked()
     {
@@ -133,9 +142,14 @@ ReturnPointButton.gameObject.SetActive(false);
             BreakEggsButton.gameObject.SetActive(false);
             DialougeImage.gameObject.SetActive(true);
 
-            // Allow returning once the birds are active.
             ReturnPointButton.gameObject.SetActive(true);
             ReturnPointButton.interactable = true;
+
+            // Tell Yarn that the eggs have hatched.
+            if (dialogueRunner != null)
+            {
+                dialogueRunner.StartDialogue("Egg_Click_2");
+            }
         }
         else
         {
@@ -172,6 +186,11 @@ ReturnPointButton.gameObject.SetActive(false);
             // Fallback if this minigame isn't managed by a popup.
             MinigameCanvas.SetActive(false);
         }
+    }
+
+    public bool AreEggsBroken()
+    {
+        return eggClickCount >= 2;
     }
 
 }

@@ -3,11 +3,15 @@ using Yarn.Unity;
 
 public class ProximityDialogue : MonoBehaviour
 {
+    [Header("Dialogue")]
     // optional, if its empty it finds the dialogue runner by itself
     [SerializeField] private DialogueRunner _dialogueRunner;
 
+    //[Header("Yarn Nodes")]
     // type the yarn node name here (like NestTree or Rock)
-    [SerializeField] private string _dialogueNode = "NestTree";
+    //[SerializeField] private string _dialogueNode = "NestTree";
+    [Header("Yarn Nodes")]
+    [SerializeField] private string _dialogueNode = "Rock_Approach_Check";
 
     private bool _running;
     private bool _walkedAway;
@@ -20,18 +24,34 @@ public class ProximityDialogue : MonoBehaviour
             _dialogueRunner = FindFirstObjectByType<DialogueRunner>();
         }
 
+        if (_dialogueRunner == null)
+        {
+            Debug.LogError("ProximityDialogue: No DialogueRunner found!");
+            return;
+        }
+
         _dialogueRunner.onDialogueComplete.AddListener(OnFinished);
     }
 
     // walk close and dialogue shows up 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"{other.name} entered, tag: {other.tag}, dialogue running: {_dialogueRunner.IsDialogueRunning}");
+        if (!other.CompareTag("Player") || _done ||
+            _dialogueRunner.IsDialogueRunning)
+            return;
 
-        if (!other.CompareTag("Player") || _done || _dialogueRunner.IsDialogueRunning) return;
+        // Don't interrupt another dialogue.
+        if (_dialogueRunner == null || _dialogueRunner.IsDialogueRunning)
+        {
+            Debug.Log("Cannot start rock dialogue. Another dialogue may be running.");
+            return;
+        }
 
         _running = true;
         _walkedAway = false;
+
+        Debug.Log("Starting Yarn node: " + _dialogueNode);
+
         _dialogueRunner.StartDialogue(_dialogueNode);
     }
 
@@ -51,6 +71,14 @@ public class ProximityDialogue : MonoBehaviour
 
         _running = false;
 
-        if (!_walkedAway) _done = true;
+       if (!_walkedAway) _done = true;
+    }
+
+        private void OnDestroy()
+    {
+        if (_dialogueRunner != null)
+        {
+            _dialogueRunner.onDialogueComplete.RemoveListener(OnFinished);
+        }
     }
 }
