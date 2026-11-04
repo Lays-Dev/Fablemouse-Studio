@@ -17,9 +17,11 @@ public class CameraLookCutscene : MonoBehaviour
     public DialogueRunner dialogueRunner;
 
     [Header("Dialogue")]
+    public string nodeBeforeMove;
     public string nodeName;
 
     [Header("Timing")]
+    public float startDelay = 0f;
     public float moveTime = 1.5f;
     public float holdTime = 1.5f;
 
@@ -42,6 +44,16 @@ public class CameraLookCutscene : MonoBehaviour
             yield return new WaitUntil(() => !dialogueRunner.IsDialogueRunning);
 
         playerMovement.FreezePlayer();
+
+        if (startDelay > 0f)
+            yield return new WaitForSeconds(startDelay);
+
+        if (dialogueRunner != null && !string.IsNullOrEmpty(nodeBeforeMove))
+        {
+            dialogueRunner.StartDialogue(nodeBeforeMove);
+            yield return new WaitUntil(() => !dialogueRunner.IsDialogueRunning);
+        }
+
         cameraController.enabled = false;
 
         Vector3 homePos = cam.position;
