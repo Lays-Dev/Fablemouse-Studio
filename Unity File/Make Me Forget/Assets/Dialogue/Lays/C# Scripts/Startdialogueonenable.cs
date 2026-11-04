@@ -1,22 +1,34 @@
+using System.Collections;
 using UnityEngine;
 using Yarn.Unity;
 
-// When this object turns on, start a Yarn node.
+// When this object turns on, start a Yarn node (only the first time)
 public class StartDialogueOnEnable : MonoBehaviour
 {
     public DialogueRunner dialogueRunner;
     public string nodeName;
 
+    private bool hasPlayed = false;
+
     void OnEnable()
     {
-        Debug.Log(name + " turned on, starting " + nodeName);
+        Debug.Log(name + " turned on (already played: " + hasPlayed + ")");
 
+        if (hasPlayed) return;
+        hasPlayed = true;
+
+        dialogueRunner.StartCoroutine(SwitchTo(nodeName));
+    }
+
+    IEnumerator SwitchTo(string node)
+    {
+        // If something is already showing, close it first.
         if (dialogueRunner.IsDialogueRunning)
         {
-            Debug.Log("Skipped, still running: " + dialogueRunner.Dialogue.CurrentNode);
-            return;
+            dialogueRunner.Stop();
+            yield return new WaitUntil(() => !dialogueRunner.IsDialogueRunning);
         }
 
-        dialogueRunner.StartDialogue(nodeName);
+        dialogueRunner.StartDialogue(node);
     }
 }
