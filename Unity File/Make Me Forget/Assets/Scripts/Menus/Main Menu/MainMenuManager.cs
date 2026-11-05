@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -95,8 +96,15 @@ public class MainMenuManager : MonoBehaviour
 
     public void PlayClicked()
     {
+        if (GameSaveManager.Instance == null)
+        {
+            return;
+        }
+
+        GameSaveManager.Instance.DeleteSave();
         SceneManager.LoadScene(_sceneToLoadAfterClickingPlay);
     }
+
     public void ContinueGame()
     {
         // Use the persistent save manager to load the saved game.
@@ -160,6 +168,4 @@ public class MainMenuManager : MonoBehaviour
         _CreditsMenuContainer.SetActive(menuToOpen == _CreditsMenuContainer);
         _SettingsMenuContainer.SetActive(menuToOpen == _SettingsMenuContainer);
     }
-
-
 }

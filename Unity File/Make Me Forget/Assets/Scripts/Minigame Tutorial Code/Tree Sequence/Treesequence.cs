@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class TreeSequence : MonoBehaviour
@@ -26,6 +27,11 @@ public class TreeSequence : MonoBehaviour
 
     [Header("Blocked Area")]
     public GameObject areaBlocker;
+
+    [Header("Events")]
+    public UnityEvent onTreeHit;
+    public UnityEvent onJasonStartFall;
+    public UnityEvent onJasonLanded;
 
     [Header("Tree Wiggle")]
     public bool wiggleTree = true;
@@ -132,6 +138,7 @@ public class TreeSequence : MonoBehaviour
             {
                 if (areaBlocker != null) areaBlocker.SetActive(false);
                 jasonFalling = false;
+                onJasonLanded.Invoke();
             }
         }
 
@@ -171,6 +178,7 @@ public class TreeSequence : MonoBehaviour
     {
         hits++;
         Debug.Log("bonk! " + hits + "/" + hitsNeeded);
+        onTreeHit.Invoke();
 
         if (wiggleTree) wiggleTimer = 0.25f;
 
@@ -179,6 +187,7 @@ public class TreeSequence : MonoBehaviour
         {
             jasonFalling = true;
             Debug.Log("jason fell lmao");
+            onJasonStartFall.Invoke();
         }
     }
 }
