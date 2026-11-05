@@ -100,6 +100,15 @@ public class GameSaveManager : MonoBehaviour
         SceneManager.LoadScene(_saveData.sceneName);
     }
 
+    public void DeleteSave()
+    {
+        if (File.Exists(_savePath))
+        {
+            File.Delete(_savePath);
+        }
+        _saveData = null;
+    }
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
