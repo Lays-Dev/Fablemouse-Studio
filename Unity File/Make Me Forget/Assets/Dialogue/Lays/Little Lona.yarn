@@ -61,3 +61,113 @@ title: Branch_Pickup
 ---
 Lona: This could come in handy.
 ===
+title: Tree_Huh
+---
+Lona: Huh?
+===
+title: Tree_Acorn
+---
+Lona: ...
+Lona: Found you.
+===
+title: Jason_Hit_1
+---
+Jason: Hey!
+===
+title: Jason_Hit_2
+---
+Jason: Hey! Stop that!
+===
+title: Jason_Fall
+---
+Jason: WHOA—!
+===
+title: Jason_Found
+---
+Lona: Ha!
+Lona: You should really pick better hiding spots.
+Jason: Man. I really thought that was a good spot.
+Lona: I guess I'm just better at this than you.
+Jason: You spent ten minutes yesterday trying to figure out if you could hide behind the thorny bushes.
+Lona: And I could.
+Jason: Yeah… and then I had to explain to your mom why you had a bunch of tiny cuts all over your face.
+Lona: What can I say, I like winning.
+Jason: …
+Lona: …
+Lona: Okay my turn!
+Jason: Okay, no more thorny bushes.
+<<show JasonBubble>>
+===
+title: Forest_Trip
+---
+Lona: Stupid tree.
+===
+title: Hospital
+---
+Lona: Whoa…
+<<wait 1>>
+<<hide Jason>>
+<<show JasonHospital>>
+Jason: Lona?
+Jason: I think you forgot how to play this game.
+Jason: …Oh.
+Lona: Do you think they still have patients?
+Jason: What?
+Lona: Here. In the hospital.
+Jason: Lona, look at it.
+Lona: I'm looking at it.
+Jason: It looks like it hasn't had a patient since forever ago.
+Lona: Maybe the ghosts are still in there..
+Jason: Okay, that'd actually be pretty cool.
+Lona: Right?
+Jason: Wait. You're not actually going in, are you?
+Lona: Why wouldn't I?
+Jason: Because it's a building in the middle of nowhere.
+Lona: Maybe that's why it's here.
+Jason: …What does that even mean?
+Lona: I don't know yet.
+Lona: That's the point.
+Jason: What if there's, like, a dead body in there?
+Lona: Then we found a dead body.
+Jason: You make everything sound so easy.
+Lona: It probably won't be easy. The door looks stuck.
+Lona: See?
+Jason: That's… good, actually.
+Lona: Help me.
+Jason: Why me?
+Lona: Because you're standing there.
+Jason: You know, we could just go home and tell people we found a creepy hospital.
+Lona: And then what?
+Jason: I don't know. Eat dinner?
+Lona: That's the saddest idea I've ever heard.
+Jason: You're unbelievable.
+<<wait 2>>
+Jason: …That was probably a pipe.
+Lona: You're scared.
+Jason: I'm thinking.
+Lona: You think with your whole face.
+Jason: Can you not?
+Jason: …If something grabs me, I'm blaming you.
+Lona: Fair.
+Lona: C'mon, then.
+<<wait 1>>
+Jason: …Don't tell anyone.
+Lona: I'm telling everyone.
+Jason: Lona!
+===
+title: Nest_Reminder_1
+---
+Lona: They seem really hungry...
+===
+title: Nest_Reminder_2
+---
+Lona: Maybe I should find some food for them.
+===
+title: Rock_Reminder_1
+---
+Lona: I think the birds would enjoy this.
+===
+title: Rock_Reminder_2
+---
+Lona: I better not keep them waiting.
+===
