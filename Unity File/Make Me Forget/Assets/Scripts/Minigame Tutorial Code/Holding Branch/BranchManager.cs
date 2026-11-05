@@ -26,7 +26,7 @@ public class BranchManager : MonoBehaviour
             Vector3 position = branchImage.transform.position;
 
             // Move the branch down by 4 on the Y axis.
-            position.y -= 4f;
+            position.y -= 10f;
 
             // Apply the new position.
             branchImage.transform.position = position;
