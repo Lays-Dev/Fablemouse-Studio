@@ -137,6 +137,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 664
+--- !u!114 &-8459304166734373067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Talking/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-8397302068516744630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,10 +227,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639291694427136198
+  lastModified: 639295862632860179
   FileSizes:
   - Name: Desktop
-    Value: 4490
+    Value: 4652
   Exists: 1
 --- !u!114 &-7939582924473951958
 MonoBehaviour:
@@ -493,6 +517,34 @@ MonoBehaviour:
   - Tile
   - Stone
   Exists: 1
+--- !u!114 &-6481862875155342617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Talking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Talking
+  Guid:
+    Data1: -1407076211
+    Data2: 1162882585
+    Data3: 989564336
+    Data4: -1276567718
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8459304166734373067}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
 --- !u!114 &-6372437642708768631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,6 +714,33 @@ MonoBehaviour:
   - Loop
   - End
   Exists: 1
+--- !u!114 &-5857089185234709134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/System/Main Menu
+  m_EditorClassIdentifier: 
+  Path: event:/MX/System/Main Menu
+  Guid:
+    Data1: -1124404157
+    Data2: 1142631185
+    Data3: 971894702
+    Data4: -1784998126
+  Banks:
+  - {fileID: -3442346476839533053}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 132000
 --- !u!114 &-5850359133795719073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,11 +1128,38 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/MX.bank
   Name: MX
   StudioPath: bank:/MX
-  lastModified: 639278328653709187
+  lastModified: 639295862661159730
   FileSizes:
   - Name: Desktop
-    Value: 2342624
+    Value: 5011232
   Exists: 1
+--- !u!114 &-3389226675997235013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Story/Westwood Welcome
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Story/Westwood Welcome
+  Guid:
+    Data1: 1487264764
+    Data2: 1136765687
+    Data3: -1820979312
+    Data4: 808610673
+  Banks:
+  - {fileID: -3442346476839533053}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 81346
 --- !u!114 &-3304225992367010041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1491,7 +1597,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 639291694427116203
+  lastModified: 639295862632744171
   FileSizes:
   - Name: Desktop
     Value: 73216
@@ -1776,6 +1882,9 @@ MonoBehaviour:
   - {fileID: -5850359133795719073}
   - {fileID: 2130305336401536718}
   - {fileID: 8078537904631165404}
+  - {fileID: -5857089185234709134}
+  - {fileID: -3389226675997235013}
+  - {fileID: -6481862875155342617}
   EditorParameters:
   - {fileID: 8089620109424056317}
   - {fileID: 3228399538104972685}
@@ -1784,7 +1893,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8092922873622035379}
   cacheVersion: 131861
-  cacheTime: 639291694427837224
+  cacheTime: 639295862712871088
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
@@ -1886,6 +1995,12 @@ MonoBehaviour:
     index: 48
   - key: event:/SFX/ENV/Car/Inside/ICar EngineLoop
     index: 49
+  - key: event:/MX/System/Main Menu
+    index: 50
+  - key: event:/MX/Story/Westwood Welcome
+    index: 51
+  - key: event:/SFX/Player/Talking
+    index: 52
 --- !u!114 &217916901227981529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2661,7 +2776,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 639273257108820405
+  lastModified: 639272010486408921
   FileSizes:
   - Name: Desktop
     Value: 737888
@@ -2851,7 +2966,7 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639291694427126222
+  lastModified: 639295862632849863
   FileSizes:
   - Name: Desktop
     Value: 5540
@@ -3371,10 +3486,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639291694427837224
+  lastModified: 639295862712871088
   FileSizes:
   - Name: Desktop
-    Value: 12028448
+    Value: 12080832
   Exists: 1
 --- !u!114 &7766260312451457758
 MonoBehaviour:
