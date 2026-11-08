@@ -3,10 +3,18 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Make sure the save manager runs before other scripts.
+[DefaultExecutionOrder(-1000)]
+
 public class GameSaveManager : MonoBehaviour
 {
     public static GameSaveManager Instance { get; private set; }
     public bool IsLoadingGame { get; private set; }
+
+    [Header("Testing Mode")]
+    // Use this to delete save data from playmode testing in Unity.
+    [SerializeField] private bool testingMode = false;
+
     private string _savePath;
     private GameSaveData _saveData;
 
@@ -22,10 +30,26 @@ public class GameSaveManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
+        // Set the save file location.
         _savePath = Path.Combine(
             Application.persistentDataPath, "save.json");
+
+        // Testing Mode.
+        // Only runs inside the Unity Editor.
+        // Use this to delete save data from playmode testing.
+#if UNITY_EDITOR
+
+        if (testingMode)
+        {
+            DeleteSave();
+
+            Debug.Log("TESTING MODE: Previous save deleted!");
+        }
+        
+#endif
     }
 
+    // Saves the current scene and all objects implementing ISaveable
     public void SaveGame()
     {
         _saveData = new GameSaveData();
