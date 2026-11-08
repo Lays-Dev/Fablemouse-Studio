@@ -227,10 +227,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639295862632860179
+  lastModified: 639297531491770282
   FileSizes:
   - Name: Desktop
-    Value: 4652
+    Value: 4704
   Exists: 1
 --- !u!114 &-7939582924473951958
 MonoBehaviour:
@@ -851,6 +851,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5604586481684284347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Fish eggs/Hatching/Click 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Fish eggs/Hatching/Click 1
+  Guid:
+    Data1: 1613431682
+    Data2: 1341092852
+    Data3: 1401687941
+    Data4: -679671987
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1001
 --- !u!114 &-4971985837603756694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1346,6 +1373,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 192000
+--- !u!114 &-2729350553729140686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Fish eggs/Hatching/Click 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Fish eggs/Hatching/Click 2
+  Guid:
+    Data1: -2113627068
+    Data2: 1245368223
+    Data3: -2102781038
+    Data4: 1236380293
+  Banks:
+  - {fileID: 7659047819052415250}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1741
 --- !u!114 &-2562360169699112132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1757,33 +1811,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 800
---- !u!114 &-117627217237349474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Fish eggs/Hatching
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Fish eggs/Hatching
-  Guid:
-    Data1: 1955340806
-    Data2: 1150786186
-    Data3: 1126805155
-    Data4: -2127935567
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4481
 --- !u!114 &-60903701845155676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1833,7 +1860,6 @@ MonoBehaviour:
   - {fileID: 3494821337381461089}
   EditorEvents:
   - {fileID: -2793733609603333239}
-  - {fileID: -117627217237349474}
   - {fileID: -7290247364553753885}
   - {fileID: 3142830135974713079}
   - {fileID: -155812163117946108}
@@ -1885,6 +1911,8 @@ MonoBehaviour:
   - {fileID: -5857089185234709134}
   - {fileID: -3389226675997235013}
   - {fileID: -6481862875155342617}
+  - {fileID: -2729350553729140686}
+  - {fileID: -5604586481684284347}
   EditorParameters:
   - {fileID: 8089620109424056317}
   - {fileID: 3228399538104972685}
@@ -1893,114 +1921,116 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8092922873622035379}
   cacheVersion: 131861
-  cacheTime: 639295862712871088
+  cacheTime: 639297531496979823
   SerializableEventsDict:
   - key: event:/MX/Exploration/Tutorial BGM
     index: 0
-  - key: event:/SFX/Mechanics/Fish eggs/Hatching
-    index: 1
   - key: event:/SFX/ENV/CL Fence
-    index: 2
+    index: 1
   - key: event:/SFX/Mechanics/Puzzle/Puzzle win
-    index: 3
+    index: 2
   - key: event:/SFX/Mechanics/Puzzle/Puzzle select
-    index: 4
+    index: 3
   - key: event:/AMB/Globals/Town AMB
-    index: 5
+    index: 4
   - key: event:/SFX/Player/Yell
-    index: 6
+    index: 5
   - key: event:/SFX/NPC/Jason/YJason Talking
-    index: 7
+    index: 6
   - key: event:/AMB/Globals/Forest night AMB
-    index: 8
+    index: 7
   - key: event:/AMB/Globals/Heavy winds Forest
-    index: 9
+    index: 8
   - key: event:/AMB/Globals/Forest wind and birds AMB
-    index: 10
+    index: 9
   - key: event:/SFX/Mechanics/Branches/Move branches
-    index: 11
+    index: 10
   - key: event:/SFX/Mechanics/Dialog Bubble
-    index: 12
+    index: 11
   - key: event:/SFX/Mechanics/Puzzle/Puzzle start
-    index: 13
+    index: 12
   - key: event:/AMB/Globals/Forest AMB
-    index: 14
+    index: 13
   - key: event:/UI/Front end/select/Young/UI Forward
-    index: 15
+    index: 14
   - key: event:/UI/Front end/select/Young/UI Select
-    index: 16
+    index: 15
   - key: event:/UI/Front end/select/Young/UI Back
-    index: 17
+    index: 16
   - key: event:/DX/PC/Lona Talking
-    index: 18
+    index: 17
   - key: event:/SFX/NPC/Movment/JumpNPC
-    index: 19
+    index: 18
   - key: event:/SFX/NPC/Movment/FootstepsNpc
-    index: 20
+    index: 19
   - key: event:/SFX/Player/JumpP
-    index: 21
+    index: 20
   - key: event:/SFX/Player/FootstepsP
-    index: 22
+    index: 21
   - key: event:/SFX/NPC/Movment/LandNPC
-    index: 23
+    index: 22
   - key: event:/SFX/Player/LandP
-    index: 24
+    index: 23
   - key: event:/DX/NPC/Jason Talking
-    index: 25
+    index: 24
   - key: event:/SFX/Mechanics/Ground impact
-    index: 26
+    index: 25
   - key: event:/SFX/Mechanics/Bugs/Bug hiss
-    index: 27
+    index: 26
   - key: event:/SFX/ENV/Bird sounds
-    index: 28
+    index: 27
   - key: event:/SFX/Mechanics/Branches/Branch swing&hit
-    index: 29
+    index: 28
   - key: event:/SFX/Mechanics/Bugs/Stone drop
-    index: 30
+    index: 29
   - key: event:/SFX/Mechanics/Fish eggs/Chirp FB
-    index: 31
+    index: 30
   - key: event:/SFX/Mechanics/Branches/Move branches loop
-    index: 32
+    index: 31
   - key: event:/SFX/Mechanics/Bugs/Stone lift
-    index: 33
+    index: 32
   - key: event:/SFX/Mechanics/Fish eggs/Hungry FB
-    index: 34
+    index: 33
   - key: event:/SFX/Mechanics/Bugs/Splat
-    index: 35
+    index: 34
   - key: event:/SFX/Mechanics/Bugs/Bugs crawling loop
-    index: 36
+    index: 35
   - key: event:/SFX/Mechanics/Pumpkin/Carving
-    index: 37
+    index: 36
   - key: event:/SFX/Mechanics/Pumpkin/Retry
-    index: 38
+    index: 37
   - key: event:/SFX/Mechanics/Pumpkin/Shave
-    index: 39
+    index: 38
   - key: event:/SFX/ENV/Car/Outside/OCDoor Close
-    index: 40
+    index: 39
   - key: event:/SFX/ENV/Car/Outside/OCar Start
-    index: 41
+    index: 40
   - key: event:/SFX/ENV/Car/Outside/OCar EngineLoop
-    index: 42
+    index: 41
   - key: event:/SFX/ENV/Car/Inside/ICDoor Close
-    index: 43
+    index: 42
   - key: event:/SFX/ENV/Car/Inside/ICar Stop
-    index: 44
+    index: 43
   - key: event:/SFX/ENV/Car/Outside/OCDoor Open
-    index: 45
+    index: 44
   - key: event:/SFX/ENV/Car/Inside/ICDoor Open
-    index: 46
+    index: 45
   - key: event:/SFX/ENV/Metal Gate
-    index: 47
+    index: 46
   - key: event:/SFX/ENV/Car/Inside/ICar Start
-    index: 48
+    index: 47
   - key: event:/SFX/ENV/Car/Inside/ICar EngineLoop
-    index: 49
+    index: 48
   - key: event:/MX/System/Main Menu
-    index: 50
+    index: 49
   - key: event:/MX/Story/Westwood Welcome
-    index: 51
+    index: 50
   - key: event:/SFX/Player/Talking
+    index: 51
+  - key: event:/SFX/Mechanics/Fish eggs/Hatching/Click 2
     index: 52
+  - key: event:/SFX/Mechanics/Fish eggs/Hatching/Click 1
+    index: 53
 --- !u!114 &217916901227981529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2966,10 +2996,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639295862632849863
+  lastModified: 639297531491754801
   FileSizes:
   - Name: Desktop
-    Value: 5540
+    Value: 5244
   Exists: 1
 --- !u!114 &4562070185052309747
 MonoBehaviour:
@@ -3486,10 +3516,10 @@ MonoBehaviour:
   Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639295862712871088
+  lastModified: 639297531496979823
   FileSizes:
   - Name: Desktop
-    Value: 12080832
+    Value: 12052224
   Exists: 1
 --- !u!114 &7766260312451457758
 MonoBehaviour:
