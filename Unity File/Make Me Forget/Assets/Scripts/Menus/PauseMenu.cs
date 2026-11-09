@@ -70,9 +70,13 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(mainMenuScene);
     }
 
-    // rage quit (only works in the real build, not the editor)
+    // rage quit (closes the real build, stops Play mode in the editor)
     public void QuitGame()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 }
