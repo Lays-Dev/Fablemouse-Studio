@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using Yarn.Unity;
 
-public class CameraLookCutscene : MonoBehaviour
+public class CameraLookCutscene : MonoBehaviour, ISaveable
 {
     [Header("Camera")]
     public Transform cam;
@@ -26,6 +27,40 @@ public class CameraLookCutscene : MonoBehaviour
     public float holdTime = 1.5f;
 
     private bool hasPlayed = false;
+
+    public string SaveId => $"CameraLook_{gameObject.name}_{nodeName}";
+
+    [Serializable]
+    private class State
+    {
+        public bool hasPlayed;
+        public bool isActive;
+        public Vector3 position;
+        public Quaternion rotation;
+    }
+
+    public string CaptureState()
+    {
+        return JsonUtility.ToJson(new State
+        {
+            hasPlayed = hasPlayed,
+            isActive = gameObject.activeSelf,
+            position = transform.position,
+            rotation = transform.rotation
+        });
+    }
+
+    public void RestoreState(string json)
+    {
+        State state = JsonUtility.FromJson<State>(json);
+        hasPlayed = state.hasPlayed;
+
+        if (!hasPlayed) return;
+
+        // hasPlayed is already true, so turning this on won't replay the cutscene.
+        transform.SetPositionAndRotation(state.position, state.rotation);
+        gameObject.SetActive(state.isActive);
+    }
 
     void OnEnable()
     {
