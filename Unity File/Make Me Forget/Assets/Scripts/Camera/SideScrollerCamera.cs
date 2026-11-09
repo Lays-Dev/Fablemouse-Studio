@@ -22,6 +22,9 @@ public class SideScrollerCamera : MonoBehaviour
     public float lookaheadSmoothTime = 0.5f;
     public float lookaheadMinSpeed = 0.1f;
 
+    [Header("Teleport")]
+    public float teleportDistance = 5f;
+
     [Header("Level Bounds")]
     public bool useBounds = false;
     public Vector2 boundsMin = new Vector2(-20f, -5f);
@@ -71,6 +74,8 @@ public class SideScrollerCamera : MonoBehaviour
         }
 
         Vector3 t = target.position;
+
+        if (Vector2.Distance(t, lastTargetPos) > teleportDistance) SnapToTarget();
 
         float halfW = deadZoneSize.x * 0.5f;
         float halfH = deadZoneSize.y * 0.5f;

@@ -23,6 +23,14 @@ public class CutsceneDolly : MonoBehaviour
     // Start automatically when the scene plays
     IEnumerator Start()
     {
+        // Loading a save: skip the cutscene and give control straight back
+        if (GameSaveManager.Instance != null && GameSaveManager.Instance.IsLoadingGame)
+        {
+            if (handoff != null)
+                handoff.EndCutscene();
+            yield break;
+        }
+
         // Gameplay rotation = the camera's rotation before we move it
         endRot = endPoint != null && cameraController == null ? endPoint.rotation : cam.rotation;
         endPos = endPoint != null ? endPoint.position : cam.position;
