@@ -1,7 +1,8 @@
+using System;
 using UnityEngine;
 using Yarn.Unity;
 
-public class ProximityDialogue : MonoBehaviour
+public class ProximityDialogue : MonoBehaviour, ISaveable
 {
     [Header("Dialogue")]
     // optional, if its empty it finds the dialogue runner by itself
@@ -16,6 +17,33 @@ public class ProximityDialogue : MonoBehaviour
     private bool _running;
     private bool _walkedAway;
     private bool _done;
+
+    // Node + position, so two zones using the same node still get different ids.
+    // If a zone is moved, older saves won't remember that zone.
+    public string SaveId
+    {
+        get
+        {
+            Vector3 p = transform.position;
+            return $"Zone_{_dialogueNode}_{Mathf.RoundToInt(p.x * 10)}_{Mathf.RoundToInt(p.y * 10)}_{Mathf.RoundToInt(p.z * 10)}";
+        }
+    }
+
+    [Serializable]
+    private class State
+    {
+        public bool done;
+    }
+
+    public string CaptureState()
+    {
+        return JsonUtility.ToJson(new State { done = _done });
+    }
+
+    public void RestoreState(string json)
+    {
+        _done = JsonUtility.FromJson<State>(json).done;
+    }
 
     private void Start()
     {
