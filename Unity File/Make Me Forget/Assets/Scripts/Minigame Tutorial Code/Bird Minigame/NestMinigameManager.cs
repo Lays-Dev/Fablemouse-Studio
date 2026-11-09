@@ -28,8 +28,14 @@ public class NestMinigame : MonoBehaviour
     public string interactArrow =
         "event:/UI/Front end/select/Young/UI Select";
 
-    public string eggsCracking =
-        "event:/SFX/Mechanics/Fish eggs/Hatching";
+    public string eggsCrackingClick1 =
+        "event:/SFX/Mechanics/Fish eggs/Hatching/Click 1";
+
+    public string eggsCrackingClick2 =
+        "event:/SFX/Mechanics/Fish eggs/Hatching/Click 2";
+
+    [Tooltip("The minigame moves on after this many seconds, even if a sound hasn't finished.")]
+    public float maxSoundWait = 5f;
 
     #endregion
 
@@ -85,25 +91,13 @@ public class NestMinigame : MonoBehaviour
 
     IEnumerator PlayEggSounds()
     {
-      isPlayingSound = true;
-BreakEggsButton.interactable = false;
-ReturnPointButton.interactable = false;
-ReturnPointButton.gameObject.SetActive(false);
+        isPlayingSound = true;
+        BreakEggsButton.interactable = false;
+        ReturnPointButton.interactable = false;
+        ReturnPointButton.gameObject.SetActive(false);
 
         // Play the interaction sound and wait for it to finish.
-        EventInstance arrowSound =
-            RuntimeManager.CreateInstance(interactArrow);
-
-        arrowSound.start();
-
-        yield return new WaitUntil(() =>
-        {
-            PLAYBACK_STATE state;
-            arrowSound.getPlaybackState(out state);
-            return state == PLAYBACK_STATE.STOPPED;
-        });
-
-        arrowSound.release();
+        yield return PlaySoundAndWait(interactArrow);
 
         eggClickCount++;
 
@@ -118,20 +112,9 @@ ReturnPointButton.gameObject.SetActive(false);
             EggsImage.sprite = EggsBrokenImage.sprite;
         }
 
-        // Play the egg cracking sound.
-        EventInstance crackingSound =
-            RuntimeManager.CreateInstance(eggsCracking);
-
-        crackingSound.start();
-
-        yield return new WaitUntil(() =>
-        {
-            PLAYBACK_STATE state;
-            crackingSound.getPlaybackState(out state);
-            return state == PLAYBACK_STATE.STOPPED;
-        });
-
-        crackingSound.release();
+        // Play the egg cracking sound for this click.
+        yield return PlaySoundAndWait(
+            eggClickCount == 1 ? eggsCrackingClick1 : eggsCrackingClick2);
 
         Debug.Log("Egg sound finished playing!");
 
@@ -161,6 +144,41 @@ ReturnPointButton.gameObject.SetActive(false);
         }
 
         isPlayingSound = false;
+    }
+
+    // Plays a sound and waits for it. A missing or stuck sound can't block the minigame.
+    IEnumerator PlaySoundAndWait(string eventPath)
+    {
+        EventInstance sound;
+
+        try
+        {
+            sound = RuntimeManager.CreateInstance(eventPath);
+        }
+        catch (EventNotFoundException)
+        {
+            Debug.LogError("FMOD event not found, skipping sound: " + eventPath);
+            yield break;
+        }
+
+        sound.start();
+
+        float giveUpTime = Time.unscaledTime + maxSoundWait;
+        PLAYBACK_STATE state;
+
+        do
+        {
+            yield return null;
+            sound.getPlaybackState(out state);
+        }
+        while (state != PLAYBACK_STATE.STOPPED && Time.unscaledTime < giveUpTime);
+
+        if (state != PLAYBACK_STATE.STOPPED)
+        {
+            sound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+
+        sound.release();
     }
 
     void OnDestroy()
