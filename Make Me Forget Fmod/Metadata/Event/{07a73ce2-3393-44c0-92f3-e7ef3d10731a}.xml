@@ -60,7 +60,7 @@
 			<destination>{92b92f3c-3122-4417-90e0-a80b8e098b56}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{bc0f60e3-2bdb-4155-9e4c-fa21b515df0e}</destination>
+			<destination>{ce140400-f874-47a7-92af-ee06d6f904b7}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{db33ec61-7e24-41e6-8e72-97df25cfe9de}" />
@@ -117,7 +117,7 @@
 	<object class="MixerBusPanner" id="{48e8f638-e4d0-4f41-8380-d20712fb8e9b}" />
 	<object class="MultiSound" id="{56c60678-0ae5-46ee-a6c2-fc7153998e04}">
 		<property name="volume">
-			<value>-3</value>
+			<value>-1</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{49c089e6-2b1d-4e2a-9428-229425846fa9}</destination>

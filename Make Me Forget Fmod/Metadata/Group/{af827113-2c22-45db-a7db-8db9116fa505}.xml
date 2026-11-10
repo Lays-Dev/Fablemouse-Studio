@@ -47,6 +47,7 @@
 		<relationship name="effects">
 			<destination>{b638beb8-43d5-4cb4-97b3-a978c4bbb7b7}</destination>
 			<destination>{1cf8af7c-30be-434f-b30c-244f568cc934}</destination>
+			<destination>{da8d582d-9968-4736-9b5d-58c3cf85e6d7}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a1dd51b3-3738-4b13-b508-9a8271df1fd9}" />
@@ -54,6 +55,11 @@
 	<object class="MultibandDynamicsEffect" id="{1cf8af7c-30be-434f-b30c-244f568cc934}">
 		<property name="bypass">
 			<value>true</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{da8d582d-9968-4736-9b5d-58c3cf85e6d7}">
+		<property name="frequencyA">
+			<value>22000</value>
 		</property>
 	</object>
 </objects>

@@ -1,720 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9210650650686395174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle win
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Puzzle/Puzzle win
-  Guid:
-    Data1: -518947044
-    Data2: 1226470326
-    Data3: -13921110
-    Data4: -1968833124
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1600
---- !u!114 &-8804142474742810068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/Car/Inside/ICar Stop
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/Car/Inside/ICar Stop
-  Guid:
-    Data1: 1805345982
-    Data2: 1103281106
-    Data3: -413301079
-    Data4: 466133451
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1001
---- !u!114 &-8537779494508201071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Branches/Branch swing&hit
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Branches/Branch swing&hit
-  Guid:
-    Data1: -1700000401
-    Data2: 1200414838
-    Data3: -672577872
-    Data4: -1186906495
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1001
---- !u!114 &-8510209434387157972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Fish eggs/Hungry FB
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Fish eggs/Hungry FB
-  Guid:
-    Data1: 238307236
-    Data2: 1161788911
-    Data3: 540390578
-    Data4: 238388377
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 250
---- !u!114 &-8461236249998466060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/NPC/Movment/JumpNPC
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/NPC/Movment/JumpNPC
-  Guid:
-    Data1: 779562514
-    Data2: 1220215410
-    Data3: 1824781954
-    Data4: -1178138824
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 4890719460897374532}
-  - {fileID: 6236900937606960413}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 664
---- !u!114 &-8459304166734373067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Talking/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-8397302068516744630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Front end/select/Young/UI Back
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Front end/select/Young/UI Back
-  Guid:
-    Data1: -1703903820
-    Data2: 1205112653
-    Data3: -1041177704
-    Data4: -1697676151
-  Banks:
-  - {fileID: 3494821337381461089}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &-8183738069999273129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/CL Fence/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-8092922873622035379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 639297548205713353
-  FileSizes:
-  - Name: Desktop
-    Value: 4704
-  Exists: 1
---- !u!114 &-7939582924473951958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Forest wind and birds AMB/Parameter 2
-  m_EditorClassIdentifier: 
-  Name: Parameter 2
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3583350736
-    data2: 2150705294
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Value A
-  - Value B
-  Exists: 1
---- !u!114 &-7935413483228458052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/Jump
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/Jump
-  Guid:
-    Data1: -926825347
-    Data2: 1091288751
-    Data3: 865987497
-    Data4: 1598701459
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -5693018833879173050}
-  - {fileID: 8774141530329240040}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2515
---- !u!114 &-7868906945155510517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Bugs/Stone lift
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Bugs/Stone lift
-  Guid:
-    Data1: -406634343
-    Data2: 1207215348
-    Data3: 1049287063
-    Data4: 561113898
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-7659065622721439998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMB/Globals/Heavy winds Forest
-  m_EditorClassIdentifier: 
-  Path: event:/AMB/Globals/Heavy winds Forest
-  Guid:
-    Data1: 1714005135
-    Data2: 1195163812
-    Data3: 1559600259
-    Data4: -1514784013
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7284504418136908630}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 284046
---- !u!114 &-7290247364553753885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/CL Fence
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/CL Fence
-  Guid:
-    Data1: -1794934254
-    Data2: 1200799433
-    Data3: -268879477
-    Data4: 555752459
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -8183738069999273129}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-7268132457083738810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Bugs/Stone drop
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Bugs/Stone drop
-  Guid:
-    Data1: 1918466689
-    Data2: 1277852644
-    Data3: -1641841236
-    Data4: 1405072424
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-7162894600866431529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/Sec1
-  m_EditorClassIdentifier: 
-  Name: Sec1
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2062178896
-    data2: 3196238178
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-7143610802535514960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Lona Talking/Vowel
-  m_EditorClassIdentifier: 
-  Name: Vowel
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0.5
-  ID:
-    data1: 3565018024
-    data2: 2386496228
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-7083903592765386329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Yell/Room Size
-  m_EditorClassIdentifier: 
-  Name: Room Size
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-6693570061455215926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 639272051766473300
-  FileSizes:
-  - Name: Desktop
-    Value: 3022
-  Exists: 1
---- !u!114 &-6505337453324542270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/LandP/groundType
-  m_EditorClassIdentifier: 
-  Name: groundType
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 1822729649
-    data2: 4252896315
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Grass
-  - Carpet
-  - Tile
-  - Stone
-  Exists: 1
---- !u!114 &-6481862875155342617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/Talking
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/Talking
-  Guid:
-    Data1: -1407076211
-    Data2: 1162882585
-    Data3: 989564336
-    Data4: -1276567718
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -8459304166734373067}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 800
---- !u!114 &-6372437642708768631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/DX/NPC/Jason Talking
-  m_EditorClassIdentifier: 
-  Path: event:/DX/NPC/Jason Talking
-  Guid:
-    Data1: 898241713
-    Data2: 1300278935
-    Data3: 1792328105
-    Data4: -750756329
-  Banks:
-  - {fileID: -1080528296133792785}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -708297084843516179}
-  - {fileID: 5377594235071529198}
-  - {fileID: 1086839780819984776}
-  - {fileID: 3544957093045864367}
-  - {fileID: 4050896385238197341}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 200
---- !u!114 &-6267901392753753676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/NPC/Movment/LandNPC
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/NPC/Movment/LandNPC
-  Guid:
-    Data1: -1099010862
-    Data2: 1260121610
-    Data3: 1104077489
-    Data4: -1852412026
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -2860375114684679503}
-  - {fileID: -4054178269379149852}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 800
---- !u!114 &-6250025504659780731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Bug/Splat
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Bug/Splat
-  Guid:
-    Data1: 33174991
-    Data2: 1112888865
-    Data3: 1152387722
-    Data4: 1706249319
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &-6225692883585042399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMB/Globals/Forest AMB
-  m_EditorClassIdentifier: 
-  Path: event:/AMB/Globals/Forest AMB
-  Guid:
-    Data1: 1605033708
-    Data2: 1181195740
-    Data3: -574023251
-    Data4: 789539891
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 9133235055604755338}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 90240
---- !u!114 &-6138307770500679087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Pumpkin/Retry
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Pumpkin/Retry
-  Guid:
-    Data1: -1972591719
-    Data2: 1267459123
-    Data3: -1836851317
-    Data4: -1240197201
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 405
---- !u!114 &-6049640135560623027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Forest night AMB/loopEnd
-  m_EditorClassIdentifier: 
-  Name: loopEnd
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3583350736
-    data2: 2150705294
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Loop
-  - End
-  Exists: 1
---- !u!114 &-5857089185234709134
+--- !u!114 &-8395337598478541378
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -733,7 +19,7 @@ MonoBehaviour:
     Data3: 971894702
     Data4: -1784998126
   Banks:
-  - {fileID: -3442346476839533053}
+  - {fileID: -5959570860246207906}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -741,7 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 132000
---- !u!114 &-5850359133795719073
+--- !u!114 &-8335601264188808143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -751,153 +37,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/Metal Gate
+  m_Name: event:/SFX/Mechanics/Bugs/Stone drop
   m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/Metal Gate
+  Path: event:/SFX/Mechanics/Bugs/Stone drop
   Guid:
-    Data1: 128400610
-    Data2: 1153446803
-    Data3: -270011502
-    Data4: 443748413
+    Data1: 1918466689
+    Data2: 1277852644
+    Data3: -1641841236
+    Data4: 1405072424
   Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -4269056747916557076}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-5816646189599662455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Dialog Bubble
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Dialog Bubble
-  Guid:
-    Data1: -218417481
-    Data2: 1341814687
-    Data3: 466425525
-    Data4: 247848723
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 273129106705907624}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-5693018833879173050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Jump/Parameter 1
-  m_EditorClassIdentifier: 
-  Name: Parameter 1
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1822729649
-    data2: 4252896315
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Value A
-  - Value B
-  Exists: 1
---- !u!114 &-5607969856196729757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/Footsteps/Grass
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/Footsteps/Grass
-  Guid:
-    Data1: -540071853
-    Data2: 1098064511
-    Data3: 1789078189
-    Data4: -127990459
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 8940365294466805633}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-5604586481684284347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Fish eggs/Hatching/Click 1
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Fish eggs/Hatching/Click 1
-  Guid:
-    Data1: 1613431682
-    Data2: 1341092852
-    Data3: 1401687941
-    Data4: -679671987
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1001
---- !u!114 &-4971985837603756694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/Car/Outside/OCDoor Close
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/Car/Outside/OCDoor Close
-  Guid:
-    Data1: -537374887
-    Data2: 1277191004
-    Data3: 1254714542
-    Data4: -298247675
-  Banks:
-  - {fileID: 7659047819052415250}
+  - {fileID: 9075975263135400520}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -905,444 +54,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-4744741149426668752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/CL Fence/Room Size
-  m_EditorClassIdentifier: 
-  Name: Room Size
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-4446410855199270671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Lona Talking/characterAge
-  m_EditorClassIdentifier: 
-  Name: characterAge
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1297164552
-    data2: 664545430
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Old
-  - Young
-  Exists: 1
---- !u!114 &-4269056747916557076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Metal Gate/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-4054178269379149852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/LandNPC/groundType
-  m_EditorClassIdentifier: 
-  Name: groundType
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 1822729649
-    data2: 4252896315
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Grass
-  - Carpet
-  - Tile
-  - Stone
-  Exists: 1
---- !u!114 &-3758703117635620086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Pumpkin/Shave
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Pumpkin/Shave
-  Guid:
-    Data1: -1719457794
-    Data2: 1189047679
-    Data3: -1785646946
-    Data4: -489809106
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 202
---- !u!114 &-3675087297102312838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Fish eggs/Bird sounds
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Fish eggs/Bird sounds
-  Guid:
-    Data1: -1342055581
-    Data2: 1166038288
-    Data3: 1187383441
-    Data4: 1755888853
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-3611823514372641373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/DX/PC/Lona Talking
-  m_EditorClassIdentifier: 
-  Path: event:/DX/PC/Lona Talking
-  Guid:
-    Data1: -1777907832
-    Data2: 1202938137
-    Data3: 1622034598
-    Data4: 8528399
-  Banks:
-  - {fileID: -1080528296133792785}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -2997765920696816979}
-  - {fileID: 7076365715737526553}
-  - {fileID: 7974099523987283495}
-  - {fileID: -7143610802535514960}
-  - {fileID: -4446410855199270671}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 200
---- !u!114 &-3485508455598324726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/Car/Inside/ICDoor Open
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/Car/Inside/ICDoor Open
-  Guid:
-    Data1: -1637994794
-    Data2: 1122306068
-    Data3: 802511506
-    Data4: 457239318
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-3474614692411237194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/MX.bank
-  Name: MX
-  StudioPath: bank:/MX
-  lastModified: 639270621551006426
-  FileSizes:
-  - Name: Desktop
-    Value: 2342624
-  Exists: 1
---- !u!114 &-3442346476839533053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/MX.bank
-  Name: MX
-  StudioPath: bank:/MX
-  lastModified: 639296263432012843
-  FileSizes:
-  - Name: Desktop
-    Value: 5011232
-  Exists: 1
---- !u!114 &-3389226675997235013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MX/Story/Westwood Welcome
-  m_EditorClassIdentifier: 
-  Path: event:/MX/Story/Westwood Welcome
-  Guid:
-    Data1: 1487264764
-    Data2: 1136765687
-    Data3: -1820979312
-    Data4: 808610673
-  Banks:
-  - {fileID: -3442346476839533053}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 81346
---- !u!114 &-3304225992367010041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/Bird sounds
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/Bird sounds
-  Guid:
-    Data1: -1342055581
-    Data2: 1166038288
-    Data3: 1187383441
-    Data4: 1755888853
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-3125794522126356538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/NPC/Jason/YJason Talking
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/NPC/Jason/YJason Talking
-  Guid:
-    Data1: -488523650
-    Data2: 1124350201
-    Data3: -600347472
-    Data4: -829682342
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2997765920696816979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Lona Talking/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-2991113187652199649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Bugs/Bugs crawling loop
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Bugs/Bugs crawling loop
-  Guid:
-    Data1: 1254635506
-    Data2: 1214756887
-    Data3: -2054575985
-    Data4: 1685924165
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1398
---- !u!114 &-2903115764605761211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Town AMB/loopEnd
-  m_EditorClassIdentifier: 
-  Name: loopEnd
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3583350736
-    data2: 2150705294
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Loop
-  - End
-  Exists: 1
---- !u!114 &-2860375114684679503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/LandNPC/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-2793733609603333239
+--- !u!114 &-8300731803233894611
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1361,1481 +73,19 @@ MonoBehaviour:
     Data3: -2137945444
     Data4: -2042765085
   Banks:
-  - {fileID: -3442346476839533053}
+  - {fileID: -5959570860246207906}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 8816108869087763425}
-  - {fileID: 5890435833479362126}
-  - {fileID: -955434606764726879}
-  - {fileID: 2645513466534482896}
+  - {fileID: 559763691405307265}
+  - {fileID: -2459505258559956675}
+  - {fileID: -4452311363198667502}
+  - {fileID: -617063955857422931}
   MinDistance: 1
   MaxDistance: 20
   Length: 192000
---- !u!114 &-2729350553729140686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Fish eggs/Hatching/Click 2
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Fish eggs/Hatching/Click 2
-  Guid:
-    Data1: -2113627068
-    Data2: 1245368223
-    Data3: -2102781038
-    Data4: 1236380293
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1741
---- !u!114 &-2562360169699112132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMB/Globals/Town AMB
-  m_EditorClassIdentifier: 
-  Path: event:/AMB/Globals/Town AMB
-  Guid:
-    Data1: 1149970490
-    Data2: 1137862833
-    Data3: 248967308
-    Data4: -172469577
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 114515
---- !u!114 &-2477253725762330014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Front end/select/Young/UI Forward
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Front end/select/Young/UI Forward
-  Guid:
-    Data1: 920973855
-    Data2: 1257726945
-    Data3: 1612530055
-    Data4: 294027419
-  Banks:
-  - {fileID: 3494821337381461089}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &-2430519079331031849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/NPC/Jason/YJason Talking
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/NPC/Jason/YJason Talking
-  Guid:
-    Data1: -488523650
-    Data2: 1124350201
-    Data3: -600347472
-    Data4: -829682342
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2398999274139176946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/LandP/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-2233316275044140936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Fish eggs/Chirp FB
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Fish eggs/Chirp FB
-  Guid:
-    Data1: 1245132433
-    Data2: 1225628188
-    Data3: 864241046
-    Data4: -991569378
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2173170793533171924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMB/Globals/Town AMB
-  m_EditorClassIdentifier: 
-  Path: event:/AMB/Globals/Town AMB
-  Guid:
-    Data1: 1149970490
-    Data2: 1137862833
-    Data3: 248967308
-    Data4: -172469577
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -2903115764605761211}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 114515
---- !u!114 &-1391725048417045336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 639272051767846935
-  FileSizes:
-  - Name: Desktop
-    Value: 11087648
-  Exists: 1
---- !u!114 &-1308712586710276705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMB/Globals/Forest AMB
-  m_EditorClassIdentifier: 
-  Path: event:/AMB/Globals/Forest AMB
-  Guid:
-    Data1: 1605033708
-    Data2: 1181195740
-    Data3: -574023251
-    Data4: 789539891
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 3231777625129566820}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 90240
---- !u!114 &-1188201688848080580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/Yell
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/Yell
-  Guid:
-    Data1: -1481516213
-    Data2: 1235390282
-    Data3: 474548140
-    Data4: 1100207482
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 1242686008967242674}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &-1080528296133792785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/DX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
-  Name: DX
-  StudioPath: bank:/DX
-  lastModified: 639291306632637950
-  FileSizes:
-  - Name: Desktop
-    Value: 73216
-  Exists: 1
---- !u!114 &-955434606764726879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/sec1
-  m_EditorClassIdentifier: 
-  Name: sec1
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2062178896
-    data2: 3196238178
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-842100572679539530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Forest night AMB/Parameter 2
-  m_EditorClassIdentifier: 
-  Name: Parameter 2
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3583350736
-    data2: 2150705294
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Value A
-  - Value B
-  Exists: 1
---- !u!114 &-708297084843516179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Jason Talking/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-684499301776938132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Front end/select/Young/UI Forward
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Front end/select/Young/UI Forward
-  Guid:
-    Data1: 920973855
-    Data2: 1257726945
-    Data3: 1612530055
-    Data4: 294027419
-  Banks:
-  - {fileID: 4396521001560468880}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &-155812163117946108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle select
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Puzzle/Puzzle select
-  Guid:
-    Data1: 598155549
-    Data2: 1275830164
-    Data3: 42277781
-    Data4: 1945209458
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-145833733705136420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Branches/Move branches
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Branches/Move branches
-  Guid:
-    Data1: -428374626
-    Data2: 1118908469
-    Data3: 2008907937
-    Data4: -2094455592
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 800
---- !u!114 &-60903701845155676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/FootstepsNpc/groundType
-  m_EditorClassIdentifier: 
-  Name: groundType
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 1822729649
-    data2: 4252896315
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Grass
-  - Carpet
-  - Tile
-  - Stone
-  Exists: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -8092922873622035379}
-  - {fileID: -1080528296133792785}
-  - {fileID: 4484139177999110664}
-  - {fileID: -3442346476839533053}
-  - {fileID: 7659047819052415250}
-  - {fileID: 3494821337381461089}
-  EditorEvents:
-  - {fileID: -2793733609603333239}
-  - {fileID: -7290247364553753885}
-  - {fileID: 3142830135974713079}
-  - {fileID: -155812163117946108}
-  - {fileID: -2173170793533171924}
-  - {fileID: -1188201688848080580}
-  - {fileID: -3125794522126356538}
-  - {fileID: 4957252017241196247}
-  - {fileID: -7659065622721439998}
-  - {fileID: 1965946505099266240}
-  - {fileID: 4876594719485248828}
-  - {fileID: 7851166565380609389}
-  - {fileID: 2205648238622836699}
-  - {fileID: -6225692883585042399}
-  - {fileID: -2477253725762330014}
-  - {fileID: 5700028351035481086}
-  - {fileID: -8397302068516744630}
-  - {fileID: -3611823514372641373}
-  - {fileID: -8461236249998466060}
-  - {fileID: 870825632396695188}
-  - {fileID: 217916901227981529}
-  - {fileID: 5224887336113745328}
-  - {fileID: -6267901392753753676}
-  - {fileID: 5212986040854994872}
-  - {fileID: -6372437642708768631}
-  - {fileID: 2424714625362436588}
-  - {fileID: 3354179957743655091}
-  - {fileID: -3304225992367010041}
-  - {fileID: -8537779494508201071}
-  - {fileID: -7268132457083738810}
-  - {fileID: -2233316275044140936}
-  - {fileID: 6773676093603893856}
-  - {fileID: -7868906945155510517}
-  - {fileID: -8510209434387157972}
-  - {fileID: 5014737156336308738}
-  - {fileID: -2991113187652199649}
-  - {fileID: 4155000703302734494}
-  - {fileID: -6138307770500679087}
-  - {fileID: -3758703117635620086}
-  - {fileID: -4971985837603756694}
-  - {fileID: 3784176201966655784}
-  - {fileID: 7016765358893888032}
-  - {fileID: 614702342612309769}
-  - {fileID: -8804142474742810068}
-  - {fileID: 2188991746909925630}
-  - {fileID: -3485508455598324726}
-  - {fileID: -5850359133795719073}
-  - {fileID: 2130305336401536718}
-  - {fileID: 8078537904631165404}
-  - {fileID: -5857089185234709134}
-  - {fileID: -3389226675997235013}
-  - {fileID: -6481862875155342617}
-  - {fileID: -2729350553729140686}
-  - {fileID: -5604586481684284347}
-  EditorParameters:
-  - {fileID: 8089620109424056317}
-  - {fileID: 3228399538104972685}
-  MasterBanks:
-  - {fileID: 4484139177999110664}
-  StringsBanks:
-  - {fileID: -8092922873622035379}
-  cacheVersion: 131861
-  cacheTime: 639297548206435828
-  SerializableEventsDict:
-  - key: event:/MX/Exploration/Tutorial BGM
-    index: 0
-  - key: event:/SFX/ENV/CL Fence
-    index: 1
-  - key: event:/SFX/Mechanics/Puzzle/Puzzle win
-    index: 2
-  - key: event:/SFX/Mechanics/Puzzle/Puzzle select
-    index: 3
-  - key: event:/AMB/Globals/Town AMB
-    index: 4
-  - key: event:/SFX/Player/Yell
-    index: 5
-  - key: event:/SFX/NPC/Jason/YJason Talking
-    index: 6
-  - key: event:/AMB/Globals/Forest night AMB
-    index: 7
-  - key: event:/AMB/Globals/Heavy winds Forest
-    index: 8
-  - key: event:/AMB/Globals/Forest wind and birds AMB
-    index: 9
-  - key: event:/SFX/Mechanics/Branches/Move branches
-    index: 10
-  - key: event:/SFX/Mechanics/Dialog Bubble
-    index: 11
-  - key: event:/SFX/Mechanics/Puzzle/Puzzle start
-    index: 12
-  - key: event:/AMB/Globals/Forest AMB
-    index: 13
-  - key: event:/UI/Front end/select/Young/UI Forward
-    index: 14
-  - key: event:/UI/Front end/select/Young/UI Select
-    index: 15
-  - key: event:/UI/Front end/select/Young/UI Back
-    index: 16
-  - key: event:/DX/PC/Lona Talking
-    index: 17
-  - key: event:/SFX/NPC/Movment/JumpNPC
-    index: 18
-  - key: event:/SFX/NPC/Movment/FootstepsNpc
-    index: 19
-  - key: event:/SFX/Player/JumpP
-    index: 20
-  - key: event:/SFX/Player/FootstepsP
-    index: 21
-  - key: event:/SFX/NPC/Movment/LandNPC
-    index: 22
-  - key: event:/SFX/Player/LandP
-    index: 23
-  - key: event:/DX/NPC/Jason Talking
-    index: 24
-  - key: event:/SFX/Mechanics/Ground impact
-    index: 25
-  - key: event:/SFX/Mechanics/Bugs/Bug hiss
-    index: 26
-  - key: event:/SFX/ENV/Bird sounds
-    index: 27
-  - key: event:/SFX/Mechanics/Branches/Branch swing&hit
-    index: 28
-  - key: event:/SFX/Mechanics/Bugs/Stone drop
-    index: 29
-  - key: event:/SFX/Mechanics/Fish eggs/Chirp FB
-    index: 30
-  - key: event:/SFX/Mechanics/Branches/Move branches loop
-    index: 31
-  - key: event:/SFX/Mechanics/Bugs/Stone lift
-    index: 32
-  - key: event:/SFX/Mechanics/Fish eggs/Hungry FB
-    index: 33
-  - key: event:/SFX/Mechanics/Bugs/Splat
-    index: 34
-  - key: event:/SFX/Mechanics/Bugs/Bugs crawling loop
-    index: 35
-  - key: event:/SFX/Mechanics/Pumpkin/Carving
-    index: 36
-  - key: event:/SFX/Mechanics/Pumpkin/Retry
-    index: 37
-  - key: event:/SFX/Mechanics/Pumpkin/Shave
-    index: 38
-  - key: event:/SFX/ENV/Car/Outside/OCDoor Close
-    index: 39
-  - key: event:/SFX/ENV/Car/Outside/OCar Start
-    index: 40
-  - key: event:/SFX/ENV/Car/Outside/OCar EngineLoop
-    index: 41
-  - key: event:/SFX/ENV/Car/Inside/ICDoor Close
-    index: 42
-  - key: event:/SFX/ENV/Car/Inside/ICar Stop
-    index: 43
-  - key: event:/SFX/ENV/Car/Outside/OCDoor Open
-    index: 44
-  - key: event:/SFX/ENV/Car/Inside/ICDoor Open
-    index: 45
-  - key: event:/SFX/ENV/Metal Gate
-    index: 46
-  - key: event:/SFX/ENV/Car/Inside/ICar Start
-    index: 47
-  - key: event:/SFX/ENV/Car/Inside/ICar EngineLoop
-    index: 48
-  - key: event:/MX/System/Main Menu
-    index: 49
-  - key: event:/MX/Story/Westwood Welcome
-    index: 50
-  - key: event:/SFX/Player/Talking
-    index: 51
-  - key: event:/SFX/Mechanics/Fish eggs/Hatching/Click 2
-    index: 52
-  - key: event:/SFX/Mechanics/Fish eggs/Hatching/Click 1
-    index: 53
---- !u!114 &217916901227981529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/JumpP
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/JumpP
-  Guid:
-    Data1: -926825347
-    Data2: 1091288751
-    Data3: 865987497
-    Data4: 1598701459
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 8890835963033148485}
-  - {fileID: 3824280969625647918}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 664
---- !u!114 &273129106705907624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Dialog Bubble/Room Size
-  m_EditorClassIdentifier: 
-  Name: Room Size
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &338025299557094886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/FootstepsP/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &614702342612309769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/Car/Inside/ICDoor Close
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/Car/Inside/ICDoor Close
-  Guid:
-    Data1: 699850923
-    Data2: 1243769340
-    Data3: -1865492078
-    Data4: -2071803740
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &803503985744622675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle start
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Puzzle/Puzzle start
-  Guid:
-    Data1: -1551137841
-    Data2: 1330984728
-    Data3: 1742725035
-    Data4: -187494383
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1600
---- !u!114 &870825632396695188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/NPC/Movment/FootstepsNpc
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/NPC/Movment/FootstepsNpc
-  Guid:
-    Data1: -837019096
-    Data2: 1262053430
-    Data3: 808376475
-    Data4: -1727618132
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -60903701845155676}
-  - {fileID: 2651436431551458988}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 800
---- !u!114 &1086839780819984776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Jason Talking/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 2723243440
-    data2: 1420114338
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &1131559031614633983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Forest wind and birds AMB/loopEnd
-  m_EditorClassIdentifier: 
-  Name: loopEnd
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3583350736
-    data2: 2150705294
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Loop
-  - End
-  Exists: 1
---- !u!114 &1242686008967242674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Yell/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &1599328141128018940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Dialog Bubble/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &1723530095342730243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/Sec4
-  m_EditorClassIdentifier: 
-  Name: Sec4
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1768245747
-    data2: 1389024608
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &1965946505099266240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMB/Globals/Forest wind and birds AMB
-  m_EditorClassIdentifier: 
-  Path: event:/AMB/Globals/Forest wind and birds AMB
-  Guid:
-    Data1: -1420459367
-    Data2: 1332629753
-    Data3: 1760060071
-    Data4: -249715458
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 1131559031614633983}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 188124
---- !u!114 &2124698414858655876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/CL Fence
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/CL Fence
-  Guid:
-    Data1: -1794934254
-    Data2: 1200799433
-    Data3: -268879477
-    Data4: 555752459
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -4744741149426668752}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &2130305336401536718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/Car/Inside/ICar Start
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/Car/Inside/ICar Start
-  Guid:
-    Data1: 2080930040
-    Data2: 1145493497
-    Data3: -1760749128
-    Data4: 1913506205
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3001
---- !u!114 &2132299651779556950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMB/Globals/Forest night AMB
-  m_EditorClassIdentifier: 
-  Path: event:/AMB/Globals/Forest night AMB
-  Guid:
-    Data1: -489733745
-    Data2: 1213472850
-    Data3: 291191949
-    Data4: 1874520312
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -842100572679539530}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 142973
---- !u!114 &2188991746909925630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/Car/Outside/OCDoor Open
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/Car/Outside/OCDoor Open
-  Guid:
-    Data1: 1378157257
-    Data2: 1302591864
-    Data3: 211616185
-    Data4: 1473521757
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &2205648238622836699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle start
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Puzzle/Puzzle start
-  Guid:
-    Data1: -1551137841
-    Data2: 1330984728
-    Data3: 1742725035
-    Data4: -187494383
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1600
---- !u!114 &2424714625362436588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Ground impact
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Ground impact
-  Guid:
-    Data1: -1437039838
-    Data2: 1239602228
-    Data3: 1474471083
-    Data4: -484236696
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 4562070185052309747}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 802
---- !u!114 &2628049430791307689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MX/Exploration/Tutorial BGM
-  m_EditorClassIdentifier: 
-  Path: event:/MX/Exploration/Tutorial BGM
-  Guid:
-    Data1: 1358189720
-    Data2: 1136107501
-    Data3: -2137945444
-    Data4: -2042765085
-  Banks:
-  - {fileID: -3474614692411237194}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 8656486913280580276}
-  - {fileID: 5764299053767071015}
-  - {fileID: -7162894600866431529}
-  - {fileID: 1723530095342730243}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 192000
---- !u!114 &2645513466534482896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/sec4
-  m_EditorClassIdentifier: 
-  Name: sec4
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1768245747
-    data2: 1389024608
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &2651436431551458988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/FootstepsNpc/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &2684559921295770011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 639272051766448009
-  FileSizes:
-  - Name: Desktop
-    Value: 5174
-  Exists: 1
---- !u!114 &2768778413082092040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Fish eggs/Hatching
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Fish eggs/Hatching
-  Guid:
-    Data1: 1955340806
-    Data2: 1150786186
-    Data3: 1126805155
-    Data4: -2127935567
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4437
---- !u!114 &2892533650695259197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMB/Globals/Forest wind and birds AMB
-  m_EditorClassIdentifier: 
-  Path: event:/AMB/Globals/Forest wind and birds AMB
-  Guid:
-    Data1: -1420459367
-    Data2: 1332629753
-    Data3: 1760060071
-    Data4: -249715458
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7939582924473951958}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 188124
---- !u!114 &3142830135974713079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle win
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Puzzle/Puzzle win
-  Guid:
-    Data1: -518947044
-    Data2: 1226470326
-    Data3: -13921110
-    Data4: -1968833124
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1600
---- !u!114 &3228399538104972685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: parameter:/roomSize
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &3231777625129566820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Forest AMB/Parameter 2
-  m_EditorClassIdentifier: 
-  Name: Parameter 2
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3583350736
-    data2: 2150705294
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Value A
-  - Value B
-  Exists: 1
---- !u!114 &3354179957743655091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Bugs/Bug hiss
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Bugs/Bug hiss
-  Guid:
-    Data1: 1286385230
-    Data2: 1307219268
-    Data3: 264606104
-    Data4: -1555402354
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &3461217813143518520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Fish eggs/Fish noises (inst)
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Fish eggs/Fish noises (inst)
-  Guid:
-    Data1: 2064727599
-    Data2: 1305960720
-    Data3: -1725610586
-    Data4: 1370938240
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &3494821337381461089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/UI.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/UI.bank
-  Name: UI
-  StudioPath: bank:/UI
-  lastModified: 639274878360548342
-  FileSizes:
-  - Name: Desktop
-    Value: 737888
-  Exists: 1
---- !u!114 &3544957093045864367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Jason Talking/Pitch
-  m_EditorClassIdentifier: 
-  Name: Pitch
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0.5
-  ID:
-    data1: 3071614846
-    data2: 2746791122
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &3784176201966655784
+--- !u!114 &-8131462189118970100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2854,7 +104,7 @@ MonoBehaviour:
     Data3: 310097286
     Data4: 1379027633
   Banks:
-  - {fileID: 7659047819052415250}
+  - {fileID: 9075975263135400520}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2862,79 +112,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3001
---- !u!114 &3791004829022609497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Talking/Room Size
-  m_EditorClassIdentifier: 
-  Name: Room Size
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &3824280969625647918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/JumpP/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &4050896385238197341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Jason Talking/Vowel
-  m_EditorClassIdentifier: 
-  Name: Vowel
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0.5
-  ID:
-    data1: 3565018024
-    data2: 2386496228
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &4155000703302734494
+--- !u!114 &-7948139348267934737
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2944,175 +122,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Pumpkin/Carving
+  m_Name: event:/SFX/Player/JumpP
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Pumpkin/Carving
+  Path: event:/SFX/Player/JumpP
   Guid:
-    Data1: 1332753023
-    Data2: 1216859038
-    Data3: 1173164177
-    Data4: -289252451
+    Data1: -926825347
+    Data2: 1091288751
+    Data3: 865987497
+    Data4: 1598701459
   Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 500
---- !u!114 &4396521001560468880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/UI.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/UI.bank
-  Name: UI
-  StudioPath: bank:/UI
-  lastModified: 639272010486408921
-  FileSizes:
-  - Name: Desktop
-    Value: 737888
-  Exists: 1
---- !u!114 &4484139177999110664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 639297548205713353
-  FileSizes:
-  - Name: Desktop
-    Value: 5244
-  Exists: 1
---- !u!114 &4562070185052309747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Ground impact/groundType
-  m_EditorClassIdentifier: 
-  Name: groundType
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 1822729649
-    data2: 4252896315
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Grass
-  - Carpet
-  - Tile
-  - Stone
-  Exists: 1
---- !u!114 &4876594719485248828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Branches/Move branches
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Branches/Move branches
-  Guid:
-    Data1: -428374626
-    Data2: 1118908469
-    Data3: 2008907937
-    Data4: -2094455592
-  Banks:
-  - {fileID: 7659047819052415250}
+  - {fileID: 9075975263135400520}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 730
---- !u!114 &4890719460897374532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/JumpNPC/groundType
-  m_EditorClassIdentifier: 
-  Name: groundType
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 1822729649
-    data2: 4252896315
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Grass
-  - Carpet
-  - Tile
-  - Stone
-  Exists: 1
---- !u!114 &4957252017241196247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMB/Globals/Forest night AMB
-  m_EditorClassIdentifier: 
-  Path: event:/AMB/Globals/Forest night AMB
-  Guid:
-    Data1: -489733745
-    Data2: 1213472850
-    Data3: 291191949
-    Data4: 1874520312
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
   Parameters:
-  - {fileID: -6049640135560623027}
+  - {fileID: -3505075578781733438}
+  - {fileID: 6720604259209386210}
   MinDistance: 1
   MaxDistance: 20
-  Length: 142973
---- !u!114 &5014737156336308738
+  Length: 664
+--- !u!114 &-7245889921453178938
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3131,7 +160,7 @@ MonoBehaviour:
     Data3: 1152387722
     Data4: 1706249319
   Banks:
-  - {fileID: 7659047819052415250}
+  - {fileID: 9075975263135400520}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3139,7 +168,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
---- !u!114 &5212986040854994872
+--- !u!114 &-6558959790973667906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3149,26 +178,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/LandP
+  m_Name: event:/SFX/ENV/Car/Inside/ICDoor Open
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/LandP
+  Path: event:/SFX/ENV/Car/Inside/ICDoor Open
   Guid:
-    Data1: 214050813
-    Data2: 1109917373
-    Data3: -197586297
-    Data4: -772855958
+    Data1: -1637994794
+    Data2: 1122306068
+    Data3: 802511506
+    Data4: 457239318
   Banks:
-  - {fileID: 7659047819052415250}
+  - {fileID: 9075975263135400520}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters:
-  - {fileID: -2398999274139176946}
-  - {fileID: -6505337453324542270}
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 800
---- !u!114 &5224887336113745328
+  Length: 0
+--- !u!114 &-6361978411591347778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3187,501 +214,17 @@ MonoBehaviour:
     Data3: 555804600
     Data4: 1003583817
   Banks:
-  - {fileID: 7659047819052415250}
+  - {fileID: 9075975263135400520}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 338025299557094886}
-  - {fileID: 9077355933380000822}
+  - {fileID: 5029759612763518027}
+  - {fileID: -2816193203336933520}
   MinDistance: 1
   MaxDistance: 20
   Length: 800
---- !u!114 &5377594235071529198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Jason Talking/characterAge
-  m_EditorClassIdentifier: 
-  Name: characterAge
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1297164552
-    data2: 664545430
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Old
-  - Young
-  Exists: 1
---- !u!114 &5478996945096515251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Front end/select/Young/UI Select
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Front end/select/Young/UI Select
-  Guid:
-    Data1: 1196251549
-    Data2: 1075463939
-    Data3: 1393018291
-    Data4: -76973240
-  Banks:
-  - {fileID: 4396521001560468880}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &5700028351035481086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Front end/select/Young/UI Select
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Front end/select/Young/UI Select
-  Guid:
-    Data1: 1196251549
-    Data2: 1075463939
-    Data3: 1393018291
-    Data4: -76973240
-  Banks:
-  - {fileID: 3494821337381461089}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &5764299053767071015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/Sec2
-  m_EditorClassIdentifier: 
-  Name: Sec2
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 959849305
-    data2: 3092094403
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &5803136370976050982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/DX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
-  Name: DX
-  StudioPath: bank:/DX
-  lastModified: 639263879606289697
-  FileSizes:
-  - Name: Desktop
-    Value: 506
-  Exists: 1
---- !u!114 &5890435833479362126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/sec2
-  m_EditorClassIdentifier: 
-  Name: sec2
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 959849305
-    data2: 3092094403
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &6236900937606960413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/JumpNPC/roomSize
-  m_EditorClassIdentifier: 
-  Name: roomSize
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2885259439
-    data2: 2548027537
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &6773676093603893856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Branches/Move branches loop
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Branches/Move branches loop
-  Guid:
-    Data1: -636422766
-    Data2: 1189802381
-    Data3: 117571205
-    Data4: -1726814234
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9068
---- !u!114 &6853229808131494837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/Yell
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/Yell
-  Guid:
-    Data1: -1481516213
-    Data2: 1235390282
-    Data3: 474548140
-    Data4: 1100207482
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -7083903592765386329}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &7016765358893888032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/Car/Outside/OCar EngineLoop
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/Car/Outside/OCar EngineLoop
-  Guid:
-    Data1: -1797409124
-    Data2: 1156780013
-    Data3: 1032892843
-    Data4: -282278543
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 10000
---- !u!114 &7076365715737526553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Lona Talking/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 2723243440
-    data2: 1420114338
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &7284504418136908630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Heavy winds Forest/loopEnd
-  m_EditorClassIdentifier: 
-  Name: loopEnd
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3583350736
-    data2: 2150705294
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Loop
-  - End
-  Exists: 1
---- !u!114 &7659047819052415250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 639297548206435828
-  FileSizes:
-  - Name: Desktop
-    Value: 12052224
-  Exists: 1
---- !u!114 &7766260312451457758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle select
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Puzzle/Puzzle select
-  Guid:
-    Data1: 598155549
-    Data2: 1275830164
-    Data3: 42277781
-    Data4: 1945209458
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &7777719085036982792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AMB/Globals/Heavy winds Forest
-  m_EditorClassIdentifier: 
-  Path: event:/AMB/Globals/Heavy winds Forest
-  Guid:
-    Data1: 1714005135
-    Data2: 1195163812
-    Data3: 1559600259
-    Data4: -1514784013
-  Banks:
-  - {fileID: -1391725048417045336}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 284046
---- !u!114 &7851166565380609389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Mechanics/Dialog Bubble
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Mechanics/Dialog Bubble
-  Guid:
-    Data1: -218417481
-    Data2: 1341814687
-    Data3: 466425525
-    Data4: 247848723
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 1599328141128018940}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &7974099523987283495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Lona Talking/Pitch
-  m_EditorClassIdentifier: 
-  Name: Pitch
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0.5
-  ID:
-    data1: 3071614846
-    data2: 2746791122
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &8051980358995538364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Front end/select/Young/UI Back
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Front end/select/Young/UI Back
-  Guid:
-    Data1: -1703903820
-    Data2: 1205112653
-    Data3: -1041177704
-    Data4: -1697676151
-  Banks:
-  - {fileID: 4396521001560468880}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &8078537904631165404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/ENV/Car/Inside/ICar EngineLoop
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/ENV/Car/Inside/ICar EngineLoop
-  Guid:
-    Data1: 1591369725
-    Data2: 1138948457
-    Data3: -1184747898
-    Data4: 757300542
-  Banks:
-  - {fileID: 7659047819052415250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9693
---- !u!114 &8089620109424056317
+--- !u!114 &-6271384713201620439
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3709,7 +252,159 @@ MonoBehaviour:
   - Tile
   - Stone
   Exists: 1
---- !u!114 &8580885378657805572
+--- !u!114 &-6191167859820559496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Town AMB/loopEnd
+  m_EditorClassIdentifier: 
+  Name: loopEnd
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Loop
+  - End
+  Exists: 1
+--- !u!114 &-6138649129201297062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CL Fence/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-6074576734623500339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/CL Fence
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/CL Fence
+  Guid:
+    Data1: -1794934254
+    Data2: 1200799433
+    Data3: -268879477
+    Data4: 555752459
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -6138649129201297062}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5959570860246207906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/MX.bank
+  Name: MX
+  StudioPath: bank:/MX
+  lastModified: 639299143303410249
+  FileSizes:
+  - Name: Desktop
+    Value: 5011616
+  Exists: 1
+--- !u!114 &-5753558341070218264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Outside/OCDoor Open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Outside/OCDoor Open
+  Guid:
+    Data1: 1378157257
+    Data2: 1302591864
+    Data3: 211616185
+    Data4: 1473521757
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5652936518458449905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Bugs/Stone lift
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Bugs/Stone lift
+  Guid:
+    Data1: -406634343
+    Data2: 1207215348
+    Data3: 1049287063
+    Data4: 561113898
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5576340205619727643
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3728,16 +423,16 @@ MonoBehaviour:
     Data3: 989564336
     Data4: -1276567718
   Banks:
-  - {fileID: -1391725048417045336}
+  - {fileID: 9075975263135400520}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 3791004829022609497}
+  - {fileID: -984372755856829939}
   MinDistance: 1
   MaxDistance: 20
   Length: 800
---- !u!114 &8656486913280580276
+--- !u!114 &-5398274541950428160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3747,33 +442,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/Sec3
+  m_Name: parameter:/Metal Gate/roomSize
   m_EditorClassIdentifier: 
-  Name: Sec3
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1901171272
-    data2: 1249407490
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &8774141530329240040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Jump/Room Size
-  m_EditorClassIdentifier: 
-  Name: Room Size
+  Name: roomSize
   StudioPath: 
   Min: 0
   Max: 1
@@ -3782,10 +453,94 @@ MonoBehaviour:
     data1: 2885259439
     data2: 2548027537
   Type: 0
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &8816108869087763425
+--- !u!114 &-4958784066656508778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Fish eggs/Hatching/Click 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Fish eggs/Hatching/Click 1
+  Guid:
+    Data1: 1613431682
+    Data2: 1341092852
+    Data3: 1401687941
+    Data4: -679671987
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1001
+--- !u!114 &-4856623930676489712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Forest wind and birds AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Forest wind and birds AMB
+  Guid:
+    Data1: -1420459367
+    Data2: 1332629753
+    Data3: 1760060071
+    Data4: -249715458
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -4407317509060412783}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 188124
+--- !u!114 &-4782570853086561698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/NPC/Movment/LandNPC
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NPC/Movment/LandNPC
+  Guid:
+    Data1: -1099010862
+    Data2: 1260121610
+    Data3: 1104077489
+    Data4: -1852412026
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4146945344233330144}
+  - {fileID: 5865987574687764026}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
+--- !u!114 &-4452311363198667502
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3795,21 +550,173 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Tutorial BGM/sec3
+  m_Name: parameter:/Tutorial BGM/sec1
   m_EditorClassIdentifier: 
-  Name: sec3
+  Name: sec1
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 1901171272
-    data2: 1249407490
+    data1: 2062178896
+    data2: 3196238178
   Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &8890835963033148485
+--- !u!114 &-4407317509060412783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest wind and birds AMB/loopEnd
+  m_EditorClassIdentifier: 
+  Name: loopEnd
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Loop
+  - End
+  Exists: 1
+--- !u!114 &-4187624749759144571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UI.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/UI.bank
+  Name: UI
+  StudioPath: bank:/UI
+  lastModified: 639299143308926495
+  FileSizes:
+  - Name: Desktop
+    Value: 737888
+  Exists: 1
+--- !u!114 &-4166526926571924959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Front end/select/Young/UI Select
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Front end/select/Young/UI Select
+  Guid:
+    Data1: 1196251549
+    Data2: 1075463939
+    Data3: 1393018291
+    Data4: -76973240
+  Banks:
+  - {fileID: -4187624749759144571}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &-3866275919393807816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Heavy winds Forest
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Heavy winds Forest
+  Guid:
+    Data1: 1714005135
+    Data2: 1195163812
+    Data3: 1559600259
+    Data4: -1514784013
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1104476065841324815}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 284046
+--- !u!114 &-3698589403644319499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lona Talking/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-3655538166001758873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Story/Westwood Welcome
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Story/Westwood Welcome
+  Guid:
+    Data1: 1487264764
+    Data2: 1136765687
+    Data3: -1820979312
+    Data4: 808610673
+  Banks:
+  - {fileID: -5959570860246207906}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 81346
+--- !u!114 &-3505075578781733438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3837,7 +744,7 @@ MonoBehaviour:
   - Tile
   - Stone
   Exists: 1
---- !u!114 &8940365294466805633
+--- !u!114 &-3502722377010050319
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3847,9 +754,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Grass/Room Size
+  m_Name: parameter:/Yell/roomSize
   m_EditorClassIdentifier: 
-  Name: Room Size
+  Name: roomSize
   StudioPath: 
   Min: 0
   Max: 1
@@ -3858,10 +765,62 @@ MonoBehaviour:
     data1: 2885259439
     data2: 2548027537
   Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-3111992576291010279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Ground impact
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Ground impact
+  Guid:
+    Data1: -1437039838
+    Data2: 1239602228
+    Data3: 1474471083
+    Data4: -484236696
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1900733732162672795}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 802
+--- !u!114 &-2823190928578496644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lona Talking/Pitch
+  m_EditorClassIdentifier: 
+  Name: Pitch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.5
+  ID:
+    data1: 3071614846
+    data2: 2746791122
+  Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &9077355933380000822
+--- !u!114 &-2816193203336933520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3889,7 +848,1355 @@ MonoBehaviour:
   - Tile
   - Stone
   Exists: 1
---- !u!114 &9133235055604755338
+--- !u!114 &-2459505258559956675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Tutorial BGM/sec2
+  m_EditorClassIdentifier: 
+  Name: sec2
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 959849305
+    data2: 3092094403
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2023907523549237890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle win
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Puzzle/Puzzle win
+  Guid:
+    Data1: -518947044
+    Data2: 1226470326
+    Data3: -13921110
+    Data4: -1968833124
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1600
+--- !u!114 &-1978247910155681611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Branches/Branch swing&hit
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Branches/Branch swing&hit
+  Guid:
+    Data1: -1700000401
+    Data2: 1200414838
+    Data3: -672577872
+    Data4: -1186906495
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1001
+--- !u!114 &-1900733732162672795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ground impact/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
+  Exists: 1
+--- !u!114 &-1705370020172953285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Inside/ICar EngineLoop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Inside/ICar EngineLoop
+  Guid:
+    Data1: 1591369725
+    Data2: 1138948457
+    Data3: -1184747898
+    Data4: 757300542
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9693
+--- !u!114 &-1677977758873701624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639299143273479894
+  FileSizes:
+  - Name: Desktop
+    Value: 4750
+  Exists: 1
+--- !u!114 &-1591416996186504732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Inside/ICDoor Close
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Inside/ICDoor Close
+  Guid:
+    Data1: 699850923
+    Data2: 1243769340
+    Data3: -1865492078
+    Data4: -2071803740
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1386792701213306792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/menuUp
+  m_EditorClassIdentifier: 
+  Path: snapshot:/menuUp
+  Guid:
+    Data1: 1515542843
+    Data2: 1170193533
+    Data3: -870940236
+    Data4: 456330304
+  Banks:
+  - {fileID: 3187951860548638559}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1002388109882158500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/DX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/DX.bank
+  Name: DX
+  StudioPath: bank:/DX
+  lastModified: 639295862632744171
+  FileSizes:
+  - Name: Desktop
+    Value: 73216
+  Exists: 1
+--- !u!114 &-984372755856829939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Talking/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-964243594239254545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: parameter:/roomSize
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-772136441203161086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Outside/OCar EngineLoop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Outside/OCar EngineLoop
+  Guid:
+    Data1: -1797409124
+    Data2: 1156780013
+    Data3: 1032892843
+    Data4: -282278543
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
+--- !u!114 &-617063955857422931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Tutorial BGM/sec4
+  m_EditorClassIdentifier: 
+  Name: sec4
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1768245747
+    data2: 1389024608
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-274617122066286755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Branches/Move branches
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Branches/Move branches
+  Guid:
+    Data1: -428374626
+    Data2: 1118908469
+    Data3: 2008907937
+    Data4: -2094455592
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 730
+--- !u!114 &-211042766776209186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Fish eggs/Chirp FB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Fish eggs/Chirp FB
+  Guid:
+    Data1: 1245132433
+    Data2: 1225628188
+    Data3: 864241046
+    Data4: -991569378
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -1677977758873701624}
+  - {fileID: -1002388109882158500}
+  - {fileID: 3187951860548638559}
+  - {fileID: -5959570860246207906}
+  - {fileID: 9075975263135400520}
+  - {fileID: -4187624749759144571}
+  EditorEvents:
+  - {fileID: 390353217541192869}
+  - {fileID: 1002558087598987975}
+  - {fileID: -1386792701213306792}
+  - {fileID: -8395337598478541378}
+  - {fileID: -8300731803233894611}
+  - {fileID: -3655538166001758873}
+  - {fileID: 7638460894051527235}
+  - {fileID: -6074576734623500339}
+  - {fileID: -2023907523549237890}
+  - {fileID: 2173331752671702456}
+  - {fileID: -3111992576291010279}
+  - {fileID: 3187137032586539272}
+  - {fileID: 1478292518094448146}
+  - {fileID: 1707756698690086597}
+  - {fileID: 8912215709960934615}
+  - {fileID: 5759875364374856602}
+  - {fileID: 8540808013764015989}
+  - {fileID: 3289533716004978989}
+  - {fileID: -1978247910155681611}
+  - {fileID: -7948139348267934737}
+  - {fileID: 519971810254794800}
+  - {fileID: 8957348881619263397}
+  - {fileID: -8131462189118970100}
+  - {fileID: -8335601264188808143}
+  - {fileID: -4958784066656508778}
+  - {fileID: -5576340205619727643}
+  - {fileID: 5414480727791474873}
+  - {fileID: -3866275919393807816}
+  - {fileID: -211042766776209186}
+  - {fileID: 3158096937225791730}
+  - {fileID: -5652936518458449905}
+  - {fileID: -4856623930676489712}
+  - {fileID: 2106969964197055127}
+  - {fileID: -6361978411591347778}
+  - {fileID: -772136441203161086}
+  - {fileID: -274617122066286755}
+  - {fileID: 8591740699815178600}
+  - {fileID: -1591416996186504732}
+  - {fileID: 4173760679533942543}
+  - {fileID: 5595758655685907161}
+  - {fileID: -5753558341070218264}
+  - {fileID: -7245889921453178938}
+  - {fileID: 2019970310526581554}
+  - {fileID: -4782570853086561698}
+  - {fileID: -6558959790973667906}
+  - {fileID: 2548624789906582768}
+  - {fileID: 2895358424842085196}
+  - {fileID: 6310454503981422592}
+  - {fileID: 6804831875839879372}
+  - {fileID: 7015500896640758114}
+  - {fileID: -1705370020172953285}
+  - {fileID: 2162116373641664625}
+  - {fileID: 840598629499447713}
+  - {fileID: -4166526926571924959}
+  - {fileID: 4104644337405330021}
+  EditorParameters:
+  - {fileID: -6271384713201620439}
+  - {fileID: -964243594239254545}
+  MasterBanks:
+  - {fileID: 3187951860548638559}
+  StringsBanks:
+  - {fileID: -1677977758873701624}
+  cacheVersion: 131861
+  cacheTime: 639299172006516202
+  SerializableEventsDict:
+  - key: event:/DX/PC/Lona Talking
+    index: 0
+  - key: event:/DX/NPC/Jason Talking
+    index: 1
+  - key: snapshot:/menuUp
+    index: 2
+  - key: event:/MX/System/Main Menu
+    index: 3
+  - key: event:/MX/Exploration/Tutorial BGM
+    index: 4
+  - key: event:/MX/Story/Westwood Welcome
+    index: 5
+  - key: event:/SFX/NPC/Movment/JumpNPC
+    index: 6
+  - key: event:/SFX/ENV/CL Fence
+    index: 7
+  - key: event:/SFX/Mechanics/Puzzle/Puzzle win
+    index: 8
+  - key: event:/SFX/Mechanics/Puzzle/Puzzle select
+    index: 9
+  - key: event:/SFX/Mechanics/Ground impact
+    index: 10
+  - key: event:/SFX/NPC/Movment/FootstepsNpc
+    index: 11
+  - key: event:/AMB/Globals/Town AMB
+    index: 12
+  - key: event:/SFX/Mechanics/Fish eggs/Hatching/Click 2
+    index: 13
+  - key: event:/SFX/Player/Yell
+    index: 14
+  - key: event:/SFX/Mechanics/Bugs/Bug hiss
+    index: 15
+  - key: event:/SFX/ENV/Car/Outside/OCDoor Close
+    index: 16
+  - key: event:/SFX/ENV/Bird sounds
+    index: 17
+  - key: event:/SFX/Mechanics/Branches/Branch swing&hit
+    index: 18
+  - key: event:/SFX/Player/JumpP
+    index: 19
+  - key: event:/SFX/NPC/Jason/YJason Talking
+    index: 20
+  - key: event:/SFX/Mechanics/Pumpkin/Carving
+    index: 21
+  - key: event:/SFX/ENV/Car/Outside/OCar Start
+    index: 22
+  - key: event:/SFX/Mechanics/Bugs/Stone drop
+    index: 23
+  - key: event:/SFX/Mechanics/Fish eggs/Hatching/Click 1
+    index: 24
+  - key: event:/SFX/Player/Talking
+    index: 25
+  - key: event:/AMB/Globals/Forest night AMB
+    index: 26
+  - key: event:/AMB/Globals/Heavy winds Forest
+    index: 27
+  - key: event:/SFX/Mechanics/Fish eggs/Chirp FB
+    index: 28
+  - key: event:/SFX/Mechanics/Branches/Move branches loop
+    index: 29
+  - key: event:/SFX/Mechanics/Bugs/Stone lift
+    index: 30
+  - key: event:/AMB/Globals/Forest wind and birds AMB
+    index: 31
+  - key: event:/SFX/Mechanics/Pumpkin/Retry
+    index: 32
+  - key: event:/SFX/Player/FootstepsP
+    index: 33
+  - key: event:/SFX/ENV/Car/Outside/OCar EngineLoop
+    index: 34
+  - key: event:/SFX/Mechanics/Branches/Move branches
+    index: 35
+  - key: event:/SFX/Mechanics/Fish eggs/Hungry FB
+    index: 36
+  - key: event:/SFX/ENV/Car/Inside/ICDoor Close
+    index: 37
+  - key: event:/SFX/Mechanics/Dialog Bubble
+    index: 38
+  - key: event:/SFX/ENV/Car/Inside/ICar Stop
+    index: 39
+  - key: event:/SFX/ENV/Car/Outside/OCDoor Open
+    index: 40
+  - key: event:/SFX/Mechanics/Bugs/Splat
+    index: 41
+  - key: event:/SFX/Mechanics/Puzzle/Puzzle start
+    index: 42
+  - key: event:/SFX/NPC/Movment/LandNPC
+    index: 43
+  - key: event:/SFX/ENV/Car/Inside/ICDoor Open
+    index: 44
+  - key: event:/SFX/ENV/Metal Gate
+    index: 45
+  - key: event:/AMB/Globals/Forest AMB
+    index: 46
+  - key: event:/SFX/Mechanics/Bugs/Bugs crawling loop
+    index: 47
+  - key: event:/SFX/ENV/Car/Inside/ICar Start
+    index: 48
+  - key: event:/SFX/Player/LandP
+    index: 49
+  - key: event:/SFX/ENV/Car/Inside/ICar EngineLoop
+    index: 50
+  - key: event:/SFX/Mechanics/Pumpkin/Shave
+    index: 51
+  - key: event:/UI/Front end/select/Young/UI Forward
+    index: 52
+  - key: event:/UI/Front end/select/Young/UI Select
+    index: 53
+  - key: event:/UI/Front end/select/Young/UI Back
+    index: 54
+--- !u!114 &390353217541192869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DX/PC/Lona Talking
+  m_EditorClassIdentifier: 
+  Path: event:/DX/PC/Lona Talking
+  Guid:
+    Data1: -1777907832
+    Data2: 1202938137
+    Data3: 1622034598
+    Data4: 8528399
+  Banks:
+  - {fileID: -1002388109882158500}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3447222594540575686}
+  - {fileID: -3698589403644319499}
+  - {fileID: 4689625365682857782}
+  - {fileID: -2823190928578496644}
+  - {fileID: 3598704717978325738}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 200
+--- !u!114 &519971810254794800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/NPC/Jason/YJason Talking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NPC/Jason/YJason Talking
+  Guid:
+    Data1: -488523650
+    Data2: 1124350201
+    Data3: -600347472
+    Data4: -829682342
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &559763691405307265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Tutorial BGM/sec3
+  m_EditorClassIdentifier: 
+  Name: sec3
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1901171272
+    data2: 1249407490
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &840598629499447713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Front end/select/Young/UI Forward
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Front end/select/Young/UI Forward
+  Guid:
+    Data1: 920973855
+    Data2: 1257726945
+    Data3: 1612530055
+    Data4: 294027419
+  Banks:
+  - {fileID: -4187624749759144571}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &1002558087598987975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DX/NPC/Jason Talking
+  m_EditorClassIdentifier: 
+  Path: event:/DX/NPC/Jason Talking
+  Guid:
+    Data1: 898241713
+    Data2: 1300278935
+    Data3: 1792328105
+    Data4: -750756329
+  Banks:
+  - {fileID: -1002388109882158500}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6432503937796150891}
+  - {fileID: 5696179109380676781}
+  - {fileID: 6132648241455342999}
+  - {fileID: 5522149239793390646}
+  - {fileID: 6482585472149711313}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 200
+--- !u!114 &1104476065841324815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Heavy winds Forest/loopEnd
+  m_EditorClassIdentifier: 
+  Name: loopEnd
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Loop
+  - End
+  Exists: 1
+--- !u!114 &1466038541828666107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/JumpNPC/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &1478292518094448146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Town AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Town AMB
+  Guid:
+    Data1: 1149970490
+    Data2: 1137862833
+    Data3: 248967308
+    Data4: -172469577
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6191167859820559496}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 114515
+--- !u!114 &1606604404390846324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Forest night AMB/loopEnd
+  m_EditorClassIdentifier: 
+  Name: loopEnd
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3583350736
+    data2: 2150705294
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Loop
+  - End
+  Exists: 1
+--- !u!114 &1707756698690086597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Fish eggs/Hatching/Click 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Fish eggs/Hatching/Click 2
+  Guid:
+    Data1: -2113627068
+    Data2: 1245368223
+    Data3: -2102781038
+    Data4: 1236380293
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1741
+--- !u!114 &2019970310526581554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle start
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Puzzle/Puzzle start
+  Guid:
+    Data1: -1551137841
+    Data2: 1330984728
+    Data3: 1742725035
+    Data4: -187494383
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1600
+--- !u!114 &2048706438493364564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FootstepsNpc/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2106969964197055127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Pumpkin/Retry
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Pumpkin/Retry
+  Guid:
+    Data1: -1972591719
+    Data2: 1267459123
+    Data3: -1836851317
+    Data4: -1240197201
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 405
+--- !u!114 &2162116373641664625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Pumpkin/Shave
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Pumpkin/Shave
+  Guid:
+    Data1: -1719457794
+    Data2: 1189047679
+    Data3: -1785646946
+    Data4: -489809106
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 202
+--- !u!114 &2173331752671702456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Puzzle/Puzzle select
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Puzzle/Puzzle select
+  Guid:
+    Data1: 598155549
+    Data2: 1275830164
+    Data3: 42277781
+    Data4: 1945209458
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2548624789906582768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Metal Gate
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Metal Gate
+  Guid:
+    Data1: 128400610
+    Data2: 1153446803
+    Data3: -270011502
+    Data4: 443748413
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5398274541950428160}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2895358424842085196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Forest AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Forest AMB
+  Guid:
+    Data1: 1605033708
+    Data2: 1181195740
+    Data3: -574023251
+    Data4: 789539891
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4366815142764842842}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 90240
+--- !u!114 &2987241630909845034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/JumpNPC/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
+  Exists: 1
+--- !u!114 &3120091528469591046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LandP/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
+  Exists: 1
+--- !u!114 &3158096937225791730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Branches/Move branches loop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Branches/Move branches loop
+  Guid:
+    Data1: -636422766
+    Data2: 1189802381
+    Data3: 117571205
+    Data4: -1726814234
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9068
+--- !u!114 &3187137032586539272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/NPC/Movment/FootstepsNpc
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NPC/Movment/FootstepsNpc
+  Guid:
+    Data1: -837019096
+    Data2: 1262053430
+    Data3: 808376475
+    Data4: -1727618132
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6543642337366570972}
+  - {fileID: 2048706438493364564}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
+--- !u!114 &3187951860548638559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639299143273464807
+  FileSizes:
+  - Name: Desktop
+    Value: 6752
+  Exists: 1
+--- !u!114 &3289533716004978989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Bird sounds
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Bird sounds
+  Guid:
+    Data1: -1342055581
+    Data2: 1166038288
+    Data3: 1187383441
+    Data4: 1755888853
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3447222594540575686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lona Talking/characterAge
+  m_EditorClassIdentifier: 
+  Name: characterAge
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1297164552
+    data2: 664545430
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Old
+  - Young
+  Exists: 1
+--- !u!114 &3598704717978325738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lona Talking/Vowel
+  m_EditorClassIdentifier: 
+  Name: Vowel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.5
+  ID:
+    data1: 3565018024
+    data2: 2386496228
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &3694754757179069436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dialog Bubble/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &4104644337405330021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Front end/select/Young/UI Back
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Front end/select/Young/UI Back
+  Guid:
+    Data1: -1703903820
+    Data2: 1205112653
+    Data3: -1041177704
+    Data4: -1697676151
+  Banks:
+  - {fileID: -4187624749759144571}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &4146945344233330144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LandNPC/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &4173760679533942543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Dialog Bubble
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Dialog Bubble
+  Guid:
+    Data1: -218417481
+    Data2: 1341814687
+    Data3: 466425525
+    Data4: 247848723
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3694754757179069436}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4366815142764842842
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3914,4 +2221,601 @@ MonoBehaviour:
   Labels:
   - Loop
   - End
+  Exists: 1
+--- !u!114 &4689625365682857782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lona Talking/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2723243440
+    data2: 1420114338
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &5029759612763518027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FootstepsP/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &5414480727791474873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/Globals/Forest night AMB
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/Globals/Forest night AMB
+  Guid:
+    Data1: -489733745
+    Data2: 1213472850
+    Data3: 291191949
+    Data4: 1874520312
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1606604404390846324}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 142973
+--- !u!114 &5522149239793390646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jason Talking/Pitch
+  m_EditorClassIdentifier: 
+  Name: Pitch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.5
+  ID:
+    data1: 3071614846
+    data2: 2746791122
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &5595758655685907161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Inside/ICar Stop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Inside/ICar Stop
+  Guid:
+    Data1: 1805345982
+    Data2: 1103281106
+    Data3: -413301079
+    Data4: 466133451
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1001
+--- !u!114 &5696179109380676781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jason Talking/characterAge
+  m_EditorClassIdentifier: 
+  Name: characterAge
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1297164552
+    data2: 664545430
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Old
+  - Young
+  Exists: 1
+--- !u!114 &5759875364374856602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Bugs/Bug hiss
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Bugs/Bug hiss
+  Guid:
+    Data1: 1286385230
+    Data2: 1307219268
+    Data3: 264606104
+    Data4: -1555402354
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5865987574687764026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LandNPC/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
+  Exists: 1
+--- !u!114 &6132648241455342999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jason Talking/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2723243440
+    data2: 1420114338
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6310454503981422592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Bugs/Bugs crawling loop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Bugs/Bugs crawling loop
+  Guid:
+    Data1: 1254635506
+    Data2: 1214756887
+    Data3: -2054575985
+    Data4: 1685924165
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1398
+--- !u!114 &6432503937796150891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jason Talking/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &6482585472149711313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jason Talking/Vowel
+  m_EditorClassIdentifier: 
+  Name: Vowel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.5
+  ID:
+    data1: 3565018024
+    data2: 2386496228
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6543642337366570972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FootstepsNpc/groundType
+  m_EditorClassIdentifier: 
+  Name: groundType
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1822729649
+    data2: 4252896315
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Grass
+  - Carpet
+  - Tile
+  - Stone
+  Exists: 1
+--- !u!114 &6720604259209386210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/JumpP/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &6804831875839879372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Inside/ICar Start
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Inside/ICar Start
+  Guid:
+    Data1: 2080930040
+    Data2: 1145493497
+    Data3: -1760749128
+    Data4: 1913506205
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3001
+--- !u!114 &7015500896640758114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/LandP
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/LandP
+  Guid:
+    Data1: 214050813
+    Data2: 1109917373
+    Data3: -197586297
+    Data4: -772855958
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 9047107836231562276}
+  - {fileID: 3120091528469591046}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
+--- !u!114 &7638460894051527235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/NPC/Movment/JumpNPC
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NPC/Movment/JumpNPC
+  Guid:
+    Data1: 779562514
+    Data2: 1220215410
+    Data3: 1824781954
+    Data4: -1178138824
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2987241630909845034}
+  - {fileID: 1466038541828666107}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 664
+--- !u!114 &8540808013764015989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENV/Car/Outside/OCDoor Close
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENV/Car/Outside/OCDoor Close
+  Guid:
+    Data1: -537374887
+    Data2: 1277191004
+    Data3: 1254714542
+    Data4: -298247675
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8591740699815178600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Fish eggs/Hungry FB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Fish eggs/Hungry FB
+  Guid:
+    Data1: 238307236
+    Data2: 1161788911
+    Data3: 540390578
+    Data4: 238388377
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
+--- !u!114 &8912215709960934615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/Yell
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/Yell
+  Guid:
+    Data1: -1481516213
+    Data2: 1235390282
+    Data3: 474548140
+    Data4: 1100207482
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3502722377010050319}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &8957348881619263397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Mechanics/Pumpkin/Carving
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Mechanics/Pumpkin/Carving
+  Guid:
+    Data1: 1332753023
+    Data2: 1216859038
+    Data3: 1173164177
+    Data4: -289252451
+  Banks:
+  - {fileID: 9075975263135400520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &9047107836231562276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LandP/roomSize
+  m_EditorClassIdentifier: 
+  Name: roomSize
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2885259439
+    data2: 2548027537
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &9075975263135400520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Make Me Forget Fmod/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 639299172006516202
+  FileSizes:
+  - Name: Desktop
+    Value: 12045312
   Exists: 1

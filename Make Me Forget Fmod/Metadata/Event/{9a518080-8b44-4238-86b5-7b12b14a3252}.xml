@@ -53,7 +53,7 @@
 			<destination>{bc14ac10-5acb-4378-98ea-767da312f9d0}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{bc0f60e3-2bdb-4155-9e4c-fa21b515df0e}</destination>
+			<destination>{ce140400-f874-47a7-92af-ee06d6f904b7}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{4600f882-693d-4e62-aadb-0ea8d1444eb1}" />
@@ -92,7 +92,6 @@
 		<property name="length">
 			<value>3.0017083333333332</value>
 		</property>
-		<property name="name" />
 		<relationship name="modulators">
 			<destination>{37c70814-7e38-44ae-a4d3-6701732ca449}</destination>
 		</relationship>
