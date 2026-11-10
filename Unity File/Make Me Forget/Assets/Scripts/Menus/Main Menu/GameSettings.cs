@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 using FMODUnity;
@@ -12,7 +11,7 @@ public class GameSettings : MonoBehaviour
     [SerializeField] private Slider sfxVolumeSlider;
 
     [SerializeField] private string masterBusPath = "bus:/";
-    [SerializeField] private string musicBusPath = "bus:/Music";
+    [SerializeField] private string musicBusPath = "bus:/MX";
     [SerializeField] private string sfxBusPath = "bus:/SFX";
 
     private Bus masterBus;
@@ -100,6 +99,8 @@ public class GameSettings : MonoBehaviour
 
     public void SetMusicVolume(float volume)
     {
+        Debug.Log($"Music slider: {volume}, Bus valid: {musicBus.isValid()}");
+
         if (musicBus.isValid())
             musicBus.setVolume(volume);
 
@@ -109,6 +110,8 @@ public class GameSettings : MonoBehaviour
 
     public void SetSFXVolume(float volume)
     {
+        Debug.Log("SFX Slider Value: " + volume);
+
         if (sfxBus.isValid())
             sfxBus.setVolume(volume);
 
