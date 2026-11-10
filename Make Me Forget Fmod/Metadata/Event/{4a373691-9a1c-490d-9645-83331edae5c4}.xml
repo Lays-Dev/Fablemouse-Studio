@@ -73,7 +73,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{6b710cdd-2210-44da-a43c-11c2b4b68807}">
 		<property name="volume">
-			<value>-3</value>
+			<value>2.5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{562b86c5-7f9d-4b46-ade6-9629ffd80bc4}</destination>
@@ -98,12 +98,16 @@
 	<object class="MixerBusPanner" id="{6e502e23-f211-4bf3-aaa9-50faa1c47f2b}" />
 	<object class="MixerBusEffectChain" id="{562b86c5-7f9d-4b46-ade6-9629ffd80bc4}">
 		<relationship name="effects">
-			<destination>{1060cb42-e938-4cb8-a114-7d6e75a52def}</destination>
 			<destination>{2ebe1e67-a727-4110-9f42-a9ec715cf8ed}</destination>
+			<destination>{1060cb42-e938-4cb8-a114-7d6e75a52def}</destination>
 			<destination>{f14b2e97-1986-496f-8d07-d2c970a6196d}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{e5c20754-a102-4116-85a9-493655629688}" />
+	<object class="MixerBusPanner" id="{e5c20754-a102-4116-85a9-493655629688}">
+		<property name="overridingOutputFormat">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MultiSound" id="{05c84418-2d18-48ed-8823-a2a3acea6c95}">
 		<relationship name="modulators">
 			<destination>{7cbe8bdf-e036-425d-ba50-4ee288f3aa9b}</destination>
@@ -118,15 +122,15 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{596f381f-dfe0-46ed-b7e5-5463ffb6d359}" />
+	<object class="MixerBusFader" id="{2ebe1e67-a727-4110-9f42-a9ec715cf8ed}" />
 	<object class="LimiterEffect" id="{1060cb42-e938-4cb8-a114-7d6e75a52def}">
 		<property name="ceiling">
 			<value>-6</value>
 		</property>
 		<property name="release">
-			<value>200</value>
+			<value>300</value>
 		</property>
 	</object>
-	<object class="MixerBusFader" id="{2ebe1e67-a727-4110-9f42-a9ec715cf8ed}" />
 	<object class="LoudnessMeter" id="{f14b2e97-1986-496f-8d07-d2c970a6196d}">
 		<property name="meterRange">
 			<value>1</value>

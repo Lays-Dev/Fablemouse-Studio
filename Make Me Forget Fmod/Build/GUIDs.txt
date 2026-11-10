@@ -29,6 +29,8 @@
 {358a14b1-ae97-4d80-a9c1-d46a175e40d3} event:/DX/NPC/Jason Talking
 {96074788-6119-47b3-a648-ae600f228200} event:/DX/PC/Lona Talking
 {50f45498-9fed-43b7-9c8a-9180e3e03d86} event:/MX/Exploration/Tutorial BGM
+{58a5dbfc-aaf7-43c1-900f-7693716b3230} event:/MX/Story/Westwood Welcome
+{bcfaf443-2b11-441b-aeef-ed3912179b95} event:/MX/System/Main Menu
 {b001db63-5510-4580-9108-c646d5bca868} event:/SFX/ENV/Bird sounds
 {95037a12-bec9-4792-8b39-f9ef0b1c2021} event:/SFX/ENV/CL Fence
 {29b6e0ab-69fc-4a22-92d9-ce90a4c88284} event:/SFX/ENV/Car/Inside/ICDoor Close
@@ -51,7 +53,8 @@
 {e7c34099-a4f4-47f4-97d9-8a3e2aeb7121} event:/SFX/Mechanics/Bugs/Stone lift
 {f2fb36b7-779f-4ffa-b516-cd1b13dfc50e} event:/SFX/Mechanics/Dialog Bubble
 {4a373691-9a1c-490d-9645-83331edae5c4} event:/SFX/Mechanics/Fish eggs/Chirp FB
-{748c2206-9a8a-4497-a3ae-2943b1472a81} event:/SFX/Mechanics/Fish eggs/Hatching
+{602b0382-73f4-4fef-850f-8c534d077dd7} event:/SFX/Mechanics/Fish eggs/Hatching/Click 1
+{82049c44-cf9f-4a3a-921b-aa8285aab149} event:/SFX/Mechanics/Fish eggs/Hatching/Click 2
 {0e3447a4-7def-453f-b2b4-35209984350e} event:/SFX/Mechanics/Fish eggs/Hungry FB
 {aa588322-d434-49e2-aba4-e257682223e3} event:/SFX/Mechanics/Ground impact
 {4f70327f-cb9e-4887-9110-ed459d5bc2ee} event:/SFX/Mechanics/Pumpkin/Carving
@@ -67,6 +70,7 @@
 {7c08769c-9ea0-45c4-b8e7-20214979d13b} event:/SFX/Player/FootstepsP
 {c8c1c47d-beaf-410b-a9eb-9d33933f4a5f} event:/SFX/Player/JumpP
 {0cc227fd-febd-4227-8712-39f46a27efd1} event:/SFX/Player/LandP
+{ac21b88d-2e19-4550-b08d-fb3a5a1fe9b3} event:/SFX/Player/Talking
 {a7b1db4b-8f4a-49a2-ac07-491c7ad59341} event:/SFX/Player/Yell
 {9a707db4-8f4d-47d4-98e3-f0c18984cf9a} event:/UI/Front end/select/Young/UI Back
 {36e4f21f-63e1-4af7-8741-1d609b808611} event:/UI/Front end/select/Young/UI Forward
@@ -82,3 +86,4 @@
 {12a19525-41de-4beb-8a01-f49cb651bfc5} parameter:/sec2
 {9ef676e7-a41f-4695-a9e0-3686ecb925e3} parameter:/sec3
 {aa6f256f-2cb1-4776-895b-88aeb976ab49} parameter:/sec4
+{5a55593b-bc7d-45bf-b481-16cc400c331b} snapshot:/menuUp

@@ -5,7 +5,7 @@
 			<value>Click 1</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{6ac3463b-6889-4712-8e8e-65d18dd6711c}</destination>
@@ -54,7 +54,7 @@
 			<destination>{11a14458-3072-499b-bc0c-1540a636f9e3}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{bc0f60e3-2bdb-4155-9e4c-fa21b515df0e}</destination>
+			<destination>{d00c655e-e94d-4d7d-9cc5-6bb9a6eba9b9}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{99cd0311-f570-44e4-8fa7-5338fa80c219}" />
@@ -84,6 +84,9 @@
 	<object class="EventMixerMaster" id="{4c1476ce-6cac-4f80-b4d0-bc0020d87af0}">
 		<property name="volume">
 			<value>-4</value>
+		</property>
+		<property name="overridingInputFormat">
+			<value>1</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{86d645c2-89d3-4824-946a-a72cb1906ffd}</destination>
@@ -160,13 +163,16 @@
 			<destination>{fa2ee8e8-cee6-433a-ba6a-ebaeba403840}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{5385f22d-2455-49bc-b258-4ce6f08e97be}" />
+	<object class="MixerBusPanner" id="{5385f22d-2455-49bc-b258-4ce6f08e97be}">
+		<property name="overridingOutputFormat">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{a4736608-c251-456f-9fc9-a705ac2457ce}" />
 	<object class="MixerBusEffectChain" id="{e054607e-f85c-4c07-9cf7-daebf91a00dc}">
 		<relationship name="effects">
 			<destination>{f1db43e2-18af-4d93-b709-585251b42285}</destination>
 			<destination>{8117f265-295a-4a00-95ed-fbb6c6a88db2}</destination>
-			<destination>{82d1dca6-61ef-43bc-b6d5-ce714d2b35a2}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b5e58854-05e1-428d-bf67-9678f13f174b}" />
@@ -188,7 +194,7 @@
 	<object class="MixerBusFader" id="{ee7eb8dd-6ee2-4bb6-a01d-1b9512ae5fad}" />
 	<object class="ProxyEffect" id="{fa2ee8e8-cee6-433a-ba6a-ebaeba403840}">
 		<property name="inputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="preset">
 			<destination>{003480ab-c506-48b4-9c55-6c4b4191b76e}</destination>
@@ -198,14 +204,6 @@
 	<object class="PannerEffect" id="{8117f265-295a-4a00-95ed-fbb6c6a88db2}">
 		<property name="stereoPan">
 			<value>-20</value>
-		</property>
-	</object>
-	<object class="SpatialiserEffect" id="{82d1dca6-61ef-43bc-b6d5-ce714d2b35a2}">
-		<property name="panBlend">
-			<value>0.204999998</value>
-		</property>
-		<property name="userStereoSeparation">
-			<value>120</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{ebec91c9-87b8-4ecd-b567-9a80bacf9e64}">

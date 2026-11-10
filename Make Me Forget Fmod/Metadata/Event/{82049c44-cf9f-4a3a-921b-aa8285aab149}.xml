@@ -5,7 +5,7 @@
 			<value>Click 2</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{6ac3463b-6889-4712-8e8e-65d18dd6711c}</destination>
@@ -54,7 +54,7 @@
 			<destination>{d105483a-f473-48da-bf8a-2282452862fc}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{bc0f60e3-2bdb-4155-9e4c-fa21b515df0e}</destination>
+			<destination>{d00c655e-e94d-4d7d-9cc5-6bb9a6eba9b9}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{ea63578d-04d3-4eb2-8101-2179af92a826}" />
@@ -84,6 +84,9 @@
 	<object class="EventMixerMaster" id="{6ffc11e8-80ad-4cd5-a305-163db3d4d19d}">
 		<property name="volume">
 			<value>-4</value>
+		</property>
+		<property name="overridingInputFormat">
+			<value>1</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{3e85c12f-a974-4463-bc14-a378e8b678bf}</destination>
@@ -130,7 +133,6 @@
 		<property name="startOffset">
 			<value>15.5</value>
 		</property>
-		<property name="name" />
 		<property name="pitch">
 			<value>-3</value>
 		</property>
@@ -161,13 +163,16 @@
 			<destination>{6dd6f81b-026f-4e7c-9073-aa1ed9c010eb}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{11880a12-e550-4ab7-9c23-983f7c1bdb6e}" />
+	<object class="MixerBusPanner" id="{11880a12-e550-4ab7-9c23-983f7c1bdb6e}">
+		<property name="overridingOutputFormat">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{c86b6650-b0a5-4fe8-95d7-e35943c8d900}" />
 	<object class="MixerBusEffectChain" id="{f62c3934-8ac7-4094-9438-f02376da7334}">
 		<relationship name="effects">
 			<destination>{0e0d3fd5-2de5-4c8d-a714-15ee32814fed}</destination>
 			<destination>{2ca9f6ec-dc24-482a-855d-3957cae30f54}</destination>
-			<destination>{15361a02-ca40-49ac-978b-3a6d798d8fe1}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3164a5f5-b429-4ced-bcda-cfb4493af6b3}" />
@@ -189,7 +194,7 @@
 	<object class="MixerBusFader" id="{6ce517ee-6411-4a52-8013-49a549f81f2c}" />
 	<object class="ProxyEffect" id="{6dd6f81b-026f-4e7c-9073-aa1ed9c010eb}">
 		<property name="inputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="preset">
 			<destination>{003480ab-c506-48b4-9c55-6c4b4191b76e}</destination>
@@ -199,14 +204,6 @@
 	<object class="PannerEffect" id="{2ca9f6ec-dc24-482a-855d-3957cae30f54}">
 		<property name="stereoPan">
 			<value>-20</value>
-		</property>
-	</object>
-	<object class="SpatialiserEffect" id="{15361a02-ca40-49ac-978b-3a6d798d8fe1}">
-		<property name="panBlend">
-			<value>0.204999998</value>
-		</property>
-		<property name="userStereoSeparation">
-			<value>120</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{f86061a1-4fef-4ad3-96a9-6ad6b737f42a}">
