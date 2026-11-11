@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 68800d481fbe8404db852f2aebf83f19, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 5f1dfd755c895e247b573cb9cb0ab8ec, type: 2}
+      objectReference: {fileID: 2100000, guid: 433b0039c8168514cbc6908d2bec5770, type: 2}
     - target: {fileID: 919132149155446097, guid: 68800d481fbe8404db852f2aebf83f19, type: 3}
       propertyPath: m_Name
       value: Fire_Hydrant
