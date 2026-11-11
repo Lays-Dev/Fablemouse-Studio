@@ -17,6 +17,7 @@ public class Live2DAnimationController : MonoBehaviour
     // These components must be attached to the same GameObject as this script.
     private PlayerInput playerInput;
     private InputAction moveAction;
+    private InputAction sprintAction;
 
     // Holds the players direction. 1 being Right. -1 being Left.
     // This will keep the script from updating Little Lona's scale every frame.
@@ -42,7 +43,17 @@ public class Live2DAnimationController : MonoBehaviour
         // Null check.
         if (moveAction == null)
         {
-            Debug.LogError("Move action was not found in PlayerInput.", this)
+            Debug.LogError("Move action was not found in PlayerInput.", this);
+            return;
+        }
+
+        // Get the sprint action
+        sprintAction = playerInput.actions["Sprint"];
+
+        // Null check
+        if (sprintAction == null)
+        {
+            Debug.LogError("Sprint action was not found in PlayerInput.", this);
             return;
         }
     }
@@ -50,9 +61,9 @@ public class Live2DAnimationController : MonoBehaviour
     private void Update()
     {
         // Null check.
-        if (moveAction == null)
+        if (moveAction == null || sprintAction == null)
         {
-            Debug.LogError("Move action was not found in PlayerInput.", this)
+            Debug.LogError("Move or Sprint action was not found in PlayerInput.", this);
             return;
         }
 
@@ -60,8 +71,13 @@ public class Live2DAnimationController : MonoBehaviour
         // Using the X value.
         Vector2 moveInput = moveAction.ReadValue<Vector2>();
 
+        // Checks if the player is sprinting by checking the sprint action keybind
+        bool isSprinting = sprintAction.IsPressed() && moveInput.magnitude > 0.01f;
+
         // Update animation speed.
         animator.SetFloat("Speed", Mathf.Abs(moveInput.x));
+
+        animator.SetBool("IsSprinting", isSprinting);
 
         // Flip immediately when direction changes.
         if (moveInput.x < 0 && currentDirection != -1)
