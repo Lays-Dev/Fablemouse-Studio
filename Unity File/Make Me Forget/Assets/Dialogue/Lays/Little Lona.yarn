@@ -96,7 +96,7 @@ Jason: …
 Lona: …
 Lona: Okay my turn!
 Jason: Okay, no more thorny bushes.
-<<show JasonBubble>>
+<<show JasonCountZone>>
 ===
 title: Forest_Trip
 ---
@@ -170,4 +170,8 @@ Lona: I think the birds would enjoy this.
 title: Rock_Reminder_2
 ---
 Lona: I better not keep them waiting.
+===
+title: Jason_Counting
+---
+Jason: 10...9...8...
 ===
