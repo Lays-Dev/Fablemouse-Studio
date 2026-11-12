@@ -104,10 +104,12 @@ Lona: Stupid tree.
 ===
 title: Hospital
 ---
+<<walk "lil lona live2D" LonaSpot>>>>
 Lona: Whoa…
 <<wait 1>>
 <<hide Jason>>
 <<show JasonHospital>>
+<<walk JasonHospital JasonSpot>>
 Jason: Lona?
 Jason: I think you forgot how to play this game.
 Jason: …Oh.
