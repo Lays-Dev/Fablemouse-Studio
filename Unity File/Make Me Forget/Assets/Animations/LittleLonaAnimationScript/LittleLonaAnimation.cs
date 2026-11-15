@@ -42,12 +42,21 @@ public class Live2DAnimationController : MonoBehaviour
     // This will be used for the interact animation.
     private bool isInteracting = false;
 
+    // NEW: Used to check if the player is frozen (cutscenes and dialogue).
+    private PlayerMovement playerMovement;
+
+    // NEW: Remembers if the player was frozen last frame.
+    private bool wasFrozen = false;
+
 #endregion
 #region Awake
 
     // Find and store references to components when the script is initialized.
     private void Awake()
     {
+        // NEW: Get the PlayerMovement component on the same GameObject.
+        playerMovement = GetComponent<PlayerMovement>();
+
         // Get the PlayerInput component. This must be on the same GameObject as this script.
         playerInput = GetComponent<PlayerInput>();
 
@@ -100,6 +109,23 @@ public class Live2DAnimationController : MonoBehaviour
             Debug.LogError("Move, Sprint, or Interact action was not found in PlayerInput.", this);
             return;
         }
+
+        // NEW: Ignore input while the player is frozen.
+        // This lets cutscenes control the animation instead.
+        if (playerMovement != null && playerMovement.IsFrozen)
+        {
+            // Only stop the animations once, right when she gets frozen.
+            if (!wasFrozen)
+            {
+                animator.SetFloat("Speed", 0f);
+                animator.SetBool("IsSprinting", false);
+                wasFrozen = true;
+            }
+
+            return;
+        }
+
+        wasFrozen = false;
 
 
         // Checks if the interact button was pressed and the player is not currently interacting.
@@ -168,6 +194,15 @@ public class Live2DAnimationController : MonoBehaviour
 
 #endregion
 #region Walking Left
+
+    // NEW: Lets cutscenes turn her left (-1) or right (1).
+    public void FaceDirection(int direction)
+    {
+        if (direction == 0 || direction == currentDirection) return;
+
+        currentDirection = direction;
+        UpdateFacingDirection();
+    }
 
     // Update the characters scale.
     // This will make it appear as if Little Lona is moving left.

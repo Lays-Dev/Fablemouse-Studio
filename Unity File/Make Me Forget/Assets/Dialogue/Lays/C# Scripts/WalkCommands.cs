@@ -36,7 +36,7 @@ public class WalkCommands : MonoBehaviour
     {
         if (who == null || spot == null) yield break;
 
-        // turn off physics while walking so she stops bouncing pls
+        // turn off physics while walking so she stops bouncing
         Rigidbody rb = who.GetComponent<Rigidbody>();
         bool wasKinematic = false;
         if (rb != null)
@@ -45,11 +45,16 @@ public class WalkCommands : MonoBehaviour
             rb.isKinematic = true;
         }
 
+        // turn them to face where they're walking
+        Live2DAnimationController facing = who.GetComponent<Live2DAnimationController>();
+        if (facing != null)
+            facing.FaceDirection(spot.position.x < who.position.x ? -1 : 1);
+
         // start the walk animation
         Animator anim = who.GetComponentInChildren<Animator>();
         SetWalking(anim, true);
 
-        // how high above the ground they are so they follow the terrain
+        // how high above the ground they are, so they follow the terrain
         float heightAboveGround = who.position.y - GroundHeight(who.position);
 
         Vector2 goal = new Vector2(spot.position.x, spot.position.z);
@@ -65,7 +70,7 @@ public class WalkCommands : MonoBehaviour
 
             flat = Vector2.MoveTowards(flat, goal, speed * Time.deltaTime);
 
-            // walk on the ground instead of levitating my gawd
+            // walk on the ground instead of levitating
             Vector3 newPos = new Vector3(flat.x, pos.y, flat.y);
             newPos.y = GroundHeight(newPos) + heightAboveGround;
             who.position = newPos;
@@ -97,7 +102,7 @@ public class WalkCommands : MonoBehaviour
         {
             if (p.name != walkAnimParameter) continue;
 
-            // if the parameter is a Bool or a Float 
+            // works if the parameter is a Bool or a Float (like Speed)
             if (p.type == AnimatorControllerParameterType.Bool)
                 anim.SetBool(walkAnimParameter, walking);
             else if (p.type == AnimatorControllerParameterType.Float)

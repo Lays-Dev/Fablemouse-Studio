@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -26,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
 
     // Tracks whether the player is frozen.
     private bool _playerFrozen;
+
+    // NEW: Lets other scripts check if the player is frozen.
+    public bool IsFrozen => _playerFrozen;
 
     // Stores the original Rigidbody constraints.
     private RigidbodyConstraints _originalConstraints;
