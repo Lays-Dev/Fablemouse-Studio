@@ -3882,6 +3882,16 @@ MonoBehaviour:
   lonaNames:
   - Lona
   - Little Lona
+  talkSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  dialogueText: {fileID: 0}
+  lettersPerNote: 2
+  noteScale: 00000000020000000400000007000000090000000c000000
 --- !u!114 &423781289093249888
 MonoBehaviour:
   m_ObjectHideFlags: 0

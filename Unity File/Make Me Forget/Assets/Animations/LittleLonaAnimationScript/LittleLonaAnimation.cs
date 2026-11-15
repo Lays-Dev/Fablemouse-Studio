@@ -7,6 +7,9 @@ using System.Collections;
 using TMPro;
 using Yarn.Unity;
 
+// NEW: Used for the talking sound.
+using FMODUnity;
+
 // This script will control Little Lona's walk left and right animation.
 public class Live2DAnimationController : MonoBehaviour
 {
@@ -36,6 +39,20 @@ public class Live2DAnimationController : MonoBehaviour
 
     [Tooltip("Names in the Yarn file that count as Lona talking.")]
     public string[] lonaNames = { "Lona", "Little Lona" };
+
+    // NEW
+    [Header("Talking Sound")]
+    [Tooltip("Lona's talking FMOD event.")]
+    public EventReference talkSound;
+
+    [Tooltip("Dialogue System > Canvas > Line Presenter > Text.")]
+    public TMP_Text dialogueText;
+
+    [Tooltip("Plays one note every this many letters. Higher = fewer notes.")]
+    public int lettersPerNote = 2;
+
+    [Tooltip("Notes she can play, in semitones up from the original note. Default is a pentatonic scale, so it always sounds nice.")]
+    public int[] noteScale = { 0, 2, 4, 7, 9, 12 };
 
 
 #endregion
@@ -69,6 +86,13 @@ public class Live2DAnimationController : MonoBehaviour
 
     // NEW: Remembers if she was talking last frame.
     private bool wasTalking = false;
+
+    // NEW: How many letters were showing last frame, and letters since the last note.
+    private int lastVisibleLetters = 0;
+    private int lettersSinceNote = 0;
+
+    // NEW: The last note played, so the same one doesn't repeat twice in a row.
+    private int lastNote = -1;
 
 #endregion
 #region Awake
@@ -260,6 +284,76 @@ public class Live2DAnimationController : MonoBehaviour
             animator.SetBool("IsTalking", talking);
             wasTalking = talking;
         }
+
+        // NEW: Talking sound.
+        UpdateTalkSound(talking);
+    }
+
+    // NEW: Plays a note every few letters while her text types out.
+    private void UpdateTalkSound(bool talking)
+    {
+        if (dialogueText == null || talkSound.IsNull) return;
+
+        int visible = Mathf.Min(dialogueText.maxVisibleCharacters, dialogueText.textInfo.characterCount);
+
+        // A new line started, so start counting again (first letter plays a note).
+        if (visible < lastVisibleLetters)
+        {
+            lettersSinceNote = lettersPerNote - 1;
+        }
+
+        if (talking)
+        {
+            bool playedThisFrame = false;
+
+            // Check each new letter that appeared since last frame.
+            for (int i = lastVisibleLetters; i < visible; i++)
+            {
+                char letter = dialogueText.textInfo.characterInfo[i].character;
+
+                // Spaces and punctuation don't make sounds.
+                if (!char.IsLetterOrDigit(letter)) continue;
+
+                lettersSinceNote++;
+
+                // Max one note per frame, so skipping ahead doesn't blast notes.
+                if (lettersSinceNote >= lettersPerNote && !playedThisFrame)
+                {
+                    PlayNote();
+                    lettersSinceNote = 0;
+                    playedThisFrame = true;
+                }
+            }
+        }
+
+        lastVisibleLetters = visible;
+    }
+
+    // NEW: Plays her note, pitched to a random note from the scale.
+    private void PlayNote()
+    {
+        FMOD.Studio.EventInstance note = RuntimeManager.CreateInstance(talkSound);
+
+        if (noteScale != null && noteScale.Length > 0)
+        {
+            // Pick a random note, but not the same as last time.
+            int pick = Random.Range(0, noteScale.Length);
+            if (noteScale.Length > 1 && pick == lastNote)
+            {
+                pick = (pick + 1) % noteScale.Length;
+            }
+            lastNote = pick;
+
+            // Turns semitones into pitch (12 semitones up = double the pitch).
+            note.setPitch(Mathf.Pow(2f, noteScale[pick] / 12f));
+        }
+
+        // Plays it from where Lona is (only matters if the event is 3D).
+        note.set3DAttributes(RuntimeUtils.To3DAttributes(transform));
+        note.start();
+
+        // Frees the sound automatically once it finishes playing.
+        note.release();
     }
 
 #endregion
