@@ -25,6 +25,15 @@ public class CameraLookCutscene : MonoBehaviour
     public float moveTime = 1.5f;
     public float holdTime = 1.5f;
 
+    [Header("Walk While Camera Moves (optional)")]
+    public WalkCommands walkCommands;
+    public string walkWho;
+    public string walkSpot;
+
+    [Header("Slow Zoom During Dialogue (optional)")]
+    public Transform closeSpot;
+    public float zoomTime = 30f;
+
     private bool hasPlayed = false;
 
     void OnEnable()
@@ -58,7 +67,25 @@ public class CameraLookCutscene : MonoBehaviour
 
         Quaternion homeRot = cam.rotation;
 
+        // Wait one frame so her animation script finishes "freezing" her first,
+        // otherwise it resets her walk animation right after it starts.
+        yield return null;
+
+        // Start walking at the same time the camera starts moving.
+        Coroutine walk = null;
+        if (walkCommands != null && !string.IsNullOrEmpty(walkWho))
+            walk = walkCommands.Walk(walkWho, walkSpot);
+
         yield return Glide(cam.position, homeRot, lookSpot.position, lookSpot.rotation);
+
+        // If she's still walking when the camera arrives, wait for her.
+        if (walk != null)
+            yield return walk;
+
+        // Slowly move in closer while the dialogue plays.
+        Coroutine zoom = null;
+        if (closeSpot != null)
+            zoom = StartCoroutine(SlowZoom());
 
         if (dialogueRunner != null && !string.IsNullOrEmpty(nodeName))
         {
@@ -70,14 +97,30 @@ public class CameraLookCutscene : MonoBehaviour
             yield return new WaitForSeconds(holdTime);
         }
 
-        // Glide to wherever the follow camera wants to be NOW
-        // where Lona is after the cutscene not where it started.
+        if (zoom != null)
+            StopCoroutine(zoom);
+
+        // Glide from wherever the camera is now to where Lona is now.
         Vector3 endPos = FollowSpotNow(homeRot);
 
-        yield return Glide(lookSpot.position, lookSpot.rotation, endPos, homeRot);
+        yield return Glide(cam.position, cam.rotation, endPos, homeRot);
 
         cameraController.enabled = true;
         playerMovement.UnfreezePlayer();
+    }
+
+    IEnumerator SlowZoom()
+    {
+        for (float t = 0f; t < zoomTime; t += Time.deltaTime)
+        {
+            float k = Mathf.SmoothStep(0f, 1f, t / zoomTime);
+            cam.SetPositionAndRotation(
+                Vector3.Lerp(lookSpot.position, closeSpot.position, k),
+                Quaternion.Slerp(lookSpot.rotation, closeSpot.rotation, k));
+            yield return null;
+        }
+
+        cam.SetPositionAndRotation(closeSpot.position, closeSpot.rotation);
     }
 
     Vector3 FollowSpotNow(Quaternion followRot)

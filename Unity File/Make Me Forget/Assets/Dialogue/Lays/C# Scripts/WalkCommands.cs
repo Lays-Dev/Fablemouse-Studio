@@ -9,6 +9,7 @@ public class WalkCommands : MonoBehaviour
     public Transform[] spots;     // where they walk to
     public float speed = 2f;
     public string walkAnimParameter = "isWalking";   // the walk parameter in their Animator
+    public Transform[] useAnyGround;   // walkers here follow any ground with a collider, not just terrain (JasonHospital)
 
     void Awake()
     {
@@ -16,7 +17,8 @@ public class WalkCommands : MonoBehaviour
         dialogueRunner.AddCommandHandler<string, string>("walk", Walk);
     }
 
-    Coroutine Walk(string who, string where)
+    // public so cutscenes can start a walk too
+    public Coroutine Walk(string who, string where)
     {
         return StartCoroutine(WalkTo(Find(walkers, who), Find(spots, where)));
     }
@@ -54,8 +56,11 @@ public class WalkCommands : MonoBehaviour
         Animator anim = who.GetComponentInChildren<Animator>();
         SetWalking(anim, true);
 
+        // only the walkers in the Use Any Ground list use the new ground check
+        bool anyGround = System.Array.IndexOf(useAnyGround, who) >= 0;
+
         // how high above the ground they are, so they follow the terrain
-        float heightAboveGround = who.position.y - GroundHeight(who.position);
+        float heightAboveGround = who.position.y - GroundHeight(who.position, who, anyGround);
 
         Vector2 goal = new Vector2(spot.position.x, spot.position.z);
         float timer = 0f;
@@ -72,7 +77,7 @@ public class WalkCommands : MonoBehaviour
 
             // walk on the ground instead of levitating
             Vector3 newPos = new Vector3(flat.x, pos.y, flat.y);
-            newPos.y = GroundHeight(newPos) + heightAboveGround;
+            newPos.y = GroundHeight(newPos, who, anyGround) + heightAboveGround;
             who.position = newPos;
 
             timer += Time.deltaTime;
@@ -86,8 +91,25 @@ public class WalkCommands : MonoBehaviour
         if (rb != null) rb.isKinematic = wasKinematic;
     }
 
-    float GroundHeight(Vector3 pos)
+    float GroundHeight(Vector3 pos, Transform who, bool anyGround)
     {
+        // looks straight down for any ground with a collider (paths, floors, etc.)
+        if (anyGround)
+        {
+            RaycastHit[] hits = Physics.RaycastAll(pos + Vector3.up * 10f, Vector3.down, 50f, ~0, QueryTriggerInteraction.Ignore);
+            float best = float.NegativeInfinity;
+
+            foreach (RaycastHit hit in hits)
+            {
+                // skip their own body, and anything above their head
+                if (hit.transform.IsChildOf(who)) continue;
+                if (hit.point.y > best && hit.point.y <= pos.y + 2f) best = hit.point.y;
+            }
+
+            if (best != float.NegativeInfinity) return best;
+        }
+
+        // same as before (Lona uses this)
         Terrain terrain = Terrain.activeTerrain;
         if (terrain == null) return pos.y;
 
