@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using Yarn.Unity;
 
-public class CameraLookCutscene : MonoBehaviour, ISaveable
+public class CameraLookCutscene : MonoBehaviour
 {
     [Header("Camera")]
     public Transform cam;
@@ -27,40 +26,6 @@ public class CameraLookCutscene : MonoBehaviour, ISaveable
     public float holdTime = 1.5f;
 
     private bool hasPlayed = false;
-
-    public string SaveId => $"CameraLook_{gameObject.name}_{nodeName}";
-
-    [Serializable]
-    private class State
-    {
-        public bool hasPlayed;
-        public bool isActive;
-        public Vector3 position;
-        public Quaternion rotation;
-    }
-
-    public string CaptureState()
-    {
-        return JsonUtility.ToJson(new State
-        {
-            hasPlayed = hasPlayed,
-            isActive = gameObject.activeSelf,
-            position = transform.position,
-            rotation = transform.rotation
-        });
-    }
-
-    public void RestoreState(string json)
-    {
-        State state = JsonUtility.FromJson<State>(json);
-        hasPlayed = state.hasPlayed;
-
-        if (!hasPlayed) return;
-
-        // hasPlayed is already true, so turning this on won't replay the cutscene.
-        transform.SetPositionAndRotation(state.position, state.rotation);
-        gameObject.SetActive(state.isActive);
-    }
 
     void OnEnable()
     {
@@ -91,10 +56,9 @@ public class CameraLookCutscene : MonoBehaviour, ISaveable
 
         cameraController.enabled = false;
 
-        Vector3 homePos = cam.position;
         Quaternion homeRot = cam.rotation;
 
-        yield return Glide(homePos, homeRot, lookSpot.position, lookSpot.rotation);
+        yield return Glide(cam.position, homeRot, lookSpot.position, lookSpot.rotation);
 
         if (dialogueRunner != null && !string.IsNullOrEmpty(nodeName))
         {
@@ -106,11 +70,27 @@ public class CameraLookCutscene : MonoBehaviour, ISaveable
             yield return new WaitForSeconds(holdTime);
         }
 
-        yield return Glide(lookSpot.position, lookSpot.rotation, homePos, homeRot);
+        // Glide to wherever the follow camera wants to be NOW
+        // where Lona is after the cutscene not where it started.
+        Vector3 endPos = FollowSpotNow(homeRot);
+
+        yield return Glide(lookSpot.position, lookSpot.rotation, endPos, homeRot);
 
         cameraController.enabled = true;
-        cameraController.SnapToTarget();
         playerMovement.UnfreezePlayer();
+    }
+
+    Vector3 FollowSpotNow(Quaternion followRot)
+    {
+        Vector3 savedPos = cam.position;
+        Quaternion savedRot = cam.rotation;
+
+        cam.rotation = followRot;
+        cameraController.SnapToTarget();
+        Vector3 spot = cam.position;
+
+        cam.SetPositionAndRotation(savedPos, savedRot);
+        return spot;
     }
 
     IEnumerator Glide(Vector3 fromPos, Quaternion fromRot, Vector3 toPos, Quaternion toRot)

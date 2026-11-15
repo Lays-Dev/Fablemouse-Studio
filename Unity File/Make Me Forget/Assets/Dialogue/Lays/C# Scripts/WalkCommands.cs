@@ -8,6 +8,7 @@ public class WalkCommands : MonoBehaviour
     public Transform[] walkers;   // who shall be le walker
     public Transform[] spots;     // where they walk to
     public float speed = 2f;
+    public string walkAnimParameter = "isWalking";   // the walk parameter in their Animator
 
     void Awake()
     {
@@ -35,7 +36,7 @@ public class WalkCommands : MonoBehaviour
     {
         if (who == null || spot == null) yield break;
 
-        // turn off physics while walking so she stops bouncing
+        // turn off physics while walking so she stops bouncing pls
         Rigidbody rb = who.GetComponent<Rigidbody>();
         bool wasKinematic = false;
         if (rb != null)
@@ -44,7 +45,13 @@ public class WalkCommands : MonoBehaviour
             rb.isKinematic = true;
         }
 
-        // found this part online to keep their height? idk
+        // start the walk animation
+        Animator anim = who.GetComponentInChildren<Animator>();
+        SetWalking(anim, true);
+
+        // how high above the ground they are so they follow the terrain
+        float heightAboveGround = who.position.y - GroundHeight(who.position);
+
         Vector2 goal = new Vector2(spot.position.x, spot.position.z);
         float timer = 0f;
 
@@ -57,13 +64,46 @@ public class WalkCommands : MonoBehaviour
             if (Vector2.Distance(flat, goal) < 0.05f) break;
 
             flat = Vector2.MoveTowards(flat, goal, speed * Time.deltaTime);
-            who.position = new Vector3(flat.x, pos.y, flat.y);
+
+            // walk on the ground instead of levitating my gawd
+            Vector3 newPos = new Vector3(flat.x, pos.y, flat.y);
+            newPos.y = GroundHeight(newPos) + heightAboveGround;
+            who.position = newPos;
 
             timer += Time.deltaTime;
             yield return null;
         }
 
+        // stop the walk animation
+        SetWalking(anim, false);
+
         // physics back on
         if (rb != null) rb.isKinematic = wasKinematic;
+    }
+
+    float GroundHeight(Vector3 pos)
+    {
+        Terrain terrain = Terrain.activeTerrain;
+        if (terrain == null) return pos.y;
+
+        return terrain.SampleHeight(pos) + terrain.transform.position.y;
+    }
+
+    void SetWalking(Animator anim, bool walking)
+    {
+        if (anim == null || string.IsNullOrEmpty(walkAnimParameter)) return;
+
+        foreach (AnimatorControllerParameter p in anim.parameters)
+        {
+            if (p.name != walkAnimParameter) continue;
+
+            // if the parameter is a Bool or a Float 
+            if (p.type == AnimatorControllerParameterType.Bool)
+                anim.SetBool(walkAnimParameter, walking);
+            else if (p.type == AnimatorControllerParameterType.Float)
+                anim.SetFloat(walkAnimParameter, walking ? 1f : 0f);
+
+            return;
+        }
     }
 }
