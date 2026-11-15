@@ -3,6 +3,10 @@ using UnityEngine.InputSystem;
 using System.Collections;
 // Using Input System because this script uses PlayerInput and InputAction.
 
+// NEW: Used for the talking animation.
+using TMPro;
+using Yarn.Unity;
+
 // This script will control Little Lona's walk left and right animation.
 public class Live2DAnimationController : MonoBehaviour
 {
@@ -21,6 +25,17 @@ public class Live2DAnimationController : MonoBehaviour
     [Tooltip("How long the interaction animation plays.")]
     // Estimated to be around 0.9 sec long.
     [SerializeField] private float interactionDuration = 0.9f;
+
+    // NEW
+    [Header("Talking")]
+    [Tooltip("Drag the Dialogue System here.")]
+    public DialogueRunner dialogueRunner;
+
+    [Tooltip("Dialogue System > Canvas > Line Presenter > Character Name.")]
+    public TMP_Text characterNameText;
+
+    [Tooltip("Names in the Yarn file that count as Lona talking.")]
+    public string[] lonaNames = { "Lona", "Little Lona" };
 
 
 #endregion
@@ -47,6 +62,13 @@ public class Live2DAnimationController : MonoBehaviour
 
     // NEW: Remembers if the player was frozen last frame.
     private bool wasFrozen = false;
+
+    // NEW: Is she facing the camera (last moved towards it).
+    // Used to pick the front or side interact animation.
+    private bool facingFront = false;
+
+    // NEW: Remembers if she was talking last frame.
+    private bool wasTalking = false;
 
 #endregion
 #region Awake
@@ -110,6 +132,10 @@ public class Live2DAnimationController : MonoBehaviour
             return;
         }
 
+        // NEW: Talking animation. Checked before the frozen check,
+        // because she is usually frozen while dialogue plays.
+        UpdateTalking();
+
         // NEW: Ignore input while the player is frozen.
         // This lets cutscenes control the animation instead.
         if (playerMovement != null && playerMovement.IsFrozen)
@@ -119,6 +145,7 @@ public class Live2DAnimationController : MonoBehaviour
             {
                 animator.SetFloat("Speed", 0f);
                 animator.SetBool("IsSprinting", false);
+                animator.SetBool("IsMovingFront", false);
                 wasFrozen = true;
             }
 
@@ -146,13 +173,32 @@ public class Live2DAnimationController : MonoBehaviour
         // Using the X value.
         Vector2 moveInput = moveAction.ReadValue<Vector2>();
 
+        // NEW: Moving towards the camera (negative Z) more than sideways.
+        bool movingFront = moveInput.y < -0.01f && Mathf.Abs(moveInput.y) > Mathf.Abs(moveInput.x);
+
+        // NEW: Remember which way she's facing for the interact animation.
+        if (movingFront)
+        {
+            facingFront = true;
+        }
+        else if (Mathf.Abs(moveInput.x) > 0.01f)
+        {
+            facingFront = false;
+        }
+
         // Checks if the player is sprinting by checking the sprint action keybind
+        // NEW: Also used for Walk_Front vs Sprint_Front.
         bool isSprinting = sprintAction.IsPressed() && moveInput.magnitude > 0.01f;
 
         // Update animation speed.
-        animator.SetFloat("Speed", Mathf.Abs(moveInput.x));
+        // NEW: Speed stays 0 while running front, so the side walk doesn't play.
+        animator.SetFloat("Speed", movingFront ? 0f : Mathf.Abs(moveInput.x));
 
-        animator.SetBool("IsSprinting", isSprinting);    
+        animator.SetBool("IsSprinting", isSprinting);
+
+        // NEW: Front run and facing direction.
+        animator.SetBool("IsMovingFront", movingFront);
+        animator.SetBool("IsFacingFront", facingFront);
 
         // Flip immediately when direction changes.
         if (moveInput.x < 0 && currentDirection != -1)
@@ -178,6 +224,10 @@ public class Live2DAnimationController : MonoBehaviour
         // Stop Walking and Sprinting animations.
         animator.SetFloat("Speed", 0f);
         animator.SetBool("IsSprinting", false);
+        animator.SetBool("IsMovingFront", false);
+
+        // NEW: Picks front or side interact in the Animator.
+        animator.SetBool("IsFacingFront", facingFront);
 
         // Set Interaction bool to true.
         animator.SetBool("isInteracting", true);
@@ -193,11 +243,33 @@ public class Live2DAnimationController : MonoBehaviour
     }
 
 #endregion
+#region Talking
+
+    // NEW: Plays the talking animation while one of Lona's lines is showing.
+    private void UpdateTalking()
+    {
+        if (dialogueRunner == null || characterNameText == null) return;
+
+        bool talking = dialogueRunner.IsDialogueRunning
+            && characterNameText.gameObject.activeInHierarchy
+            && System.Array.IndexOf(lonaNames, characterNameText.text) >= 0;
+
+        // Only tell the Animator when it changes.
+        if (talking != wasTalking)
+        {
+            animator.SetBool("IsTalking", talking);
+            wasTalking = talking;
+        }
+    }
+
+#endregion
 #region Walking Left
 
     // NEW: Lets cutscenes turn her left (-1) or right (1).
     public void FaceDirection(int direction)
     {
+        facingFront = false;
+
         if (direction == 0 || direction == currentDirection) return;
 
         currentDirection = direction;

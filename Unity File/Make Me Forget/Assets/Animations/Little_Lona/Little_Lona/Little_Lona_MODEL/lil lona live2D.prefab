@@ -3877,6 +3877,11 @@ MonoBehaviour:
   animator: {fileID: 0}
   facingScale: 3
   interactionDuration: 1.5
+  dialogueRunner: {fileID: 0}
+  characterNameText: {fileID: 0}
+  lonaNames:
+  - Lona
+  - Little Lona
 --- !u!114 &423781289093249888
 MonoBehaviour:
   m_ObjectHideFlags: 0
