@@ -29,6 +29,10 @@ public class Live2DAnimationController : MonoBehaviour
     // Estimated to be around 0.9 sec long.
     [SerializeField] private float interactionDuration = 0.9f;
 
+    [Header("Jump")]
+    [Tooltip("How long the jump animation plays.")]
+    [SerializeField] private float jumpAnimationDuration = 0.7f;
+
     // NEW
     [Header("Talking")]
     [Tooltip("Drag the Dialogue System here.")]
@@ -64,6 +68,7 @@ public class Live2DAnimationController : MonoBehaviour
     private InputAction moveAction;
     private InputAction sprintAction;
     private InputAction interactAction;
+    private InputAction jumpAction;
 
     // Holds the players direction. 1 being Right. -1 being Left.
     // This will keep the script from updating Little Lona's scale every frame.
@@ -73,6 +78,9 @@ public class Live2DAnimationController : MonoBehaviour
     // Is the player pressing the interact key.
     // This will be used for the interact animation.
     private bool isInteracting = false;
+
+    // Prevents other movement animations from interrupting the jump animation.
+    private bool isJumpingAnimation = false;
 
     // NEW: Used to check if the player is frozen (cutscenes and dialogue).
     private PlayerMovement playerMovement;
@@ -142,6 +150,16 @@ public class Live2DAnimationController : MonoBehaviour
             Debug.LogError("Interact action was not found in PlayerInput.", this);
             return;
         }
+
+        // Get the jump action.
+        jumpAction = playerInput.actions["Jump"];
+
+        // Null check.
+        if (jumpAction == null)
+        {
+            Debug.LogError("Jump action was not found in PlayerInput.", this);
+            return;
+        }
     }
 
 #endregion
@@ -189,6 +207,18 @@ public class Live2DAnimationController : MonoBehaviour
 
         // Prevents the other animations from interupting the Interact animation.
         if (isInteracting)
+        {
+            return;
+        }
+
+        // Check if the Jump button was pressed.
+        if (jumpAction.WasPressedThisFrame() && !isJumpingAnimation)
+        {
+            StartCoroutine(PlayJumpAnimation());
+        }
+
+        // Prevent walking and sprinting animations from interrupting jumping.
+        if (isJumpingAnimation)
         {
             return;
         }
@@ -264,6 +294,32 @@ public class Live2DAnimationController : MonoBehaviour
 
         // Allow movement animations again.
         isInteracting = false;
+    }
+
+#endregion
+#region Jump
+
+    private IEnumerator PlayJumpAnimation()
+    {
+        // Lock the jump animation.
+        isJumpingAnimation = true;
+
+        // Stop walking and sprinting animations.
+        animator.SetFloat("Speed", 0f);
+        animator.SetBool("IsSprinting", false);
+        animator.SetBool("IsMovingFront", false);
+
+        // Set Jump Bool to true.
+        animator.SetBool("IsJumping", true);
+
+        // Wait for the jump animation.
+        yield return new WaitForSeconds(jumpAnimationDuration);
+
+        // Set Jump Bool to false.
+        animator.SetBool("IsJumping", false);
+
+        // Allow movement animations again.
+        isJumpingAnimation = false;
     }
 
 #endregion

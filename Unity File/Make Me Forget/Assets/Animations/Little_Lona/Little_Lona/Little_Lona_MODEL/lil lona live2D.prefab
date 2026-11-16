@@ -3877,6 +3877,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   facingScale: 3
   interactionDuration: 1.5
+  jumpAnimationDuration: 0.7
   dialogueRunner: {fileID: 0}
   characterNameText: {fileID: 0}
   lonaNames:
