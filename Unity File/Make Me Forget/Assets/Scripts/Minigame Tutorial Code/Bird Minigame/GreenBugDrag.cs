@@ -19,6 +19,9 @@ public class GreenBugDrag : MonoBehaviour,
 
     [SerializeField ]public static bool birdsFed = false;
 
+    [Header("Bird Flight")]
+    public BirdFlight[] birdsToFly;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -51,6 +54,16 @@ public class GreenBugDrag : MonoBehaviour,
             dialogueImage.gameObject.SetActive(false);
             birdsHungry.gameObject.SetActive(false);
             birdsFlight.gameObject.SetActive(true);
+
+            // Make each bird fly away.
+            foreach (BirdFlight bird in birdsToFly)
+            {
+                if (bird != null)
+                {
+                    bird.FlyAway();
+                }
+            }
+
             birdsFed = true;
 
             // Hide the bug after feeding.
