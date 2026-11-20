@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403ae2dd693bb1d4b924f6b8d206b053, type: 3}
+  m_Name: Little_Jason.fadeMotionList
+  m_EditorClassIdentifier: 
+  MotionInstanceIds: 86c9ffff5cc9ffff40c9ffff24c9ffff08c9ffff
+  CubismFadeMotionObjects:
+  - {fileID: 11400000, guid: 85c3ecbaa6a28c744b0ac24efca86e11, type: 2}
+  - {fileID: 11400000, guid: 9051befa4374bc14991cf962ac356ac5, type: 2}
+  - {fileID: 11400000, guid: e6e77f4a3fb1e754b8c8ff7fb8a9cbb0, type: 2}
+  - {fileID: 11400000, guid: 9060bf3de98055c4f8c4bddcbb1d4db2, type: 2}
+  - {fileID: 11400000, guid: e5714ce0e1b95324092cc6e2f339a0bd, type: 2}
