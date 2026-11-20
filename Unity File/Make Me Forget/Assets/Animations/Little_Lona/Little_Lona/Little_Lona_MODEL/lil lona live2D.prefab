@@ -3782,6 +3782,7 @@ MonoBehaviour:
   _sprintSpeed: 8
   _jumpHeight: 5
   _jumpCooldown: 1
+  _maxSlopeAngle: 45
 --- !u!114 &2800148412425362421
 MonoBehaviour:
   m_ObjectHideFlags: 0
