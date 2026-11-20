@@ -9,6 +9,7 @@ public class StartButtonControlsMenu : MonoBehaviour
     // The Controls menu will go to the Tutorial level.
     [SerializeField] private string tutoralSceneName = "Tutorial";
     [SerializeField] private string mainMenuSceneName = "Main Menu";
+    [SerializeField] private string townSceneName = "Town";
 
 
     // Naming the method something obvious.
@@ -20,6 +21,11 @@ public class StartButtonControlsMenu : MonoBehaviour
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene(mainMenuSceneName);
+    }
+
+    public void StartTownLevel()
+    {
+        SceneManager.LoadScene(townSceneName);
     }
 
 }

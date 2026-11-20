@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HospitalScene.unity
     guid: 03a6bab6a0701d040a71ada5b7ae1e23
+  - enabled: 1
+    path: Assets/Scenes/Town.unity
+    guid: 14f9290a957718c4995c3b26c6f28acb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

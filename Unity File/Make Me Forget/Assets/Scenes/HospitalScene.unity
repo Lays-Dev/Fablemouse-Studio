@@ -227,7 +227,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 152052507}
         m_TargetAssemblyTypeName: StartButtonControlsMenu, Assembly-CSharp
-        m_MethodName: ReturnToMainMenu
+        m_MethodName: StartTownLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -289,6 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutoralSceneName: Tutorial
   mainMenuSceneName: Main Menu
+  townSceneName: Town
 --- !u!1 &321887321
 GameObject:
   m_ObjectHideFlags: 0
