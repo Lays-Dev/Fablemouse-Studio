@@ -28,6 +28,7 @@
 {448b283a-68b1-43d2-8cf0-d60eb752b8f5} event:/AMB/Globals/Town AMB
 {358a14b1-ae97-4d80-a9c1-d46a175e40d3} event:/DX/NPC/Jason Talking
 {96074788-6119-47b3-a648-ae600f228200} event:/DX/PC/Lona Talking
+{56e05f4a-489b-4741-bc9e-26cd6e8f730e} event:/DX/PC/Lona Talking AC
 {50f45498-9fed-43b7-9c8a-9180e3e03d86} event:/MX/Exploration/Tutorial BGM
 {58a5dbfc-aaf7-43c1-900f-7693716b3230} event:/MX/Story/Westwood Welcome
 {bcfaf443-2b11-441b-aeef-ed3912179b95} event:/MX/System/Main Menu
@@ -78,6 +79,7 @@
 {88fa0308-d29d-498a-8080-3f5430d1df3f} parameter:/Intensity
 {07189d0b-63ec-4250-b504-25cd5cfb5d8e} parameter:/Pitch
 {d5e76763-00b4-4d77-8234-da10a1d52b45} parameter:/Vowel
+{98e666b8-c961-4785-b975-87b7b26eadf8} parameter:/Vowel AC
 {706a07df-1fd0-4c1f-9606-135104b73e94} parameter:/characterAge
 {3a571959-1920-4197-ae69-145cb5372e19} parameter:/groundType
 {22d6d82a-2dee-4e8d-97bc-c4bd71d7632d} parameter:/loopEnd
