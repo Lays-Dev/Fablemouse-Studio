@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8756100705011722499, guid: 64992fe1a779e954d9405e4129667c8d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2352f916efb41bf4d970dee913ba07b8, type: 2}
     - target: {fileID: -8679921383154817045, guid: 64992fe1a779e954d9405e4129667c8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.94656
@@ -60,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedestrian Walk Light
       objectReference: {fileID: 0}
+    - target: {fileID: 3256448075161499827, guid: 64992fe1a779e954d9405e4129667c8d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2352f916efb41bf4d970dee913ba07b8, type: 2}
     - target: {fileID: 4531912228224351498, guid: 64992fe1a779e954d9405e4129667c8d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
