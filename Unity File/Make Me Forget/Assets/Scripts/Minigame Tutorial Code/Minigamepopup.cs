@@ -4,6 +4,7 @@ using UnityEngine.Events;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
+using FMODUnity;
 
 public class MiniGamePopup : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class MiniGamePopup : MonoBehaviour
     //public bool allowCancel = true;
     
     public KeyCode cancelKey = KeyCode.Escape;
+
+    [Header("Audio Settings")]
+    [SerializeField] private EventReference _puzzleStartSound;
 
     [Header("Events")]
     public UnityEvent onOpened;
@@ -62,6 +66,12 @@ public class MiniGamePopup : MonoBehaviour
         CurrentPart = partIndex;
         IsOpen = true;
         gameObject.SetActive(true);
+
+        // Play the puzzle opening SFX.
+        if (!_puzzleStartSound.IsNull)
+        {
+            RuntimeManager.PlayOneShot(_puzzleStartSound);
+        }
 
         FreezePlayer();
 

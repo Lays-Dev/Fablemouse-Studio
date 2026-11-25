@@ -1,6 +1,6 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMODUnity;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -17,6 +17,13 @@ public class PlayerMovement : MonoBehaviour
     [Header("Slope Settings")]
     [SerializeField] private float _maxSlopeAngle = 45f;
 
+    [Header("Audio Settings")]
+    [SerializeField] private EventReference _jumpSound;
+    [SerializeField] private EventReference _walkSound;
+    [SerializeField] private float _footstepInterval = 0.4f;
+
+    private float _footstepTimer;
+
     private Rigidbody _rigidbody;
     private PlayerInput _playerInput;
 
@@ -32,16 +39,10 @@ public class PlayerMovement : MonoBehaviour
 
     private RigidbodyConstraints _originalConstraints;
 
-    // Reusable array for checking current collision contacts.
     private readonly ContactPoint[] _contacts = new ContactPoint[32];
 
-    // Stores whether Lona is standing on walkable ground.
     private bool _isGrounded;
-
-    // Stores whether Lona is touching a steep surface.
     private bool _touchingSteepSurface;
-
-    // Direction pointing away from the steep surface.
     private Vector3 _steepSurfaceNormal;
 
     private void Awake()
@@ -75,16 +76,16 @@ public class PlayerMovement : MonoBehaviour
 
         _playerFrozen = true;
         _jumpRequested = false;
+        _footstepTimer = 0f;
 
         // Stop all movement.
         _rigidbody.linearVelocity = Vector3.zero;
         _rigidbody.angularVelocity = Vector3.zero;
 
-        // Remember the original Rigidbody constraints.
+        // Freeze movement during dialogue.
         _originalConstraints = _rigidbody.constraints;
-
-        // Prevent movement during dialogue.
-        _rigidbody.constraints = _originalConstraints | RigidbodyConstraints.FreezePosition;
+        _rigidbody.constraints =
+            _originalConstraints | RigidbodyConstraints.FreezePosition;
 
         Debug.Log("PLAYER FROZEN!");
     }
@@ -94,13 +95,14 @@ public class PlayerMovement : MonoBehaviour
         if (!_playerFrozen)
             return;
 
-        // Restore the Rigidbody constraints.
+        // Restore normal movement.
         _rigidbody.constraints = _originalConstraints;
 
         _rigidbody.linearVelocity = Vector3.zero;
         _rigidbody.angularVelocity = Vector3.zero;
 
         _playerFrozen = false;
+
         Debug.Log("PLAYER UNFROZEN!");
     }
 
@@ -109,8 +111,11 @@ public class PlayerMovement : MonoBehaviour
         if (_playerFrozen)
             return;
 
-        // Only allow a jump when grounded and off cooldown.
-        if (_jumpAction != null && _jumpAction.WasPressedThisFrame() && Time.time >= _nextJumpTime && _isGrounded)
+        // Only jump when grounded and off cooldown.
+        if (_jumpAction != null &&
+            _jumpAction.WasPressedThisFrame() &&
+            Time.time >= _nextJumpTime &&
+            _isGrounded)
         {
             _jumpRequested = true;
             _nextJumpTime = Time.time + _jumpCooldown;
@@ -120,7 +125,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         if (_playerFrozen)
+        {
+            _footstepTimer = 0f;
             return;
+        }
 
         if (_moveAction == null || _sprintAction == null)
             return;
@@ -142,6 +150,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 velocity = _rigidbody.linearVelocity;
 
+        // Restrict movement against steep surfaces.
         if (_touchingSteepSurface)
         {
             float movementIntoSurface =
@@ -156,8 +165,9 @@ public class PlayerMovement : MonoBehaviour
 
                 movement.y = 0f;
 
-                // Prevent climbing caused by collision velocity.
-                if (_isGrounded && !_jumpRequested && velocity.y > 0f)
+                if (_isGrounded &&
+                    !_jumpRequested &&
+                    velocity.y > 0f)
                 {
                     velocity.y = 0f;
                 }
@@ -173,7 +183,46 @@ public class PlayerMovement : MonoBehaviour
                 2f * Mathf.Abs(Physics.gravity.y) * _jumpHeight
             );
 
+            // Play jumping SFX.
+            if (!_jumpSound.IsNull)
+            {
+                RuntimeManager.PlayOneShot(
+                    _jumpSound, transform.position
+                );
+            }
+
             _jumpRequested = false;
+            _footstepTimer = 0f;
+        }
+        else
+        {
+            // Measure actual horizontal movement.
+            Vector3 horizontalVelocity = _rigidbody.linearVelocity;
+            horizontalVelocity.y = 0f;
+
+            // Play footsteps while grounded and moving.
+            if (_isGrounded &&
+                moveInput.magnitude > 0.1f &&
+                horizontalVelocity.magnitude > 0.1f)
+            {
+                _footstepTimer += Time.fixedDeltaTime;
+
+                if (_footstepTimer >= _footstepInterval)
+                {
+                    if (!_walkSound.IsNull)
+                    {
+                        RuntimeManager.PlayOneShot(
+                            _walkSound, transform.position
+                        );
+                    }
+
+                    _footstepTimer = 0f;
+                }
+            }
+            else
+            {
+                _footstepTimer = 0f;
+            }
         }
 
         _rigidbody.linearVelocity = velocity;
@@ -181,6 +230,7 @@ public class PlayerMovement : MonoBehaviour
         // Clear contact information after using it.
         CheckSurfaces();
     }
+
     private void OnCollisionStay(Collision collision)
     {
         int contactCount = collision.GetContacts(_contacts);
@@ -210,11 +260,13 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         // Detect new contacts immediately.
         OnCollisionStay(collision);
     }
+
     private void CheckSurfaces()
     {
         _isGrounded = false;
@@ -222,4 +274,5 @@ public class PlayerMovement : MonoBehaviour
         _steepSurfaceNormal = Vector3.zero;
     }
 }
+
 

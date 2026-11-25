@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using FMODUnity;
 
 public class TreeSequence : MonoBehaviour
 {
@@ -36,6 +37,10 @@ public class TreeSequence : MonoBehaviour
     [Header("Tree Wiggle")]
     public bool wiggleTree = true;
     public float wiggleAmount = 0.1f;
+
+    [Header("Audio Settings")]
+    [SerializeField] private EventReference _branchHitSound;
+    [SerializeField] private EventReference _groundImpactSound;
 
     private int hits = 0;
     private bool birdsShown = false;
@@ -133,9 +138,17 @@ public class TreeSequence : MonoBehaviour
                 jasonFallSpeed * Time.deltaTime
             );
 
-            // jason hit the ground, area's unlocked yayy
+            // Jason hits the ground.
             if (jason.transform.position == jasonLandPoint.position)
             {
+                // Play ground impact SFX.
+                if (!_groundImpactSound.IsNull)
+                {
+                    RuntimeManager.PlayOneShot(
+                        _groundImpactSound, jason.transform.position
+                    );
+                }
+
                 if (areaBlocker != null) areaBlocker.SetActive(false);
                 jasonFalling = false;
                 onJasonLanded.Invoke();
@@ -176,13 +189,19 @@ public class TreeSequence : MonoBehaviour
     // bonk
     private void HitTree()
     {
+        // Play the branch swing and hit SFX.
+        if (!_branchHitSound.IsNull)
+        {
+            RuntimeManager.PlayOneShot(_branchHitSound, transform.position);
+        }
+
         hits++;
         Debug.Log("bonk! " + hits + "/" + hitsNeeded);
         onTreeHit.Invoke();
 
         if (wiggleTree) wiggleTimer = 0.25f;
 
-        // third bonk, jason's going down
+        // Third bonk, Jason's going down.
         if (hits >= hitsNeeded)
         {
             jasonFalling = true;

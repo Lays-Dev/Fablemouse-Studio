@@ -1,9 +1,10 @@
 using UnityEngine;
+using FMODUnity;
 
 public class BranchManager : MonoBehaviour
 {
     public GameObject branchImage;
-
+    [SerializeField] private EventReference _groundImpactSound;
     private bool branchMoved = false;
 
     public bool HasBranchMoved => branchMoved;
@@ -31,6 +32,12 @@ public class BranchManager : MonoBehaviour
             // Apply the new position.
             branchImage.transform.position = position;
 
+            if (!_groundImpactSound.IsNull)
+            {
+                RuntimeManager.PlayOneShot(
+                    _groundImpactSound, branchImage.transform.position
+                );
+            }
             // Make sure this only happens once.
             branchMoved = true;
         }
